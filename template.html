@@ -16,11 +16,30 @@
 <link rel="alternate" type="application/rss+xml" title="THE GRUDGE REPORT" href="${site_url}feed.xml">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23c00'/%3E%3Ctext x='2.5' y='12.5' font-family='Courier New,monospace' font-size='12' font-weight='bold' fill='%23fff'%3EG%3C/text%3E%3C/svg%3E">
 <title>THE GRUDGE REPORT</title>
+<link rel="preload" href="fonts/oswald.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/plexmono-400.woff2" as="font" type="font/woff2" crossorigin>
 ${gc_head}<style>
+  /* Type: Oswald (modern condensed gothic — tabloid headline voice) for the
+     masthead/lead/desks/stories; IBM Plex Mono (modern typewriter — the
+     wire-service anchor) for all metadata. Self-hosted woff2, same origin. */
+  @font-face {
+    font-family: "Oswald"; src: url("fonts/oswald.woff2") format("woff2");
+    font-weight: 200 700; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: "IBM Plex Mono"; src: url("fonts/plexmono-400.woff2") format("woff2");
+    font-weight: 400; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: "IBM Plex Mono"; src: url("fonts/plexmono-600.woff2") format("woff2");
+    font-weight: 600; font-style: normal; font-display: swap;
+  }
   /* Newsprint tokens: warm paper, soft ink, one wire-red, one press-green.
      Dark theme redefines the tokens (warm near-black, desaturated accents,
      rules dimmer than text) instead of naively inverting. */
   :root {
+    --font-head: "Oswald", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    --font-wire: "IBM Plex Mono", "Courier New", Courier, monospace;
     --paper: #f8f5ee;
     --ink: #1d1a15;
     --red: #b01818;
@@ -47,7 +66,7 @@ ${gc_head}<style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
     background: var(--paper); color: var(--ink);
-    font-family: "Courier New", Courier, monospace;
+    font-family: var(--font-wire);
     padding: 12px; max-width: 1100px; margin: 0 auto;
   }
   a { color: var(--ink); }
@@ -57,18 +76,20 @@ ${gc_head}<style>
     outline: 2px solid var(--red); outline-offset: 2px;
   }
   .stale { background: var(--red); color: var(--paper); text-align: center;
-           font-size: 12px; font-weight: bold; letter-spacing: 1px;
-           padding: 6px 8px; margin-bottom: 10px; }
+           font-family: var(--font-head); font-size: 14px; font-weight: 600;
+           letter-spacing: 1px; padding: 6px 8px; margin-bottom: 10px; }
   .topbar { text-align: center; font-size: 11px; letter-spacing: 1.5px;
              color: var(--muted);
              border-bottom: 3px double var(--rule); padding-bottom: 7px; }
-  .masthead { text-align: center; font-size: 44px; font-weight: bold;
-               letter-spacing: 4px; margin: 16px 0 2px; }
+  .masthead { text-align: center; font-family: var(--font-head);
+               font-size: 58px; font-weight: 700; letter-spacing: 3px;
+               line-height: 1.05; margin: 18px 0 2px; }
   .tagline { text-align: center; font-size: 11px; letter-spacing: 3px;
               color: var(--muted); margin-bottom: 18px; }
   .judgment { border: 3px double var(--rule); max-width: 560px; margin: 0 auto 8px;
                padding: 12px 18px 14px; text-align: center; }
-  .judgment .jtitle { font-size: 13px; font-weight: bold; letter-spacing: 3px; }
+  .judgment .jtitle { font-family: var(--font-head); font-size: 16px;
+                      font-weight: 600; letter-spacing: 3px; }
   .judgment .jread { font-size: 12px; letter-spacing: 1px; margin: 5px 0 9px; }
   .judgment .jread .grim { color: var(--red); font-weight: bold; }
   .judgment .jread .rosy { color: var(--green); font-weight: bold; }
@@ -99,9 +120,10 @@ ${gc_head}<style>
   .siren { font-size: 34px; animation: flash 1s step-start infinite; }
   @keyframes flash { 50% { opacity: 0.25; } }
   @media (prefers-reduced-motion: reduce) { .siren { animation: none; } }
-  a.lead { font-size: 32px; font-weight: bold; line-height: 1.22;
-            color: var(--red); text-decoration: underline;
-            text-underline-offset: 4px; text-wrap: balance; }
+  a.lead { font-family: var(--font-head); font-size: 44px; font-weight: 700;
+            line-height: 1.12; color: var(--red); text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 6px; text-wrap: balance; }
   a.lead:hover { background: var(--red); color: var(--paper-inv); }
   a.lead.sunny { color: var(--green); }
   a.lead.sunny:hover { background: var(--green); color: var(--paper-inv); }
@@ -110,16 +132,17 @@ ${gc_head}<style>
   .columns { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px;
               border-top: 1px solid var(--hairline); padding-top: 20px; }
   .sec { margin-bottom: 26px; }
-  .schead { color: var(--red); font-size: 11px; font-weight: bold;
-             letter-spacing: 3px; border-bottom: 1px solid var(--rule);
+  .schead { color: var(--red); font-family: var(--font-head); font-size: 14px;
+             font-weight: 600; letter-spacing: 2.5px;
+             border-bottom: 1px solid var(--rule);
              margin: 2px 0 12px; padding-bottom: 3px; }
-  .story { margin-bottom: 15px; font-size: 14px; font-weight: bold;
-            line-height: 1.5; letter-spacing: 0.015em; }
+  .story { margin-bottom: 14px; font-family: var(--font-head); font-size: 17px;
+            font-weight: 500; line-height: 1.3; letter-spacing: 0.2px; }
   .story a.hot { color: var(--red); }
   .story a.hot:hover { background: var(--red); color: var(--paper-inv); }
-  .src { display: block; font-size: 11px; font-weight: normal;
-          color: var(--muted); letter-spacing: 1px; margin-top: 3px;
-          line-height: 1.5; }
+  .src { display: block; font-family: var(--font-wire); font-size: 11px;
+          font-weight: 400; color: var(--muted); letter-spacing: 1px;
+          margin-top: 4px; line-height: 1.5; }
   .src .grim { color: var(--red); }
   .src .rosy { color: var(--green); }
   .src .rise, .lead-src .rise { color: var(--red); font-weight: bold; }
@@ -131,8 +154,8 @@ ${gc_head}<style>
   .footer a { color: var(--muted); }
   @media (max-width: 720px) {
     .columns { grid-template-columns: 1fr; }
-    .masthead { font-size: 30px; letter-spacing: 2px; }
-    a.lead { font-size: 24px; }
+    .masthead { font-size: 40px; letter-spacing: 2px; }
+    a.lead { font-size: 30px; }
   }
 </style>
 </head>
@@ -142,11 +165,11 @@ ${gc_head}<style>
   <div class="tagline">HOLDING A GRUDGE AGAINST SLOW NEWS SINCE ${year}</div>
   <div class="judgment">
     <div class="jtitle">⚖ THE JUDGMENT ⚖</div>
-    <div class="jread" id="jread">TODAY'S NEWS CYCLE: <span class="grim">${grim_pct}% GRIM</span> / <span class="rosy">${natural}% ROSY</span></div>
+    <div class="jread" id="jread">SHOWING EVERYTHING &middot; TODAY'S CYCLE: <span class="grim">${grim_pct}% GRIM</span> / <span class="rosy">${natural}% ROSY</span></div>
     <div class="jrow">
       <span class="jend" title="100% doom">😱</span>
-      <input type="range" id="mix" min="0" max="100" value="${natural}"
-             aria-label="Percentage of positive news">
+      <input type="range" id="mix" min="0" max="100" value="50"
+             aria-label="News tone bias: center is today's natural mix">
       <span class="jend" title="100% sunshine">😊</span>
     </div>
     <div class="jsplit"></div>
@@ -203,40 +226,42 @@ ${spark_html}  </div>
       document.body.insertBefore(stale, document.body.firstChild);
     }
 
-    function toneMix(list, n, p) {
-      if (n <= 0) return [];
-      // Re-weight, never hide: the biggest stories keep their spot at any
-      // setting, so 100% sunshine still shows you the war.
-      var nMust = n >= 8 ? Math.max(2, Math.round(n * 0.05)) : 0;
-      var must = list.slice(0, nMust);
-      var got = {};
-      must.forEach(function (x) { got[x.u] = 1; });
-      var rest = list.filter(function (x) { return !got[x.u]; });
-      var m = n - must.length;
-      var pos = [], neg = [], neu = [];
-      rest.forEach(function (x) { (x.tn > 0 ? pos : x.tn < 0 ? neg : neu).push(x); });
-      var nPos = Math.round(m * p / 100);
-      var take = must.concat(pos.slice(0, nPos), neg.slice(0, m - nPos));
-      if (take.length < n) take = take.concat(neu.slice(0, n - take.length));
-      if (take.length < n) {
-        take.forEach(function (x) { got[x.u] = 1; });
-        list.forEach(function (x) {
-          if (take.length < n && !got[x.u]) take.push(x);
-        });
-      }
-      return take;
+    // The tone slider is an INCLUSION dial: center shows 100% of both
+    // tones (everything, exactly as ranked); sliding right progressively
+    // removes grim stories (top-scored survive longest), sliding left
+    // removes rosy ones. Every story IS one or the other — grim until
+    // proven rosy (tn > 0), no neutral class — so the extremes genuinely
+    // empty one side and the readout is the whole truth.
+    function inclusions(v) {
+      return {
+        grim: v <= 50 ? 1 : (100 - v) / 50,
+        rosy: v >= 50 ? 1 : v / 50,
+      };
     }
 
-    function pick(p, t) {
+    function attenuate(list, gIncl, rIncl) {
+      var grim = list.filter(function (x) { return x.tn <= 0; });
+      var rosy = list.filter(function (x) { return x.tn > 0; });
+      var keep = {};
+      grim.slice(0, Math.ceil(grim.length * gIncl))
+        .forEach(function (x) { keep[x.u] = 1; });
+      rosy.slice(0, Math.ceil(rosy.length * rIncl))
+        .forEach(function (x) { keep[x.u] = 1; });
+      return list.filter(function (x) { return keep[x.u]; });
+    }
+
+    function pick(v, t) {
       var want = TOTAL + 1; // lead + columns
-      var tr = POOL.filter(function (x) { return x.tr; });
-      var non = POOL.filter(function (x) { return !x.tr; });
+      var inc = inclusions(v);
+      var elig = attenuate(POOL, inc.grim, inc.rosy);
+      var tr = elig.filter(function (x) { return x.tr; });
+      var non = elig.filter(function (x) { return !x.tr; });
       var nT = Math.min(Math.round(want * t / 100), tr.length);
-      var take = toneMix(tr, nT, p).concat(toneMix(non, want - nT, p));
+      var take = tr.slice(0, nT).concat(non.slice(0, want - nT));
       if (take.length < want) {
         var got = {};
         take.forEach(function (x) { got[x.u] = 1; });
-        POOL.forEach(function (x) {
+        elig.forEach(function (x) {
           if (take.length < want && !got[x.u]) take.push(x);
         });
       }
@@ -245,9 +270,9 @@ ${spark_html}  </div>
     }
 
     function toneTag(tn) {
+      // Grim until proven rosy — every story carries a verdict.
       if (tn > 0) return ' · <span class="rosy">ROSY</span>';
-      if (tn < 0) return ' · <span class="grim">GRIM</span>';
-      return "";
+      return ' · <span class="grim">GRIM</span>';
     }
 
     function srcLine(item) {
@@ -346,20 +371,18 @@ ${spark_html}  </div>
       });
     }
 
-    function readout(p, t) {
+    function readout(v, t) {
       var want = TOTAL + 1;
-      var jlabel = (p === NATURAL) ? "TODAY'S NEWS CYCLE: " : "YOUR VERDICT: ";
-      var jnote = "";
-      if (p !== NATURAL) {
-        if (Math.round(want * p / 100) > ROSYINV) {
-          jnote = " — ONLY " + ROSYINV + " ROSY STORIES ON TODAY'S WIRE";
-        } else if (Math.round(want * (100 - p) / 100) > GRIMINV) {
-          jnote = " — ONLY " + GRIMINV + " GRIM STORIES ON TODAY'S WIRE";
-        }
+      var inc = inclusions(v);
+      if (v === 50) {
+        jread.innerHTML = "SHOWING EVERYTHING &middot; TODAY'S CYCLE: " +
+          '<span class="grim">' + (100 - NATURAL) + "% GRIM</span> / " +
+          '<span class="rosy">' + NATURAL + "% ROSY</span>";
+      } else {
+        jread.innerHTML = "SHOWING " +
+          '<span class="grim">' + Math.round(inc.grim * 100) + "% OF GRIM</span> / " +
+          '<span class="rosy">' + Math.round(inc.rosy * 100) + "% OF ROSY</span>";
       }
-      jread.innerHTML = jlabel +
-        '<span class="grim">' + (100 - p) + "% GRIM</span> / " +
-        '<span class="rosy">' + p + "% ROSY</span>" + jnote;
       if (t === NATDOSE) {
         dread.innerHTML = "TODAY'S WIRE IS <b>" + t + "% TRUMP</b>" + YDAY;
       } else {
@@ -370,12 +393,14 @@ ${spark_html}  </div>
       }
     }
 
-    function apply(p, t, save) {
-      readout(p, t);
-      renderPage(p, t);
+    function apply(v, t, save) {
+      readout(v, t);
+      renderPage(v, t);
       if (save) {
         try {
-          localStorage.setItem("grudgeMix", String(p));
+          // grudgeMix2: dial-position space (center=natural). The old
+          // grudgeMix key stored absolute rosy percent — incompatible.
+          localStorage.setItem("grudgeMix2", String(v));
           localStorage.setItem("grudgeDose", String(t));
         } catch (e) {}
       }
@@ -396,17 +421,17 @@ ${spark_html}  </div>
 ${gc_js}
     var savedMix = null, savedDose = null;
     try {
-      savedMix = localStorage.getItem("grudgeMix");
+      savedMix = localStorage.getItem("grudgeMix2");
       savedDose = localStorage.getItem("grudgeDose");
     } catch (e) {}
-    var p = savedMix === null ? NATURAL : parseInt(savedMix, 10);
+    var v = savedMix === null ? 50 : parseInt(savedMix, 10);
     var t = savedDose === null ? NATDOSE : parseInt(savedDose, 10);
-    if (isNaN(p)) p = NATURAL;
+    if (isNaN(v)) v = 50;
     if (isNaN(t)) t = NATDOSE;
-    if (p !== NATURAL || t !== NATDOSE) {
-      mix.value = p;
+    if (v !== 50 || t !== NATDOSE) {
+      mix.value = v;
       dose.value = t;
-      apply(p, t, false);
+      apply(v, t, false);
     }
 
     // Exposed for the CI parity/execution tests only.

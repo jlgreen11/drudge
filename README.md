@@ -15,18 +15,21 @@ affiliated with the Drudge Report. We hold our grudges independently.)
 
 ## ⚖ THE JUDGMENT
 
-The news has a mood. Most days the mood is 😱. At the top of the page sits a
-slider running from **😱 100% doom** to **😊 100% sunshine**. Drag it and the
-entire front page re-mixes itself live — lead story, all three columns — to
-serve exactly the ratio of catastrophe to kittens you can stomach today.
+Every story on the wire gets a verdict: **ROSY or GRIM, no neutral.** The
+rule is editorial policy, stated proudly: *a story is grim until it proves
+otherwise.* The rosy lexicon grants pardons; everything else stands
+convicted. (This is a doom aggregator. Innocence must be demonstrated.)
 
-Two honesty rules are built in:
+The slider at the top is an inclusion dial running from **😱 all doom** to
+**😊 all sunshine**:
 
-1. **The slider starts where the news actually is.** If the wire is 74% grim,
-   the slider wakes up at 74% grim. You have to *choose* your delusion.
-2. **The biggest stories can't be hidden.** Even at 100% sunshine, the war
-   stays on the page. This is a mood dial, not a blindfold. (A fully rosy
-   lead does trade the 🚨 for a 🌈, though. You've earned it.)
+1. **Center shows everything** — 100% of grim and 100% of rosy, exactly as
+   the wire ranked it, with today's measured cycle printed beside it.
+2. **Drag right and grim stories are progressively removed** (the
+   biggest-scoring ones survive longest); drag left and the rosy ones go.
+   The extremes genuinely empty one side — and the readout always tells
+   you exactly what fraction of each you're seeing. A mood dial with a
+   truth-in-labeling sticker.
 
 Your verdict persists in localStorage, so the page remembers how much doom
 you can take.
@@ -96,7 +99,12 @@ professional standards.
   office`) — strictly speaking it measures *administration* coverage density.
 - **FULL WIRE n%** — the same share across every unique story cluster fetched
   that run (typically 500+).
-- **ROSY / GRIM** — word-lexicon tone judgment (`GRIM_WORDS` / `ROSY_WORDS`).
+- **ROSY / GRIM** — word-lexicon tone judgment (`GRIM_WORDS` / `ROSY_WORDS`),
+  binary by editorial rule: a headline with a positive rosy-minus-grim score
+  is ROSY; everything else — including headlines the lexicons don't reach —
+  is GRIM by default. The rosy share is computed over ALL top stories.
+  (Methodology note: before 2026-07-08 the stat excluded zero-signal
+  headlines from the denominator; the daily series changed definition then.)
 
 Both formulas are ~10 lines each (`wire_stats()`, `full_wire_dose()` in
 `build.py`); the feed list is right at the top of the same file. Academics

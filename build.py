@@ -160,6 +160,25 @@ GRIM_WORDS = {
     "hospitalized": 1, "lose": 1, "divided": 1, "concerns": 1,
     "ruined": 2, "ruins": 2, "wrecked": 2, "slammed": 1, "mocks": 1,
     "criticism": 1, "tensions": 1,
+    "bloodshed": 3, "carnage": 3, "atrocity": 3, "atrocities": 3,
+    "slaughter": 3, "massacres": 3, "war crimes": 3, "ethnic cleansing": 3,
+    "hate crime": 3, "bombing": 3, "bombings": 3, "beheaded": 3,
+    "femicide": 3, "genocidal": 3, "catastrophe": 3, "catastrophic": 3,
+    "executed": 2, "execution": 2, "stabbing": 2, "stabbed": 2,
+    "gunfire": 2, "gunman": 2, "airstrike": 2, "airstrikes": 2,
+    "shelling": 2, "bombardment": 2, "landmine": 2, "militants": 2,
+    "insurgents": 2, "starvation": 2, "starving": 2, "epidemic": 2,
+    "meltdown": 2, "devastation": 2, "devastated": 2, "devastating": 2,
+    "mourning": 2, "mourns": 2, "grief": 2, "grieving": 2,
+    "abducted": 2, "abduction": 2, "trafficking": 2, "exploitation": 2,
+    "imprisoned": 2, "paralyzed": 2, "bankrupt": 2, "bankruptcy": 2,
+    "repression": 2, "martial law": 2, "riots": 2, "unrest": 1,
+    "turmoil": 1, "strife": 1, "extremist": 1, "extremists": 1,
+    "crackdowns": 1, "curfew": 1, "looting": 1, "authoritarian": 1,
+    "deported": 1, "detained": 1, "detention": 1, "jailed": 1,
+    "evicted": 1, "evictions": 1, "foreclosure": 1, "overdoses": 1,
+    "fentanyl": 1, "contaminated": 1, "contamination": 1, "radioactive": 1,
+    "hospitalization": 1, "tumor": 1,
 }
 ROSY_WORDS = {
     "breakthrough": 3, "cure": 3, "cured": 3, "rescue": 3, "rescued": 3,
@@ -181,6 +200,17 @@ ROSY_WORDS = {
     "deal": 1, "agreement": 1, "growth": 1, "expands": 1, "hiring": 1,
     "anniversary": 1, "celebrate": 1, "welcomes": 1, "blooming": 1,
     "renewable": 1, "protects": 1, "protected": 1, "cleaner": 1,
+    "rescues": 3, "lifesaving": 3, "breakthroughs": 3, "cures": 3,
+    "reunion": 2, "reunites": 2, "rebuilt": 2, "comeback": 2,
+    "victorious": 2, "prevails": 2, "joyful": 2, "delight": 2,
+    "delights": 2, "thrive": 2, "thrives": 2, "flourish": 2,
+    "flourishing": 2, "heals": 2, "healed": 2, "donated": 2,
+    "celebrating": 2, "record high": 2, "adopts": 1, "adopted": 1,
+    "graduation": 1, "fundraiser": 1, "donor": 1, "gift": 1, "gifts": 1,
+    "scholarships": 1, "acclaim": 1, "acclaimed": 1, "landmark": 1,
+    "reopens": 1, "reopen": 1, "relief": 1, "healing": 1, "rebounds": 1,
+    "cheers": 1, "cheered": 1, "applauds": 1, "praised": 1, "praises": 1,
+    "honors": 1, "honoring": 1, "dazzles": 1,
 }
 
 # ── Topic desks: every story gets filed to exactly one ─────────────────────
@@ -358,7 +388,12 @@ def lexicon_score(title, lexicon):
 
 
 def judge(title):
-    """THE JUDGMENT: tone of a headline. >0 rosy, <0 grim, 0 neutral."""
+    """THE JUDGMENT: tone score of a headline (rosy hits minus grim hits).
+    Classification rule, applied everywhere downstream: tone > 0 is ROSY,
+    everything else is GRIM. There is no neutral — this is a doom
+    aggregator, and a story is grim until it proves otherwise. The rule is
+    declared in the README methodology; the binary is editorial policy,
+    not a measurement claim."""
     return lexicon_score(title, ROSY_WORDS) - lexicon_score(title, GRIM_WORDS)
 
 
@@ -547,15 +582,16 @@ def choose_lead(ranked, state, now):
 
 
 def wire_stats(ranked):
-    """FRONT PAGE stats: rosy share of tone-committed top stories, and Trump
-    share of the top stories. These are the dials' defaults and the page's
-    self-published stat line. (The methodology note in the README defines
-    this and the full-wire number side by side.)"""
+    """FRONT PAGE stats: rosy share of ALL top stories (grim-until-proven-
+    rosy — every story is one or the other, so the denominator is the whole
+    page), and Trump share of the top stories. These are the dials' defaults
+    and the page's self-published stat line. (The methodology note in the
+    README defines this and the full-wire number side by side.)"""
     top = ranked[:PAGE_STORIES + 1]
-    n_rosy = sum(1 for i in top if i["tone"] > 0)
-    n_grim = sum(1 for i in top if i["tone"] < 0)
-    natural = round(100 * n_rosy / (n_rosy + n_grim)) if (n_rosy + n_grim) else 50
-    nat_dose = round(100 * sum(1 for i in top if i["trump"]) / len(top)) if top else 0
+    if not top:
+        return 50, 0
+    natural = round(100 * sum(1 for i in top if i["tone"] > 0) / len(top))
+    nat_dose = round(100 * sum(1 for i in top if i["trump"]) / len(top))
     return natural, nat_dose
 
 
@@ -630,11 +666,10 @@ def headline_case(title):
 
 
 def tone_tag(tone):
+    # Grim until proven rosy: every story carries a verdict.
     if tone > 0:
         return ' &middot; <span class="rosy">ROSY</span>'
-    if tone < 0:
-        return ' &middot; <span class="grim">GRIM</span>'
-    return ""
+    return ' &middot; <span class="grim">GRIM</span>'
 
 
 def partition(stories):
@@ -948,7 +983,7 @@ def main():
                natural, nat_dose, fw_dose)
 
     n_rosy = sum(1 for i in on_page if i["tone"] > 0)
-    n_grim = sum(1 for i in on_page if i["tone"] < 0)
+    n_grim = len(on_page) - n_rosy  # grim until proven rosy
     n_trump = sum(1 for i in on_page[:PAGE_STORIES + 1] if i["trump"])
     print(f"Wrote index.html + feed.xml: 1 lead + "
           f"{min(len(on_page) - 1, PAGE_STORIES)} stories "

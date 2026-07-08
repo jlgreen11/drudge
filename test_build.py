@@ -580,7 +580,8 @@ class TestWireStats(unittest.TestCase):
         ranked = [{"tone": 2, "trump": True}, {"tone": -3, "trump": False},
                   {"tone": 0, "trump": False}, {"tone": 1, "trump": True}]
         natural, nat_dose = build.wire_stats(ranked)
-        self.assertEqual(natural, 67)   # 2 rosy / (2 rosy + 1 grim); neutral excluded
+        # Grim until proven rosy: rosy share over ALL stories (tone 0 = grim).
+        self.assertEqual(natural, 50)   # 2 rosy / 4 stories
         self.assertEqual(nat_dose, 50)  # 2 trump / 4 stories
 
     def test_wire_stats_empty(self):
