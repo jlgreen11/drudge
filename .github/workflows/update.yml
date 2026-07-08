@@ -1,0 +1,95 @@
+name: Update front page
+
+on:
+  schedule:
+    - cron: "7,37 * * * *"    # every 30 min, off GitHub's :00/:30 contention peak
+  workflow_dispatch:           # manual refresh button
+  push:
+    branches: [main]
+    paths:                     # rebuild when the generator or its guards change
+      - build.py
+      - template.html
+      - test_build.py
+      - .github/workflows/update.yml
+  pull_request:                # tests gate PRs; the commit step never runs here
+
+permissions:
+  contents: write
+  issues: write                # the wire-down alert below
+
+concurrency:
+  group: update-front-page
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Tests run BEFORE the build on every trigger (including PRs), so a
+      # broken generator can never reach the cron. Includes the node-executed
+      # DOM-stub smoke test that catches runtime JS errors (node is
+      # preinstalled on ubuntu-latest; not a runtime dependency).
+      - name: Run test suite
+        run: python3 -m unittest -v
+
+      - name: Fetch headlines and rebuild index.html
+        if: github.event_name != 'pull_request'
+        run: python3 build.py
+
+      - name: Commit and push if the page changed
+        if: github.event_name != 'pull_request'
+        run: |
+          git config user.name "grudge-report-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add index.html state.json feed.xml
+          if git diff --cached --quiet; then
+            echo "No new news. How boring."
+            exit 0
+          fi
+          git commit -m "Fresh headlines $(date -u '+%Y-%m-%d %H:%M UTC')"
+          # Retry with rebase: a human push racing the cron must not lose the
+          # half hour — and a failed push must exit NONZERO (a green step
+          # with an unpublished page is a silent outage).
+          for i in 1 2 3; do
+            git push && exit 0
+            git pull --rebase -X theirs origin main || { git rebase --abort; exit 1; }
+          done
+          exit 1
+
+      # A green bail-out run (feeds down -> keep last page) must not be
+      # silent on the owner side: if the published page is older than 3h,
+      # raise the same alarm as a red run.
+      - name: Check page staleness
+        id: stale
+        if: github.event_name == 'schedule'
+        run: |
+          last=$(git log -1 --format=%ct -- index.html)
+          now=$(date +%s)
+          if [ $((now - last)) -gt 10800 ]; then
+            echo "stale=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "stale=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Alert on failure or staleness
+        if: github.event_name != 'pull_request' && (failure() || steps.stale.outputs.stale == 'true')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create wire-down --color B60205 \
+            --description "The front page is not updating" 2>/dev/null || true
+          open=$(gh issue list --label wire-down --state open --json number --jq length)
+          if [ "$open" = "0" ]; then
+            gh issue create --title "WIRE DOWN: the front page is not updating" \
+              --label wire-down \
+              --body "A scheduled run failed or the published page is stale (>3h). Check the Actions log for this run. Runbook: re-run the workflow; if state.json is corrupt, delete it and re-run (the desk memory rebuilds itself). Close this issue once a green run publishes."
+          else
+            echo "wire-down issue already open; not spamming."
+          fi
