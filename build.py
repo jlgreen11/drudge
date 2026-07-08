@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""THE GRUDGE REPORT — an auto-populated Drudge Report competitor.
+"""THE DAILY MALAISE — an auto-populated Drudge Report competitor.
 
 Fetches headlines from 25 news RSS feeds (stdlib only, no dependencies),
 scores each for drama AND judges its tone (grim vs. rosy), dedupes across
@@ -74,10 +74,10 @@ MAX_PER_SOURCE = 40   # stop one chatty feed from flooding the page
 POOL_SIZE = 150       # stories embedded for the client-side judgment mixer
 PAGE_STORIES = 60     # stories shown below the lead
 
-SITE_URL = "https://jlgreen11.github.io/drudge/"   # canonical; swap on custom domain
+SITE_URL = "https://jlgreen11.github.io/daily-malaise/"   # canonical; swap on custom domain
 
 # Analytics (optional): create a free GoatCounter account and put its site
-# code here (e.g. "grudgereport"). Empty string = no analytics, no external
+# code here (e.g. "dailymalaise"). Empty string = no analytics, no external
 # scripts — the page stays fully self-contained. See README.
 GOATCOUNTER_CODE = ""
 
@@ -281,7 +281,7 @@ TOPICS = [
 # THE DOSAGE: stories filed under the president, whatever the desk.
 TRUMP_RE = re.compile(r"\btrump\b|\bmaga\b|\bpotus\b|white house|oval office", re.I)
 
-USER_AGENT = "Mozilla/5.0 (compatible; GrudgeReport/1.0; +https://github.com/jlgreen11/drudge)"
+USER_AGENT = "Mozilla/5.0 (compatible; DailyMalaise/1.0; +https://github.com/jlgreen11/daily-malaise)"
 STOPWORDS = frozenset(
     "a an the of in on at to for with as by is are was were be been from "
     "and or but not this that it its his her their he she they after over "
@@ -884,10 +884,11 @@ def write_feed(ranked, now, natural, nat_dose, fw_dose):
     rss = ET.Element("rss", version="2.0")
     rss.set("xmlns:atom", "http://www.w3.org/2005/Atom")
     ch = ET.SubElement(rss, "channel")
-    ET.SubElement(ch, "title").text = "THE GRUDGE REPORT"
+    ET.SubElement(ch, "title").text = "THE DAILY MALAISE"
     ET.SubElement(ch, "link").text = SITE_URL
     ET.SubElement(ch, "description").text = (
-        "The only front page you can tune. Holding a grudge against slow news.")
+        "The only front page you can tune. A crisis of confidence, every "
+        "thirty minutes.")
     ET.SubElement(ch, "lastBuildDate").text = format_datetime(now)
     self_link = ET.SubElement(ch, "atom:link")
     self_link.set("href", SITE_URL + "feed.xml")

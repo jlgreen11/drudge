@@ -1,4 +1,4 @@
-# THE GRUDGE REPORT
+# THE DAILY MALAISE
 
 Auto-populated Drudge-style news front page. One dependency-free Python script
 (`build.py`, stdlib only) fetches 25 RSS wires, clusters/scores/judges headlines,

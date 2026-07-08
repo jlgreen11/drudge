@@ -46,7 +46,7 @@ jobs:
       - name: Commit and push if the page changed
         if: github.event_name != 'pull_request'
         run: |
-          git config user.name "grudge-report-bot"
+          git config user.name "daily-malaise-bot"
           git config user.email "actions@users.noreply.github.com"
           git add index.html state.json feed.xml
           if git diff --cached --quiet; then
@@ -72,7 +72,7 @@ jobs:
         id: stale
         if: github.event_name == 'schedule'
         run: |
-          built=$(curl -fsSL --max-time 30 "https://jlgreen11.github.io/drudge/?probe=$(date +%s)" \
+          built=$(curl -fsSL --max-time 30 "https://jlgreen11.github.io/daily-malaise/?probe=$(date +%s)" \
             | grep -o 'var BUILT = [0-9]*' | grep -o '[0-9]*' || echo 0)
           now=$(date +%s)
           if [ "$built" = "0" ] || [ $((now - built)) -gt 10800 ]; then

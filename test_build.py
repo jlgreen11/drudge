@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Test suite for THE GRUDGE REPORT (build.py + template.html app JS).
+"""Test suite for THE DAILY MALAISE (build.py + template.html app JS).
 
 Stdlib unittest only — zero network, zero pip deps. Every fixture pubDate is
 generated relative to datetime.now(timezone.utc) at test runtime so the suite
@@ -347,7 +347,7 @@ class TestBailoutGate(TempDirCase, MainRunnerMixin):
         self.assertTrue(os.path.exists("feed.xml"))
         self.assertTrue(os.path.exists("state.json"))
         with open("index.html", encoding="utf-8") as f:
-            self.assertIn("THE GRUDGE REPORT", f.read())
+            self.assertIn("THE DAILY MALAISE", f.read())
         with open("state.json", encoding="utf-8") as f:
             state = json.load(f)
         self.assertEqual(state["v"], 2)
@@ -651,7 +651,7 @@ class TestRenderContract(unittest.TestCase):
         self.assertIn(f'<meta property="og:image" content="{build.SITE_URL}og-card.png">', page)
         self.assertIn('type="application/rss+xml"', page)
         self.assertIn(f'{build.SITE_URL}feed.xml', page)
-        self.assertIn("NOT AFFILIATED WITH THE DRUDGE REPORT", page)
+        self.assertIn("NOT AFFILIATED WITH THE DAILY MAIL", page)
         self.assertIn("<svg", page)  # history has >= 2 entries
 
     def test_goatcounter_only_when_configured(self):
@@ -793,16 +793,16 @@ class TestTwoRunYesterday(TempDirCase, MainRunnerMixin):
 # ── Node-based tests: the client-side app JS ────────────────────────────────
 
 # DOM stub adapted from the live-run harness: extracts the pool JSON block and
-# the /*GRUDGE-APP*/ block, stubs document/localStorage, fires the slider
+# the /*MALAISE-APP*/ block, stubs document/localStorage, fires the slider
 # input handlers including a drag through the natural dose value (the
-# historical YDAY ReferenceError crash path), and probes window.__grudge.
+# historical YDAY ReferenceError crash path), and probes window.__malaise.
 # With argv[3] = fixture path it additionally prints partition parity JSON.
 STUB_JS = r"""
-// Minimal DOM stub for THE GRUDGE REPORT app script (test harness).
+// Minimal DOM stub for THE DAILY MALAISE app script (test harness).
 const fs = require("fs");
 const page = fs.readFileSync(process.argv[2], "utf-8");
 const poolMatch = page.match(/<script id="pool" type="application\/json">([\s\S]*?)<\/script>/);
-const appMatch = page.match(/<script>\s*\/\*GRUDGE-APP\*\/([\s\S]*?)<\/script>/);
+const appMatch = page.match(/<script>\s*\/\*MALAISE-APP\*\/([\s\S]*?)<\/script>/);
 if (!poolMatch || !appMatch) { console.error("FAIL: script blocks not found"); process.exit(1); }
 if (!appMatch[1].includes("function readout")) { console.error("FAIL: sentinel missing"); process.exit(1); }
 
@@ -840,15 +840,15 @@ for (const v of ["0", "50", natdose, "100"]) {
   els.dose.value = v;
   els.dose.handlers.input.forEach(fn => fn());
 }
-if (!global.__grudge || typeof global.__grudge.partition !== "function") {
-  console.error("FAIL: __grudge test hooks missing"); process.exit(1);
+if (!global.__malaise || typeof global.__malaise.partition !== "function") {
+  console.error("FAIL: __malaise test hooks missing"); process.exit(1);
 }
 if (process.argv[3]) {
   const fixture = JSON.parse(fs.readFileSync(process.argv[3], "utf-8"));
-  const cols = global.__grudge.partition(fixture);
+  const cols = global.__malaise.partition(fixture);
   console.log("PARITY:" + JSON.stringify(cols.map(c => c.map(s => s[0]))));
 } else {
-  const cols = global.__grudge.partition(JSON.parse(poolMatch[1]).slice(1));
+  const cols = global.__malaise.partition(JSON.parse(poolMatch[1]).slice(1));
   console.log("PASS: no exceptions; partition cols: " + cols.map(c => c.length).join("/"));
 }
 """
@@ -907,7 +907,7 @@ class TestNodeApp(unittest.TestCase):
                               timeout=30)
 
     def test_app_script_passes_node_check(self):
-        m = re.search(r"<script>\s*/\*GRUDGE-APP\*/(.*?)</script>", self.page, re.S)
+        m = re.search(r"<script>\s*/\*MALAISE-APP\*/(.*?)</script>", self.page, re.S)
         self.assertIsNotNone(m)
         self.assertIn("function readout", m.group(1))
         app_path = os.path.join(self._td.name, "app.js")

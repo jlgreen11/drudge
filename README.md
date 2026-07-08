@@ -1,17 +1,19 @@
-# THE GRUDGE REPORT 🚨
+# THE DAILY MALAISE 🚨
 
-*The only front page you can argue with.*
+*All the news that makes you feel vaguely unwell.*
 
 Somewhere in a GitHub datacenter, every thirty minutes, a small Python script
 wakes up, reads 25 newspapers, forms opinions about all of them, rearranges
 the front page, files its memory in a JSON envelope, and goes back to sleep.
 
-It has no server. It has no database. It has no dependencies. It has a grudge.
+It has no server. It has no database. It has no dependencies. It is not
+feeling its best.
 
 The result is a [Drudge Report](https://drudgereport.com)-style front page —
 three columns, ALL CAPS, Courier, flashing siren — that assembles itself from
 the world's news wires and hands **you** the editorial controls. (Not
-affiliated with the Drudge Report. We hold our grudges independently.)
+affiliated with the Daily Mail, the Drudge Report, or your sense of
+well-being.)
 
 ## ⚖ THE JUDGMENT
 
@@ -153,8 +155,8 @@ Deploy without committing artifacts (`actions/deploy-pages`); a daily stat
 bot for Bluesky/Mastodon; a custom domain; retiring the gloriously
 period-accurate `<meta http-equiv="refresh">`; demand-side aging (stories
 readers stop clicking age *faster* — never a click boost, no rich-get-richer);
-generalizing the density dial beyond one politician, because grudges should
-be renewable.
+generalizing the density dial beyond one politician, because malaise is
+renewable.
 
 ---
 

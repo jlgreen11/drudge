@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>THE GRUDGE REPORT</title>
-    <link>https://jlgreen11.github.io/drudge/</link>
-    <description>The only front page you can tune. Holding a grudge against slow news.</description>
-    <lastBuildDate>Wed, 08 Jul 2026 16:16:00 +0000</lastBuildDate>
-    <atom:link href="https://jlgreen11.github.io/drudge/feed.xml" rel="self" type="application/rss+xml" />
+    <title>THE DAILY MALAISE</title>
+    <link>https://jlgreen11.github.io/daily-malaise/</link>
+    <description>The only front page you can tune. A crisis of confidence, every thirty minutes.</description>
+    <lastBuildDate>Wed, 08 Jul 2026 17:12:33 +0000</lastBuildDate>
+    <atom:link href="https://jlgreen11.github.io/daily-malaise/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>TODAY'S WIRE: 92% GRIM / 8% ROSY — 21% TRUMP ON THE FRONT PAGE, 16% ON THE FULL WIRE</title>
-      <link>https://jlgreen11.github.io/drudge/</link>
+      <title>TODAY'S WIRE: 93% GRIM / 7% ROSY — 31% TRUMP ON THE FRONT PAGE, 17% ON THE FULL WIRE</title>
+      <link>https://jlgreen11.github.io/daily-malaise/</link>
       <guid isPermaLink="false">stat-2026-07-08</guid>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Arizona toddler found alive in hospital morgue after declared dead from drowning (BBC)</title>
+      <link>https://www.bbc.co.uk/news/articles/cvg5x0vvrmro?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/cvg5x0vvrmro?at_medium=RSS&amp;at_campaign=rss</guid>
+      <pubDate>Wed, 08 Jul 2026 16:12:51 +0000</pubDate>
     </item>
     <item>
       <title>Trump says ceasefire is 'over' after US and Iran trade strikes (BBC)</title>
       <link>https://www.bbc.co.uk/news/articles/clyw8w1g409o?at_medium=RSS&amp;at_campaign=rss</link>
       <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/clyw8w1g409o?at_medium=RSS&amp;at_campaign=rss</guid>
-      <pubDate>Wed, 08 Jul 2026 15:59:24 +0000</pubDate>
-    </item>
-    <item>
-      <title>Teenager arrested after two girls, 13, seriously injured in German school attack (BBC US)</title>
-      <link>https://www.bbc.co.uk/news/articles/c0qyvkgndzpo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/c0qyvkgndzpo?at_medium=RSS&amp;at_campaign=rss</guid>
-      <pubDate>Wed, 08 Jul 2026 15:09:09 +0000</pubDate>
+      <pubDate>Wed, 08 Jul 2026 17:01:50 +0000</pubDate>
     </item>
     <item>
       <title>Trump says Iran ceasefire over, "going to hit them hard again tonight" (CBS)</title>
       <link>https://www.cbsnews.com/live-updates/us-iran-war-trump-says-ceasefire-over/</link>
       <guid isPermaLink="false">https://www.cbsnews.com/live-updates/us-iran-war-trump-says-ceasefire-over/</guid>
-      <pubDate>Wed, 08 Jul 2026 16:03:25 +0000</pubDate>
+      <pubDate>Wed, 08 Jul 2026 17:11:13 +0000</pubDate>
     </item>
     <item>
       <title>Son of Mexican migrant killed by ICE tells heartbreaking story of learning about shooting on social media (INDEPENDENT)</title>
       <link>https://www.independent.co.uk/news/world/americas/ice-shooting-lorenzo-salgado-araujo-b3011207.html</link>
       <guid isPermaLink="false">https://www.independent.co.uk/news/world/americas/ice-shooting-lorenzo-salgado-araujo-b3011207.html</guid>
-      <pubDate>Wed, 08 Jul 2026 16:11:17 +0000</pubDate>
+      <pubDate>Wed, 08 Jul 2026 16:31:18 +0000</pubDate>
     </item>
     <item>
       <title>Millions awarded to survivors of 1992 UVF pub attack that killed one man (BBC US)</title>
@@ -43,46 +43,58 @@
       <pubDate>Wed, 08 Jul 2026 15:06:28 +0000</pubDate>
     </item>
     <item>
-      <title>Denmark vows to defend Greenland after Trump reiterates US should control territory (FOX)</title>
-      <link>https://www.foxnews.com/politics/denmark-vows-defend-greenland-trump-reiterates-us-control-territory</link>
-      <guid isPermaLink="false">https://www.foxnews.com/politics/denmark-vows-defend-greenland-trump-reiterates-us-control-territory</guid>
-      <pubDate>Wed, 08 Jul 2026 14:51:40 +0000</pubDate>
+      <title>Trump downplays Iran's nuclear threat as ceasefire collapses (CNBC)</title>
+      <link>https://www.cnbc.com/2026/07/08/trump-says-iran-ceasefire-is-over-after-latest-round-of-strikes.html</link>
+      <guid isPermaLink="false">https://www.cnbc.com/2026/07/08/trump-says-iran-ceasefire-is-over-after-latest-round-of-strikes.html</guid>
+      <pubDate>Wed, 08 Jul 2026 16:52:47 +0000</pubDate>
     </item>
     <item>
-      <title>'Squad' member calls DHS 'greatest threat to our safety' after ICE-involved shooting (FOX)</title>
-      <link>https://www.foxnews.com/politics/squad-member-calls-dhs-greatest-threat-our-safety-after-ice-involved-shooting</link>
-      <guid isPermaLink="false">https://www.foxnews.com/politics/squad-member-calls-dhs-greatest-threat-our-safety-after-ice-involved-shooting</guid>
-      <pubDate>Wed, 08 Jul 2026 15:02:39 +0000</pubDate>
+      <title>Teenager arrested after two girls, 13, seriously injured in German school attack (BBC)</title>
+      <link>https://www.bbc.co.uk/news/articles/c0qyvkgndzpo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/c0qyvkgndzpo?at_medium=RSS&amp;at_campaign=rss</guid>
+      <pubDate>Wed, 08 Jul 2026 15:09:09 +0000</pubDate>
     </item>
     <item>
-      <title>Trump opposes Carroll getting $5 million damages verdict, cites last-ditch Supreme Court bid (CNBC)</title>
-      <link>https://www.cnbc.com/2026/07/08/trump-e-jean-carroll-supreme-court-sex-abuse.html</link>
-      <guid isPermaLink="false">https://www.cnbc.com/2026/07/08/trump-e-jean-carroll-supreme-court-sex-abuse.html</guid>
-      <pubDate>Wed, 08 Jul 2026 15:48:05 +0000</pubDate>
+      <title>Live updates: Trump warns Iran ceasefire may be 'over,' will allow Ukraine to build Patriot missile interceptors (THE HILL)</title>
+      <link>https://thehill.com/homenews/administration/5957364-live-updates-trump-nato-summit-iran-maine-platner/</link>
+      <guid isPermaLink="false">https://thehill.com/homenews/administration/5957364-live-updates-trump-nato-summit-iran-maine-platner/</guid>
+      <pubDate>Wed, 08 Jul 2026 16:28:01 +0000</pubDate>
+    </item>
+    <item>
+      <title>Trump says dealing with Iran is "a waste of time" and warns of U.S. strikes (CBS)</title>
+      <link>https://www.cbsnews.com/video/trump-says-dealing-with-iran-is-waste-of-time-and-warns-of-us-strikes/</link>
+      <guid isPermaLink="false">https://www.cbsnews.com/video/trump-says-dealing-with-iran-is-waste-of-time-and-warns-of-us-strikes/</guid>
+      <pubDate>Wed, 08 Jul 2026 16:46:47 +0000</pubDate>
     </item>
     <item>
       <title>Nato chief defends Trump’s strikes on Iran as ‘absolutely necessary’ despite threat to ceasefire (INDEPENDENT)</title>
       <link>https://www.independent.co.uk/news/world/middle-east/nato-rutte-trump-us-strikes-iran-b3010930.html</link>
       <guid isPermaLink="false">https://www.independent.co.uk/news/world/middle-east/nato-rutte-trump-us-strikes-iran-b3010930.html</guid>
-      <pubDate>Wed, 08 Jul 2026 15:13:45 +0000</pubDate>
-    </item>
-    <item>
-      <title>Henderson has surgery in USA after breaking arm (BBC US)</title>
-      <link>https://www.bbc.co.uk/sport/football/articles/c70ygpg95vlo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">https://www.bbc.co.uk/sport/football/articles/c70ygpg95vlo?at_medium=RSS&amp;at_campaign=rss</guid>
-      <pubDate>Wed, 08 Jul 2026 15:28:29 +0000</pubDate>
-    </item>
-    <item>
-      <title>Marine Le Pen launches French presidential campaign to cheers and boos after guilty verdict (INDEPENDENT)</title>
-      <link>https://www.independent.co.uk/news/world/europe/marine-le-pen-verdict-election-campaign-france-b3011212.html</link>
-      <guid isPermaLink="false">https://www.independent.co.uk/news/world/europe/marine-le-pen-verdict-election-campaign-france-b3011212.html</guid>
-      <pubDate>Wed, 08 Jul 2026 14:02:53 +0000</pubDate>
+      <pubDate>Wed, 08 Jul 2026 15:13:44 +0000</pubDate>
     </item>
     <item>
       <title>Emmy Nominees 2026: See the Full List (NYT)</title>
       <link>https://www.nytimes.com/2026/07/08/arts/television/emmy-nominees-list-2026.html</link>
       <guid isPermaLink="false">https://www.nytimes.com/2026/07/08/arts/television/emmy-nominees-list-2026.html</guid>
-      <pubDate>Wed, 08 Jul 2026 16:11:10 +0000</pubDate>
+      <pubDate>Wed, 08 Jul 2026 17:10:37 +0000</pubDate>
+    </item>
+    <item>
+      <title>Marine Le Pen launches French presidential campaign to cheers and boos after guilty verdict (INDEPENDENT)</title>
+      <link>https://www.independent.co.uk/news/world/europe/marine-le-pen-verdict-election-campaign-france-b3011212.html</link>
+      <guid isPermaLink="false">https://www.independent.co.uk/news/world/europe/marine-le-pen-verdict-election-campaign-france-b3011212.html</guid>
+      <pubDate>Wed, 08 Jul 2026 14:02:52 +0000</pubDate>
+    </item>
+    <item>
+      <title>Family of Nolan Wells, Black teen found dead off Mississippi island, retains lawyer Ben Crump (NPR)</title>
+      <link>https://www.npr.org/2026/07/08/g-s1-132521/nolan-wells-mississippi-ben-crump</link>
+      <guid isPermaLink="false">https://www.npr.org/2026/07/08/g-s1-132521/nolan-wells-mississippi-ben-crump</guid>
+      <pubDate>Wed, 08 Jul 2026 16:46:40 +0000</pubDate>
+    </item>
+    <item>
+      <title>Pakistan military says 42 killed in fighter attacks in Balochistan (AL JAZEERA)</title>
+      <link>https://www.aljazeera.com/news/2026/7/8/pakistan-military-says-42-killed-in-fighter-attacks-in-balochistan?traffic_source=rss</link>
+      <guid isPermaLink="false">https://www.aljazeera.com/news/2026/7/8/pakistan-military-says-42-killed-in-fighter-attacks-in-balochistan?traffic_source=rss</guid>
+      <pubDate>Wed, 08 Jul 2026 16:07:46 +0000</pubDate>
     </item>
     <item>
       <title>Nolan Wells' family seeks answers after missing Mississippi teen found dead (CBS)</title>
@@ -97,7 +109,13 @@
       <pubDate>Wed, 08 Jul 2026 15:46:04 +0000</pubDate>
     </item>
     <item>
-      <title>Bowen: For all his bluster, Trump has no better option than talks with Iran (BBC US)</title>
+      <title>MTG tears into Trump with brutal takedown of the war in Iran and end of ceasefire (INDEPENDENT)</title>
+      <link>https://www.independent.co.uk/news/world/americas/us-politics/marjorie-taylor-greene-trump-iran-b3011116.html</link>
+      <guid isPermaLink="false">https://www.independent.co.uk/news/world/americas/us-politics/marjorie-taylor-greene-trump-iran-b3011116.html</guid>
+      <pubDate>Wed, 08 Jul 2026 16:38:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Bowen: For all his bluster, Trump has no better option than talks with Iran (BBC)</title>
       <link>https://www.bbc.co.uk/news/articles/cy8we3j14ndo?at_medium=RSS&amp;at_campaign=rss</link>
       <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/cy8we3j14ndo?at_medium=RSS&amp;at_campaign=rss</guid>
       <pubDate>Wed, 08 Jul 2026 15:30:01 +0000</pubDate>
@@ -112,7 +130,7 @@
       <title>Used EVs keep getting more expensive amid Iran war, high gas prices (CNBC)</title>
       <link>https://www.cnbc.com/2026/07/08/used-ev-prices-gas-war.html</link>
       <guid isPermaLink="false">https://www.cnbc.com/2026/07/08/used-ev-prices-gas-war.html</guid>
-      <pubDate>Wed, 08 Jul 2026 16:11:16 +0000</pubDate>
+      <pubDate>Wed, 08 Jul 2026 16:11:15 +0000</pubDate>
     </item>
     <item>
       <title>Missing teen Nolan Wells found dead near Mississippi island (CBS)</title>
@@ -121,76 +139,58 @@
       <pubDate>Wed, 08 Jul 2026 15:10:21 +0000</pubDate>
     </item>
     <item>
-      <title>Toddler declared dead in pool accident found alive in hospital morgue (CBS)</title>
-      <link>https://www.cbsnews.com/news/toddler-declared-dead-pool-accident-found-alive-hospital-morgue-arizona/</link>
-      <guid isPermaLink="false">https://www.cbsnews.com/news/toddler-declared-dead-pool-accident-found-alive-hospital-morgue-arizona/</guid>
-      <pubDate>Wed, 08 Jul 2026 14:31:46 +0000</pubDate>
+      <title>Trump seeks delay of payment to E. Jean Carroll, asks Supreme Court to reconsider (CBS)</title>
+      <link>https://www.cbsnews.com/news/trump-seeking-delay-payment-e-jean-carroll-asks-supreme-court-to-reconsider/</link>
+      <guid isPermaLink="false">https://www.cbsnews.com/news/trump-seeking-delay-payment-e-jean-carroll-asks-supreme-court-to-reconsider/</guid>
+      <pubDate>Wed, 08 Jul 2026 16:55:17 +0000</pubDate>
     </item>
     <item>
-      <title>German doctor jailed for murder of 15 patients and suspected of more (BBC US)</title>
-      <link>https://www.bbc.co.uk/news/articles/cq819jyp2g7o?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/cq819jyp2g7o?at_medium=RSS&amp;at_campaign=rss</guid>
-      <pubDate>Wed, 08 Jul 2026 14:25:26 +0000</pubDate>
+      <title>Trump asks Supreme Court for rehearing over $5M E Jean Carroll civil judgment (FOX)</title>
+      <link>https://www.foxnews.com/politics/trump-asks-supreme-court-rehearing-5m-e-jean-carroll-civil-judgment</link>
+      <guid isPermaLink="false">https://www.foxnews.com/politics/trump-asks-supreme-court-rehearing-5m-e-jean-carroll-civil-judgment</guid>
+      <pubDate>Wed, 08 Jul 2026 16:47:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Barrett, Kagan to make rare Capitol Hill appearance as Supreme Court seeks more security amid threats (FOX)</title>
+      <link>https://www.foxnews.com/politics/barrett-kagan-rare-capitol-hill-appearance-supreme-court-seeks-security-amid-threats</link>
+      <guid isPermaLink="false">https://www.foxnews.com/politics/barrett-kagan-rare-capitol-hill-appearance-supreme-court-seeks-security-amid-threats</guid>
+      <pubDate>Wed, 08 Jul 2026 16:45:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>NYC high-rise in danger of collapse faced previous safety complaints including falling debris (INDEPENDENT)</title>
+      <link>https://www.independent.co.uk/news/world/americas/nyc-high-rise-previous-violations-b3011175.html</link>
+      <guid isPermaLink="false">https://www.independent.co.uk/news/world/americas/nyc-high-rise-previous-violations-b3011175.html</guid>
+      <pubDate>Wed, 08 Jul 2026 16:37:22 +0000</pubDate>
+    </item>
+    <item>
+      <title>Tennessee conductor fired after telling July 4 passengers America is greatest country, critics should 'leave' (FOX)</title>
+      <link>https://www.foxnews.com/media/tennessee-conductor-fired-after-telling-july-4-passengers-america-greatest-country-critics-should-leave</link>
+      <guid isPermaLink="false">https://www.foxnews.com/media/tennessee-conductor-fired-after-telling-july-4-passengers-america-greatest-country-critics-should-leave</guid>
+      <pubDate>Wed, 08 Jul 2026 16:37:22 +0000</pubDate>
+    </item>
+    <item>
+      <title>Platner ripped cheaters as ‘garbage’ in unearthed posts before his own early-marriage sexting scandal (FOX)</title>
+      <link>https://www.foxnews.com/politics/platner-ripped-cheaters-garbage-unearthed-posts-before-his-own-early-marriage-sexting-scandal</link>
+      <guid isPermaLink="false">https://www.foxnews.com/politics/platner-ripped-cheaters-garbage-unearthed-posts-before-his-own-early-marriage-sexting-scandal</guid>
+      <pubDate>Wed, 08 Jul 2026 16:25:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Fact check: No, Iran did not strike a secret US Gulf base (DW)</title>
+      <link>https://www.dw.com/en/fact-check-no-iran-did-not-strike-a-secret-us-gulf-base/a-77876290?maca=en-rss-en-all-1573-rdf</link>
+      <guid isPermaLink="false">https://www.dw.com/en/fact-check-no-iran-did-not-strike-a-secret-us-gulf-base/a-77876290?maca=en-rss-en-all-1573-rdf</guid>
+      <pubDate>Wed, 08 Jul 2026 16:22:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Judge orders E. Jean Carroll be paid $5M in damages from Trump verdict (CNBC)</title>
+      <link>https://www.cnbc.com/2026/07/08/trump-e-jean-carroll-supreme-court-sex-abuse.html</link>
+      <guid isPermaLink="false">https://www.cnbc.com/2026/07/08/trump-e-jean-carroll-supreme-court-sex-abuse.html</guid>
+      <pubDate>Wed, 08 Jul 2026 17:12:07 +0000</pubDate>
     </item>
     <item>
       <title>First major 2026 Atlantic hurricane forecast predicts below-average season (CBS)</title>
       <link>https://www.cbsnews.com/news/2026-atlantic-hurricane-season-forecast/</link>
       <guid isPermaLink="false">https://www.cbsnews.com/news/2026-atlantic-hurricane-season-forecast/</guid>
       <pubDate>Wed, 08 Jul 2026 16:07:28 +0000</pubDate>
-    </item>
-    <item>
-      <title>Trump lawyers promise to pay E Jean Carroll more than $5.8M if Supreme Court rejects last-ditch appeal (INDEPENDENT)</title>
-      <link>https://www.independent.co.uk/news/world/americas/us-politics/trump-pay-e-jean-carroll-verdict-supreme-court-b3011337.html</link>
-      <guid isPermaLink="false">https://www.independent.co.uk/news/world/americas/us-politics/trump-pay-e-jean-carroll-verdict-supreme-court-b3011337.html</guid>
-      <pubDate>Wed, 08 Jul 2026 16:06:18 +0000</pubDate>
-    </item>
-    <item>
-      <title>Eight killed after landslide hits girls' school in Bangladesh (BBC)</title>
-      <link>https://www.bbc.co.uk/news/articles/cx2wkzww20ro?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/cx2wkzww20ro?at_medium=RSS&amp;at_campaign=rss</guid>
-      <pubDate>Wed, 08 Jul 2026 14:02:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>Trump gives Ukraine OK to produce Patriot missiles as war with Russia drags on (ABC)</title>
-      <link>https://abcnews.com/Politics/trump-zelenskyy-set-meet-nato-summit-turkey/story?id=134561170</link>
-      <guid isPermaLink="false">https://abcnews.com/Politics/trump-zelenskyy-set-meet-nato-summit-turkey/story?id=134561170</guid>
-      <pubDate>Wed, 08 Jul 2026 15:01:32 +0000</pubDate>
-    </item>
-    <item>
-      <title>Idaho mom charged with murder after blaming vaccines in death of her twins (THE HILL)</title>
-      <link>https://thehill.com/homenews/state-watch/5955066-idaho-mom-vaccines-deaths/</link>
-      <guid isPermaLink="false">https://thehill.com/homenews/state-watch/5955066-idaho-mom-vaccines-deaths/</guid>
-      <pubDate>Wed, 08 Jul 2026 14:59:01 +0000</pubDate>
-    </item>
-    <item>
-      <title>Patriot missile deal for Ukraine 'would be a gamechanger' (FRANCE 24)</title>
-      <link>https://www.france24.com/en/video/20260708-patriot-missile-deal-for-ukraine-would-be-a-gamechanger</link>
-      <guid isPermaLink="false">https://www.france24.com/en/video/20260708-patriot-missile-deal-for-ukraine-would-be-a-gamechanger</guid>
-      <pubDate>Wed, 08 Jul 2026 14:57:36 +0000</pubDate>
-    </item>
-    <item>
-      <title>Joy Behar cornered by 'The View' producer on frustration with Trump supporters amid Platner scandal (FOX)</title>
-      <link>https://www.foxnews.com/media/joy-behar-cornered-the-view-producer-frustration-trump-supporters-amid-platner-scandal</link>
-      <guid isPermaLink="false">https://www.foxnews.com/media/joy-behar-cornered-the-view-producer-frustration-trump-supporters-amid-platner-scandal</guid>
-      <pubDate>Wed, 08 Jul 2026 15:51:07 +0000</pubDate>
-    </item>
-    <item>
-      <title>Renewed US-Iran war would hit Gulf countries hard (DW)</title>
-      <link>https://www.dw.com/en/renewed-us-iran-war-would-hit-gulf-countries-hard/a-77876781?maca=en-rss-en-all-1573-rdf</link>
-      <guid isPermaLink="false">https://www.dw.com/en/renewed-us-iran-war-would-hit-gulf-countries-hard/a-77876781?maca=en-rss-en-all-1573-rdf</guid>
-      <pubDate>Wed, 08 Jul 2026 14:30:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Why can’t we count our dead? (AL JAZEERA)</title>
-      <link>https://www.aljazeera.com/video/by-the-numbers-3/2026/7/8/why-cant-we-count-our-dead?traffic_source=rss</link>
-      <guid isPermaLink="false">https://www.aljazeera.com/video/by-the-numbers-3/2026/7/8/why-cant-we-count-our-dead?traffic_source=rss</guid>
-      <pubDate>Wed, 08 Jul 2026 13:28:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>95 percent say US in affordability crisis: Survey (THE HILL)</title>
-      <link>https://thehill.com/homenews/administration/5959019-affordability-crisis-groceries-price-surges-inflation-survey/</link>
-      <guid isPermaLink="false">https://thehill.com/homenews/administration/5959019-affordability-crisis-groceries-price-surges-inflation-survey/</guid>
-      <pubDate>Wed, 08 Jul 2026 15:26:51 +0000</pubDate>
     </item>
   </channel>
 </rss>
