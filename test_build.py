@@ -573,12 +573,24 @@ class TestWireStats(unittest.TestCase):
         self.assertEqual(build.full_wire_dose([]), 0)
 
     def test_full_wire_dose_rounding(self):
-        clusters = [{"trump": True}, {"trump": False}, {"trump": True}]
+        clusters = [{"trump": True, "topic": "WORLD"},
+                    {"trump": False, "topic": "US"},
+                    {"trump": True, "topic": "MONEY"}]
         self.assertEqual(build.full_wire_dose(clusters), 67)  # round(200/3)
 
+    def test_full_wire_dose_excludes_satire(self):
+        clusters = [{"trump": True, "topic": "WORLD"},
+                    {"trump": False, "topic": "US"},
+                    {"trump": True, "topic": "SATIRICAL"},
+                    {"trump": True, "topic": "SATIRICAL"}]
+        # Fake headlines must not move the number: 1 trump / 2 real = 50.
+        self.assertEqual(build.full_wire_dose(clusters), 50)
+
     def test_wire_stats_front_page_definitions(self):
-        ranked = [{"tone": 2, "trump": True}, {"tone": -3, "trump": False},
-                  {"tone": 0, "trump": False}, {"tone": 1, "trump": True}]
+        ranked = [{"tone": 2, "trump": True, "topic": "WORLD"},
+                  {"tone": -3, "trump": False, "topic": "US"},
+                  {"tone": 0, "trump": False, "topic": "MONEY"},
+                  {"tone": 1, "trump": True, "topic": "WASHINGTON"}]
         natural, nat_dose = build.wire_stats(ranked)
         # Grim until proven rosy: rosy share over ALL stories (tone 0 = grim).
         self.assertEqual(natural, 50)   # 2 rosy / 4 stories
@@ -729,7 +741,7 @@ class TestRenderContract(unittest.TestCase):
         self.assertIn('type="application/rss+xml"', page)
         self.assertIn(f'{build.SITE_URL}feed.xml', page)
         self.assertIn("NOT AFFILIATED WITH THE DAILY MAIL", page)
-        self.assertIn("<svg", page)  # history has >= SPARK_MIN_DAYS entries
+        self.assertIn("sl-trump", page.split("</style>")[1])  # sparkline drawn
         self.assertIn("TYPESET BY A CRON JOB", page)
 
     def test_lead_photo_toggles_on_image(self):
@@ -768,8 +780,49 @@ class TestRenderContract(unittest.TestCase):
 
     def test_no_sparkline_when_history_short(self):
         _, page = self.render(history=[hist_entry(1), hist_entry(0)])
-        self.assertNotIn("<svg", page.split("</style>")[1])  # no sparkline
+        body = page.split("</style>")[1]
+        self.assertNotIn('class="sl-trump"', body)  # no sparkline
         self.assertNotIn("ACCRUING", page)  # and no placeholder clutter
+
+    def test_no_siren_anywhere(self):
+        ranked = render_fixture()
+        ranked[0]["score"] = 99.0  # would have earned the old siren
+        _, page = self.render(ranked=ranked)
+        self.assertNotIn("siren", page)
+        self.assertNotIn("\U0001F6A8", page)  # no rotating-light emoji
+
+    def test_section_leader_gets_thumbnail(self):
+        ranked = render_fixture()
+        # ukraine/russia/gaza are the WORLD desk; give art to its top story
+        # and to a non-leader, assert exactly one section photo per desk art.
+        world = [i for i in ranked if i["topic"] == "WORLD"]
+        world[0]["img"] = "https://cdn.example.com/world-lead.jpg"
+        world[1]["img"] = "https://cdn.example.com/world-second.jpg"
+        _, page = self.render(ranked=ranked)
+        self.assertIn('class="secphoto" src="https://cdn.example.com/world-lead.jpg"', page)
+        self.assertNotIn("world-second.jpg", page.split('id="pool"')[0])
+
+    def test_satire_never_leads_and_files_to_satirical(self):
+        items = [build.parse_feed("THE ONION", raw)[0] for raw in [
+            (b'<?xml version="1.0"?><rss version="2.0"><channel>'
+             b'<item><title>Area Man Wins War On News</title>'
+             b'<link>http://example.com/onion</link></item></channel></rss>')]]
+        ranked = build.dedupe_and_rank(items + [
+            wire_item("Quiet tuesday budget meeting concludes")])
+        onion = next(i for i in ranked if i["source"] == "THE ONION")
+        self.assertEqual(onion["topic"], "SATIRICAL")
+        # Give the satire story a crushing score: it still must not lead.
+        onion["score"] = 500.0
+        ordered = build.choose_lead(
+            sorted(ranked, key=lambda i: i["score"], reverse=True),
+            {"clusters": [], "lead": None, "history": []}, utcnow())
+        self.assertNotEqual(ordered[0]["source"], "THE ONION")
+
+    def test_us_desk_classification(self):
+        self.assertEqual(
+            build.classify("Police manhunt underway in Los Angeles suburb"), "US")
+        self.assertEqual(
+            build.classify("Ukraine strikes deep into Russia"), "WORLD")
 
 
 # ── 12. write_feed ──────────────────────────────────────────────────────────
@@ -968,13 +1021,15 @@ if (process.argv[3]) {
 }
 """
 
-# Distinct desk sizes (7/5/4/3/2) make the bin packing deterministic, so the
-# Python and JS partitions must agree exactly, tie-breaking included.
+# The paper's FIXED layout: desks print in their assigned columns in order,
+# and an off-layout desk (BREAKING) lands in the emptiest column. Python and
+# JS must agree exactly.
 PARITY_SIZES = [("WASHINGTON", 7), ("WORLD", 5), ("MONEY", 4),
-                ("TECH & SCIENCE", 3), ("LIFE & CULTURE", 2)]
-PARITY_EXPECTED = [["WASHINGTON"],
-                   ["WORLD", "LIFE & CULTURE"],
-                   ["MONEY", "TECH & SCIENCE"]]
+                ("SCIENCE & TECH", 3), ("LIFESTYLE", 2), ("US", 6),
+                ("SATIRICAL", 2), ("BREAKING", 1)]
+PARITY_EXPECTED = [["WORLD", "MONEY"],
+                   ["SCIENCE & TECH", "LIFESTYLE", "BREAKING"],
+                   ["US", "WASHINGTON", "SATIRICAL"]]
 
 
 def parity_sequence():

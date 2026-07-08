@@ -10,7 +10,8 @@ It has no server. It has no database. It has no dependencies. It is not
 feeling its best.
 
 The result is a [Drudge Report](https://drudgereport.com)-style front page —
-three columns, ALL CAPS, Courier, flashing siren — that assembles itself from
+three fixed desks-in-columns, ALL CAPS, condensed tabloid headlines over
+wire-service mono — that assembles itself from
 the world's news wires and hands **you** the editorial controls. (Not
 affiliated with the Daily Mail, the Drudge Report, or your sense of
 well-being.)
@@ -56,7 +57,7 @@ Nobody runs this page. A tenure system does:
 - At **30 hours** it gets pulled — *unless it's RISING*, meaning more outlets
   are picking it up than ever before. Momentum earns a stay of execution and
   a red ▲.
-- A lead that stops growing loses the siren after **4 hours** to the
+- A lead that stops growing loses the crown after **4 hours** to the
   hungriest challenger. The crown is rented, never owned.
 - Stories the wire stops mentioning are quietly forgotten after 72 hours.
   They can't sneak back in wearing a NEW badge. The editor remembers.

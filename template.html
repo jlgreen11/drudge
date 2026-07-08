@@ -95,7 +95,9 @@ ${gc_head}<style>
   .judgment .jread .rosy { color: var(--green); font-weight: bold; }
   .judgment .jsplit { border-top: 1px solid var(--hairline); margin: 13px -18px 11px; }
   .jrow { display: flex; align-items: center; gap: 10px; }
-  .jrow .jend { font-size: 14px; }
+  .jrow .jend { font-size: 14px; display: flex; align-items: center; }
+  .jend .icon-grim { color: var(--red); }
+  .jend .icon-rosy { color: var(--green); }
   .jrow .jpct { font-size: 10px; letter-spacing: 1px; font-weight: bold;
                 color: var(--muted); }
   .spark { margin-top: 12px; }
@@ -116,15 +118,16 @@ ${gc_head}<style>
     width: 12px; height: 12px; background: var(--paper);
     border: 3px solid var(--ink); border-radius: 0;
   }
-  .leadbox { text-align: center; margin: 24px auto 28px; max-width: 760px; }
+  .leadbox { text-align: center; margin: 26px auto 28px; max-width: 760px; }
   .leadphoto { display: block; width: min(100%, 560px); aspect-ratio: 16 / 9;
                object-fit: cover; margin: 6px auto 16px;
                border: 1px solid var(--rule);
                filter: grayscale(1) contrast(1.08); }
-  @media (prefers-color-scheme: dark) { .leadphoto { opacity: 0.92; } }
-  .siren { font-size: 34px; animation: flash 1s step-start infinite; }
-  @keyframes flash { 50% { opacity: 0.25; } }
-  @media (prefers-reduced-motion: reduce) { .siren { animation: none; } }
+  @media (prefers-color-scheme: dark) { .leadphoto, .secphoto { opacity: 0.92; } }
+  .secphoto { display: block; width: 100%; aspect-ratio: 16 / 9;
+              object-fit: cover; margin: 0 0 10px;
+              border: 1px solid var(--hairline);
+              filter: grayscale(1) contrast(1.08); }
   a.lead { font-family: var(--font-head); font-size: 44px; font-weight: 700;
             line-height: 1.12; color: var(--red); text-decoration: underline;
             text-decoration-thickness: 2px;
@@ -172,10 +175,10 @@ ${gc_head}<style>
     <div class="jtitle">⚖ THE JUDGMENT ⚖</div>
     <div class="jread" id="jread">SHOWING EVERYTHING &middot; TODAY'S CYCLE: <span class="grim">${grim_pct}% GRIM</span> / <span class="rosy">${natural}% ROSY</span></div>
     <div class="jrow">
-      <span class="jend" title="100% doom">😱</span>
+      <span class="jend" title="all doom"><svg class="icon-grim" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 16a4 4 0 0 0 .4-8A6 6 0 0 0 6.3 9.4 3.6 3.6 0 0 0 7 16.5z"/><path d="M12.5 16.5l-2.5 4h3l-2 3.5"/></svg></span>
       <input type="range" id="mix" min="0" max="100" value="50"
              aria-label="News tone bias: center is today's natural mix">
-      <span class="jend" title="100% sunshine">😊</span>
+      <span class="jend" title="all sunshine"><svg class="icon-rosy" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></svg></span>
     </div>
     <div class="jsplit"></div>
     <div class="jtitle">TRUMP DENSITY</div>
@@ -257,6 +260,28 @@ ${spark_html}  </div>
       return list.filter(function (x) { return keep[x.u]; });
     }
 
+    // Mirror of build.py compose_page(): every layout desk keeps its top 3
+    // (drawn only from dial-eligible stories), lowest surplus drops.
+    function ensureDesks(take, elig, t, got) {
+      var desks = LAYOUT[0].concat(LAYOUT[1], LAYOUT[2]);
+      desks.forEach(function (d) {
+        var have = take.filter(function (x) { return (x.tp || CATCHALL) === d; }).length;
+        if (have >= 3) return;
+        elig.forEach(function (x) {
+          if (have >= 3 || (x.tp || CATCHALL) !== d || got[x.u]) return;
+          if (t === 0 && x.tr) return;  // dial hard edge holds here too
+          take.push(x); got[x.u] = 1; have++;
+        });
+      });
+      take.sort(function (a, b) { return b.sc - a.sc; });
+      for (var i = take.length - 1; i >= 0 && take.length > TOTAL + 1; i--) {
+        var d = take[i].tp || CATCHALL;
+        var cnt = take.filter(function (x) { return (x.tp || CATCHALL) === d; }).length;
+        if (cnt > 3) take.splice(i, 1);
+      }
+      return take;
+    }
+
     function pick(v, t) {
       var want = TOTAL + 1; // lead + columns
       var inc = inclusions(v);
@@ -265,18 +290,28 @@ ${spark_html}  </div>
       var non = elig.filter(function (x) { return !x.tr; });
       var nT = Math.min(Math.round(want * t / 100), tr.length);
       var take = tr.slice(0, nT).concat(non.slice(0, want - nT));
+      var got = {};
+      take.forEach(function (x) { got[x.u] = 1; });
       if (take.length < want) {
-        var got = {};
-        take.forEach(function (x) { got[x.u] = 1; });
         // Backfill must respect the dial's hard edge: at 0% Trump, nothing
         // Trump may re-enter (it could even take the LEAD); above 0%,
         // non-Trump refills first so the mix stays close to the ask.
         var refill = t === 0 ? non : non.concat(tr);
         refill.forEach(function (x) {
-          if (take.length < want && !got[x.u]) take.push(x);
+          if (take.length < want && !got[x.u]) { take.push(x); got[x.u] = 1; }
         });
       }
-      take.sort(function (a, b) { return b.sc - a.sc; });
+      take = ensureDesks(take, elig, t, got);
+      // A fabricated headline must never be the client-side lead either.
+      if (take.length && (take[0].tp || CATCHALL) === "SATIRICAL") {
+        for (var j = 1; j < take.length; j++) {
+          if ((take[j].tp || CATCHALL) !== "SATIRICAL") {
+            var real = take.splice(j, 1)[0];
+            take.unshift(real);
+            break;
+          }
+        }
+      }
       return take;
     }
 
@@ -312,23 +347,31 @@ ${spark_html}  </div>
       return div;
     }
 
-    // Mirror of build.py partition(): group by desk, bin-pack onto columns.
+    // Mirror of build.py partition(): the paper's FIXED layout — desks in
+    // assigned columns, unknown desks land in the emptiest column.
+    var LAYOUT = [["WORLD", "MONEY"],
+                  ["SCIENCE & TECH", "LIFESTYLE"],
+                  ["US", "WASHINGTON", "SATIRICAL"]];
     function partition(rest) {
-      var by = {}, names = [];
+      var by = {};
       rest.forEach(function (x) {
         var t = x.tp || CATCHALL;
-        if (!by[t]) { by[t] = []; names.push(t); }
-        by[t].push(x);
+        (by[t] = by[t] || []).push(x);
       });
-      var secs = names.map(function (n) { return [n, by[n]]; });
-      secs.sort(function (a, b) {
-        return b[1].length - a[1].length || (a[0] < b[0] ? -1 : 1);
+      var cols = LAYOUT.map(function (names) {
+        var col = [];
+        names.forEach(function (n) {
+          if (by[n]) { col.push([n, by[n]]); delete by[n]; }
+        });
+        return col;
       });
-      var cols = [[], [], []], counts = [0, 0, 0];
-      secs.forEach(function (s) {
-        var c = counts.indexOf(Math.min.apply(null, counts));
-        cols[c].push(s);
-        counts[c] += s[1].length + 2;
+      Object.keys(by).forEach(function (n) {
+        var idx = 0, best = Infinity;
+        cols.forEach(function (c, i) {
+          var len = c.reduce(function (a, s) { return a + s[1].length; }, 0);
+          if (len < best) { best = len; idx = i; }
+        });
+        cols[idx].push([n, by[n]]);
       });
       return cols;
     }
@@ -340,12 +383,6 @@ ${spark_html}  </div>
 
       var box = document.getElementById("leadbox");
       box.innerHTML = "";
-      if (lead.sc >= 30) {
-        var siren = document.createElement("div");
-        siren.className = "siren";
-        siren.textContent = lead.tn > 0 ? "🌈" : "🚨";
-        box.appendChild(siren);
-      }
       if (lead.im) {
         var ph = document.createElement("img");
         ph.className = "leadphoto";
@@ -379,6 +416,15 @@ ${spark_html}  </div>
           head.textContent = sec[0];
           wrap.appendChild(head);
           sec[1].forEach(function (item, i) {
+            if (i === 0 && item.im) {
+              var sp = document.createElement("img");
+              sp.className = "secphoto";
+              sp.src = item.im;
+              sp.alt = "";
+              sp.referrerPolicy = "no-referrer";
+              sp.onerror = function () { sp.style.display = "none"; };
+              wrap.appendChild(sp);
+            }
             wrap.appendChild(storyNode(item));
             if ((i + 1) % 6 === 0 && i + 1 < sec[1].length) {
               var hr = document.createElement("hr");

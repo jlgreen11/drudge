@@ -63,12 +63,21 @@ FEEDS = [
     ("GOOD NEWS NETWORK", "https://www.goodnewsnetwork.org/feed/"),
     ("POSITIVE.NEWS", "https://www.positive.news/feed/"),
     ("REASONS TO BE CHEERFUL", "https://reasonstobecheerful.world/feed/"),
+    ("THE ONION", "https://theonion.com/feed/"),
+    ("BABYLON BEE", "https://babylonbee.com/feed"),
 ]
 
 # Dedicated good-news outlets: they publish slowly (so they get a 7-day
 # freshness window instead of 48h) and their stories are positive by
 # construction (so they get a +1 tone prior on top of the lexicon).
 GOOD_SOURCES = {"GOOD NEWS NETWORK", "POSITIVE.NEWS", "REASONS TO BE CHEERFUL"}
+
+# Satire wires: they get the slow-publisher 7-day window, file to the
+# SATIRICAL desk regardless of keywords, are EXCLUDED from every published
+# stat (a fake Trump headline must not move the density number), and can
+# never take the lead (a fabricated headline as the top story is
+# misinformation, not comedy).
+SATIRE_SOURCES = {"THE ONION", "BABYLON BEE"}
 
 MAX_PER_SOURCE = 40   # stop one chatty feed from flooding the page
 POOL_SIZE = 150       # stories embedded for the client-side judgment mixer
@@ -216,7 +225,7 @@ ROSY_WORDS = {
 # ── Topic desks: every story gets filed to exactly one ─────────────────────
 # Highest lexicon score wins the headline; below TOPIC_MIN it goes to the
 # catch-all desk (sports, celebs, weather, oddities, good news).
-TOPIC_CATCHALL = "LIFE & CULTURE"
+TOPIC_CATCHALL = "LIFESTYLE"
 TOPIC_MIN = 2
 TOPICS = [
     ("WASHINGTON", {
@@ -263,7 +272,22 @@ TOPICS = [
         "consumer": 1, "prices": 1, "markets": 2, "investors": 2,
         "trade deal": 2, "debt": 1,
     }),
-    ("TECH & SCIENCE", {
+    ("US", {
+        "police": 1, "sheriff": 2, "nypd": 3, "lapd": 3, "fbi raid": 2,
+        "manhunt": 2, "amber alert": 3, "school district": 2,
+        "tornado": 2, "blizzard": 2, "heat wave": 2, "flash flood": 2,
+        "california": 2, "texas": 2, "florida": 2, "new york": 2,
+        "georgia": 1, "arizona": 1, "ohio": 1, "michigan": 1, "virginia": 1,
+        "colorado": 1, "oregon": 1, "nevada": 1, "alabama": 1, "utah": 1,
+        "tennessee": 1, "missouri": 1, "louisiana": 1, "kentucky": 1,
+        "oklahoma": 1, "carolina": 1, "pennsylvania": 1, "illinois": 1,
+        "wisconsin": 1, "minnesota": 1, "chicago": 2, "los angeles": 2,
+        "houston": 2, "miami": 2, "seattle": 2, "denver": 2, "boston": 2,
+        "philadelphia": 2, "atlanta": 2, "dallas": 2, "phoenix": 2,
+        "san francisco": 2, "las vegas": 2, "new orleans": 2, "detroit": 2,
+        "americans": 1, "u.s.": 1, "highway": 1, "wildfires": 2,
+    }),
+    ("SCIENCE & TECH", {
         "ai": 3, "artificial intelligence": 3, "openai": 3, "chatgpt": 3,
         "anthropic": 3, "google": 2, "apple": 2, "meta": 2, "microsoft": 2,
         "amazon": 2, "tesla": 2, "musk": 2, "spacex": 3, "nasa": 3,
@@ -405,7 +429,7 @@ def parse_feed(source, raw):
         # for the NEW badge or freshness bonus. (The default recurs every run;
         # actual re-injection is contained by the tenure system's 30h pull.)
         age_hours = (now - when).total_seconds() / 3600 if when else 47.9
-        max_age = 168 if source in GOOD_SOURCES else 48
+        max_age = 168 if source in (GOOD_SOURCES | SATIRE_SOURCES) else 48
         if age_hours > max_age:  # stale news is no news
             continue
         out.append({
@@ -484,7 +508,8 @@ def dedupe_and_rank(items):
         best["score"] = score(best, n_sources)
         best["cluster"] = n_sources
         best["tone"] = judge(best["title"]) + (1 if best["source"] in GOOD_SOURCES else 0)
-        best["topic"] = classify(best["title"])
+        best["topic"] = ("SATIRICAL" if best["source"] in SATIRE_SOURCES
+                         else classify(best["title"]))
         best["trump"] = bool(TRUMP_RE.search(best["title"]))
         # Per-link key for the optional click beacons. Computed here because
         # browser JS has no synchronous SHA-1; the pool ships it ready-made.
@@ -605,9 +630,15 @@ def choose_lead(ranked, state, now):
         return ranked
 
     def eligible(i):
+        if i["topic"] == "SATIRICAL":
+            return False  # a fabricated headline must never be the lead
         return i["cluster"] >= LEAD_MIN_OUTLETS or i["score"] >= LEAD_SOLO_SCORE
 
-    order = [i for i in ranked if eligible(i)] or ranked
+    # Fallbacks still exclude satire: even on a wire where nothing is
+    # confirmed by two outlets, a fabricated headline must not lead.
+    order = ([i for i in ranked if eligible(i)]
+             or [i for i in ranked if i["topic"] != "SATIRICAL"]
+             or ranked)
     top = order[0]
 
     prev = state.get("lead")
@@ -634,7 +665,7 @@ def wire_stats(ranked):
     page), and Trump share of the top stories. These are the dials' defaults
     and the page's self-published stat line. (The methodology note in the
     README defines this and the full-wire number side by side.)"""
-    top = ranked[:PAGE_STORIES + 1]
+    top = [i for i in ranked[:PAGE_STORIES + 1] if i["topic"] != "SATIRICAL"]
     if not top:
         return 50, 0
     natural = round(100 * sum(1 for i in top if i["tone"] > 0) / len(top))
@@ -645,9 +676,10 @@ def wire_stats(ranked):
 def full_wire_dose(clusters):
     """FULL WIRE stat: Trump share of every unique story cluster fetched this
     run (post-dedup — pre-dedup would double-weight multi-outlet stories)."""
-    if not clusters:
+    real = [i for i in clusters if i["topic"] != "SATIRICAL"]
+    if not real:
         return 0
-    return round(100 * sum(1 for i in clusters if i["trump"]) / len(clusters))
+    return round(100 * sum(1 for i in real if i["trump"]) / len(real))
 
 
 def yesterday_dose(state, now):
@@ -719,24 +751,63 @@ def tone_tag(tone):
     return ' &middot; <span class="grim">GRIM</span>'
 
 
+# The paper's fixed layout: desks appear in their assigned column, in this
+# order; a desk with no stories today simply doesn't print. Mirrored by the
+# client-side mixer — keep the two in sync (CI parity test enforces it).
+COLUMN_LAYOUT = [
+    ["WORLD", "MONEY"],
+    ["SCIENCE & TECH", "LIFESTYLE"],
+    ["US", "WASHINGTON", "SATIRICAL"],
+]
+
+
+DESK_MIN = 3  # every desk prints at least its top 3 stories (when it has them)
+
+
+def compose_page(stories, want):
+    """The page's story set: top-`want` by score, then every layout desk is
+    guaranteed its top DESK_MIN stories (swapped in over the lowest-scoring
+    surplus) — a paper prints its sections even on a loud news day.
+    Mirrored by the client-side mixer's ensureDesks(); keep in sync."""
+    take = list(stories[:want])
+    got = {i["link"] for i in take}
+    desks = [d for col in COLUMN_LAYOUT for d in col]
+    for d in desks:
+        have = sum(1 for i in take if i["topic"] == d)
+        if have >= DESK_MIN:
+            continue
+        for it in stories:
+            if have >= DESK_MIN:
+                break
+            if it["topic"] != d or it["link"] in got:
+                continue
+            take.append(it)
+            got.add(it["link"])
+            have += 1
+    take.sort(key=lambda i: i["score"], reverse=True)
+    i = len(take) - 1
+    while len(take) > want and i >= 0:
+        d = take[i]["topic"]
+        if sum(1 for x in take if x["topic"] == d) > DESK_MIN:
+            del take[i]
+        i -= 1
+    return take
+
+
 def partition(stories):
-    """Group stories by desk (score order preserved within each), then
-    bin-pack the desks onto three columns so the page stays balanced.
-    Mirrored by the client-side mixer — keep the two in sync."""
-    by_topic, names = {}, []
+    """Fixed newspaper layout per COLUMN_LAYOUT (score order preserved
+    within each desk). Any desk not in the layout lands at the bottom of
+    the emptiest column rather than vanishing."""
+    by_topic = {}
     for s in stories:
-        t = s["topic"]
-        if t not in by_topic:
-            by_topic[t] = []
-            names.append(t)
-        by_topic[t].append(s)
-    sections = sorted(by_topic.items(), key=lambda kv: (-len(kv[1]), kv[0]))
-    cols = [[], [], []]
-    counts = [0, 0, 0]
-    for name, items in sections:
-        c = counts.index(min(counts))
-        cols[c].append((name, items))
-        counts[c] += len(items) + 2  # a header costs about two rows
+        by_topic.setdefault(s["topic"], []).append(s)
+    cols = []
+    for desks in COLUMN_LAYOUT:
+        cols.append([(name, by_topic.pop(name)) for name in desks
+                     if name in by_topic])
+    for name, items in by_topic.items():
+        shortest = min(range(3), key=lambda c: sum(len(i) for _, i in cols[c]))
+        cols[shortest].append((name, items))
     return cols
 
 
@@ -834,6 +905,12 @@ def render(ranked, sources_ok, now, natural, nat_dose, prev_dose, history):
     def section_html(name, items):
         rows = [f'<div class="schead">{html.escape(name)}</div>']
         for i, item in enumerate(items):
+            if i == 0 and item.get("img"):
+                # Each desk's top story gets its art — a real paper's rhythm:
+                # one photo per section, the rest is type.
+                rows.append(f'<img class="secphoto" src="{html.escape(item["img"])}" '
+                            'alt="" loading="lazy" referrerpolicy="no-referrer" '
+                            'onerror="this.style.display=&#39;none&#39;">')
             cls = "hot" if item["score"] >= 25 else ""
             rows.append(link_html(item, cls))
             if (i + 1) % 6 == 0 and i + 1 < len(items):
@@ -841,14 +918,13 @@ def render(ranked, sources_ok, now, natural, nat_dose, prev_dose, history):
         return '<div class="sec">' + "\n".join(rows) + "</div>"
 
     col_html = []
-    for col in partition(rest[:PAGE_STORIES]):
+    for col in partition(compose_page(rest, PAGE_STORIES)):
         col_html.append("\n".join(section_html(name, items) for name, items in col))
     while len(col_html) < 3:
         col_html.append("")
 
     lead_html = ""
     if lead:
-        siren = '<div class="siren">🚨</div>' if lead["score"] >= 30 else ""
         lead_bits = [html.escape(lead["source"])]
         if lead["cluster"] > 1:
             lead_bits.append(f'REPORTED BY {lead["cluster"]} OUTLETS')
@@ -863,7 +939,7 @@ def render(ranked, sources_ok, now, natural, nat_dose, prev_dose, history):
                      'alt="" loading="eager" referrerpolicy="no-referrer" '
                      'onerror="this.style.display=&#39;none&#39;">')
         lead_html = (
-            f'{siren}{photo}<a class="lead" href="{html.escape(lead["link"])}" '
+            f'{photo}<a class="lead" href="{html.escape(lead["link"])}" '
             f'data-k="{lead.get("k", "")}" '
             f'target="_blank" rel="noopener">{headline_case(lead["title"])}</a>'
             f'<div class="lead-src">{" &middot; ".join(lead_bits)}</div>'
