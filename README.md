@@ -63,8 +63,23 @@ Nobody runs this page. A tenure system does:
   They can't sneak back in wearing a NEW badge. The editor remembers.
 
 No clicks are tracked, no visitors are counted, no cookies are set. The only
-"popularity" signal is other newsrooms' behavior — 25 editorial staffs
+"popularity" signal is other newsrooms' behavior — 27 editorial staffs
 unwittingly working the night desk for free.
+
+## The desks
+
+A fixed layout, like a paper that knows its own sections: WORLD and MONEY
+down the left; SATIRICAL on top of SCIENCE & TECH and LIFESTYLE in the
+middle (the jokes get the fold they deserve); US and WASHINGTON down the
+right. Every desk is guaranteed its top three stories even on a loud news
+day, and each desk's top story gets its thumbnail in newsprint grayscale —
+one photo per section, the rest is type. The lead gets the big picture.
+
+The SATIRICAL desk (The Onion, Babylon Bee) plays by containment rules:
+satire always files to its own desk, can never take the lead — a fabricated
+headline as the top story is misinformation, not comedy — and is excluded
+from every published stat, so the density number never counts fake
+headlines.
 
 ## No servers were harmed
 
@@ -85,7 +100,7 @@ every tick, is one `git show` away. The database is a JSON file. The backup
 strategy is the publication mechanism. The hosting bill is $0.
 
 It's engineered like it matters, because breaking at 3am with nobody watching
-is this system's whole threat model: 51 stdlib tests gate every PR (including
+is this system's whole threat model: 66 stdlib tests gate every PR (including
 one that boots the page's JavaScript in a DOM stub under node and drags both
 dials through their historically fatal path), feeds are capped at 5MB/60s so
 one tarpit can't wedge the presses, a broad wire outage holds the last good
@@ -101,7 +116,7 @@ professional standards.
   administration regex (`trump`, `maga`, `potus`, `white house`, `oval
   office`) — strictly speaking it measures *administration* coverage density.
 - **FULL WIRE n%** — the same share across every unique story cluster fetched
-  that run (typically 500+).
+  that run (typically 500+). Satire is excluded from both numbers.
 - **ROSY / GRIM** — word-lexicon tone judgment (`GRIM_WORDS` / `ROSY_WORDS`),
   binary by editorial rule: a headline with a positive rosy-minus-grim score
   is ROSY; everything else — including headlines the lexicons don't reach —

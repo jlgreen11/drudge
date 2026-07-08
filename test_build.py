@@ -1027,9 +1027,11 @@ if (process.argv[3]) {
 PARITY_SIZES = [("WASHINGTON", 7), ("WORLD", 5), ("MONEY", 4),
                 ("SCIENCE & TECH", 3), ("LIFESTYLE", 2), ("US", 6),
                 ("SATIRICAL", 2), ("BREAKING", 1)]
+# BREAKING (off-layout) lands in the emptiest column: col2 has 7 stories
+# (2+3+2) vs col1's 9 and col3's 13.
 PARITY_EXPECTED = [["WORLD", "MONEY"],
-                   ["SCIENCE & TECH", "LIFESTYLE", "BREAKING"],
-                   ["US", "WASHINGTON", "SATIRICAL"]]
+                   ["SATIRICAL", "SCIENCE & TECH", "LIFESTYLE", "BREAKING"],
+                   ["US", "WASHINGTON"]]
 
 
 def parity_sequence():

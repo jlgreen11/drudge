@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """THE DAILY MALAISE — an auto-populated Drudge Report competitor.
 
-Fetches headlines from 25 news RSS feeds (stdlib only, no dependencies),
+Fetches headlines from 27 news RSS feeds (stdlib only, no dependencies),
 scores each for drama AND judges its tone (grim vs. rosy), dedupes across
 outlets, picks a lead story, and renders a classic three-column, all-caps,
 Courier-font front page to index.html — topped by THE JUDGMENT, a slider
@@ -756,8 +756,8 @@ def tone_tag(tone):
 # client-side mixer — keep the two in sync (CI parity test enforces it).
 COLUMN_LAYOUT = [
     ["WORLD", "MONEY"],
-    ["SCIENCE & TECH", "LIFESTYLE"],
-    ["US", "WASHINGTON", "SATIRICAL"],
+    ["SATIRICAL", "SCIENCE & TECH", "LIFESTYLE"],
+    ["US", "WASHINGTON"],
 ]
 
 
@@ -978,7 +978,7 @@ def render(ranked, sources_ok, now, natural, nat_dose, prev_dose, history):
     og_desc = html.escape(
         (lead["title"].upper() + " — " if lead else "")
         + "The only front page you can tune: dial the doom with THE JUDGMENT. "
-          "Rebuilt from 25 wires every 30 minutes.", quote=True)
+          "Rebuilt from 27 wires every 30 minutes.", quote=True)
 
     gc_head = ""
     gc_js = ""

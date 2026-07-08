@@ -198,7 +198,7 @@ ${spark_html}  </div>
   </div>
   <div class="footer">
     WIRES: ${src_line}<br>
-    WRITTEN BY 25 NEWSROOMS &middot; TYPESET BY A CRON JOB &middot;
+    WRITTEN BY 27 NEWSROOMS &middot; TYPESET BY A CRON JOB &middot;
     <a href="https://github.com/jlgreen11/daily-malaise">SOURCE CODE</a><br>
     HEADLINES AND PHOTOS BELONG TO THEIR PUBLISHERS &middot; NOT AFFILIATED WITH THE DAILY MAIL,
     THE DRUDGE REPORT, OR YOUR SENSE OF WELL-BEING${disclosure}
@@ -350,8 +350,8 @@ ${spark_html}  </div>
     // Mirror of build.py partition(): the paper's FIXED layout — desks in
     // assigned columns, unknown desks land in the emptiest column.
     var LAYOUT = [["WORLD", "MONEY"],
-                  ["SCIENCE & TECH", "LIFESTYLE"],
-                  ["US", "WASHINGTON", "SATIRICAL"]];
+                  ["SATIRICAL", "SCIENCE & TECH", "LIFESTYLE"],
+                  ["US", "WASHINGTON"]];
     function partition(rest) {
       var by = {};
       rest.forEach(function (x) {
