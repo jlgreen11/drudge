@@ -825,6 +825,49 @@ class TestRenderContract(unittest.TestCase):
             build.classify("Ukraine strikes deep into Russia"), "WORLD")
 
 
+class TestEditions(unittest.TestCase):
+    """The SUNDAY/TABLOID edition switch: one DOM, two papers. TABLOID
+    (no html class, the no-JS default) shouts via CSS text-transform;
+    SUNDAY is serif sentence case with color photos."""
+
+    def page(self, ranked=None):
+        if ranked is None:
+            ranked = render_fixture()
+        history = [hist_entry(i) for i in range(8)]
+        return ranked, build.render(ranked, ["BBC"], utcnow(), 60, 35, None,
+                                    history)
+
+    def test_switch_and_boot_script_present(self):
+        _, page = self.page()
+        self.assertIn('id="ed-t"', page)
+        self.assertIn('id="ed-s"', page)
+        self.assertIn("malaiseEdition", page)
+
+    def test_edition_css_namespaces(self):
+        _, page = self.page()
+        css = page.split("</style>")[0]
+        # Tabloid shouting is CSS, scoped to the classless default...
+        self.assertIn("html:not(.sunday) .story a", css)
+        self.assertIn("text-transform: uppercase", css)
+        # ...and SUNDAY restyles type and un-grayscales the photography.
+        self.assertIn("html.sunday .story", css)
+        self.assertIn("html.sunday .leadphoto, html.sunday .secphoto "
+                      "{ filter: none; }", css)
+
+    def test_dom_carries_original_case(self):
+        ranked, page = self.page()
+        title = ranked[0]["title"]
+        self.assertNotEqual(title, title.upper())  # fixture sanity
+        self.assertIn(f">{title}</a>", page)       # as written, not shouted
+        self.assertNotIn(f">{title.upper()}</a>", page)
+
+    def test_app_js_never_uppercases(self):
+        _, page = self.page()
+        app = re.search(r"/\*MALAISE-APP\*/([\s\S]*?)</script>", page).group(1)
+        self.assertNotIn("toUpperCase", app)
+        self.assertIn("setEdition", app)
+
+
 # ── 12. write_feed ──────────────────────────────────────────────────────────
 
 ATOM_NS = "{http://www.w3.org/2005/Atom}"

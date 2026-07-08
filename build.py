@@ -741,7 +741,10 @@ def save_state(state, tracked, lead, now, natural, nat_dose, fw_dose):
 # ── Rendering ───────────────────────────────────────────────────────────────
 
 def headline_case(title):
-    return html.escape(title.upper())
+    """Escaped, original case. The DOM carries the headline as written; the
+    TABLOID edition shouts via CSS text-transform, so one DOM serves both
+    editions (SUNDAY sets it in sentence case)."""
+    return html.escape(title)
 
 
 def tone_tag(tone):

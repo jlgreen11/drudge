@@ -81,6 +81,17 @@ headline as the top story is misinformation, not comedy — and is excluded
 from every published stat, so the density number never counts fake
 headlines.
 
+## The Sunday edition
+
+The topbar has an **EDITION** switch. **TABLOID** (the default, and what
+no-JS readers get) is the paper you're looking at: all-caps gothic,
+newsprint-grayscale photos. **SUNDAY** resets the same page in serif
+sentence case with calmer links — and the photography goes to color,
+because the Sunday supplement got the color press first. Same DOM, same
+dials, same stories: the editions are pure CSS, and the choice persists in
+localStorage. For readers who love the paper but can only take it in
+lowercase.
+
 ## No servers were harmed
 
 ```

@@ -18,6 +18,14 @@
 <title>THE DAILY MALAISE</title>
 <link rel="preload" href="fonts/oswald.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/plexmono-400.woff2" as="font" type="font/woff2" crossorigin>
+<script>/* Edition boot: pre-paint so a saved choice never flashes. TABLOID
+   is the no-class default (and the no-JS experience); SUNDAY is opt-in
+   via the html class. */
+(function () {
+  var e = "";
+  try { e = localStorage.getItem("malaiseEdition") || ""; } catch (x) {}
+  if (e === "sunday") document.documentElement.className = "sunday";
+})();</script>
 ${gc_head}<style>
   /* Type: Oswald (modern condensed gothic — tabloid headline voice) for the
      masthead/lead/desks/stories; IBM Plex Mono (modern typewriter — the
@@ -158,6 +166,35 @@ ${gc_head}<style>
   .src .rise, .lead-src .rise { color: var(--red); font-weight: bold; }
   .src .fresh { color: var(--green); font-weight: bold; }
   hr.rule { border: none; border-top: 1px solid var(--hairline); margin: 18px 30%; }
+  /* ── Editions. One DOM, two papers. The default (no html class) is the
+     TABLOID: all-caps gothic, grayscale wire photos. html.sunday is the
+     SUNDAY EDITION: serif sentence case, calmer links, and color
+     photography — the Sunday supplement got the color press first. The
+     DOM carries headlines as written; the tabloid shouts via CSS. ── */
+  .topbar a { color: var(--muted); text-decoration: none; }
+  .topbar a:hover { background: none; color: var(--ink);
+                    text-decoration: underline; }
+  html:not(.sunday) #ed-t, html.sunday #ed-s {
+    color: var(--red); font-weight: bold; }
+  html:not(.sunday) .story a, html:not(.sunday) a.lead {
+    text-transform: uppercase; }
+  html.sunday .story {
+    font-family: Georgia, "Times New Roman", serif; font-size: 16px;
+    font-weight: 400; line-height: 1.4; letter-spacing: 0;
+    margin-bottom: 17px; }
+  html.sunday .story a {
+    text-decoration-thickness: 1px; text-decoration-color: var(--hairline);
+    text-underline-offset: 3px; }
+  html.sunday .story a:hover, html.sunday .story a.hot:hover {
+    background: none; color: var(--red); text-decoration-color: var(--red); }
+  html.sunday a.lead {
+    font-family: Georgia, "Times New Roman", serif; color: var(--ink);
+    font-size: 36px; font-weight: 700; line-height: 1.18;
+    text-decoration: none; }
+  html.sunday a.lead:hover { background: none; color: var(--red); }
+  html.sunday a.lead.sunny { color: var(--ink); }
+  html.sunday a.lead.sunny:hover { background: none; color: var(--green); }
+  html.sunday .leadphoto, html.sunday .secphoto { filter: none; }
   .footer { border-top: 3px double var(--rule); margin-top: 28px; padding-top: 9px;
              text-align: center; font-size: 10px; color: var(--muted);
              letter-spacing: 1px; line-height: 1.9; }
@@ -170,7 +207,7 @@ ${gc_head}<style>
 </style>
 </head>
 <body>
-  <div class="topbar">${stamp} &middot; UPDATES EVERY 30 MINUTES &middot; ALL LINKS GO TO ORIGINAL SOURCES</div>
+  <div class="topbar">${stamp} &middot; UPDATES EVERY 30 MINUTES &middot; ALL LINKS GO TO ORIGINAL SOURCES &middot; EDITION: <a href="#" id="ed-t">TABLOID</a> / <a href="#" id="ed-s">SUNDAY</a></div>
   <div class="masthead">THE DAILY MALAISE</div>
   <div class="tagline">A CRISIS OF CONFIDENCE, EVERY THIRTY MINUTES, SINCE ${year}</div>
   <div class="judgment">
@@ -338,7 +375,7 @@ ${spark_html}  </div>
       a.href = item.u;
       a.target = "_blank";
       a.rel = "noopener";
-      a.textContent = item.t.toUpperCase();
+      a.textContent = item.t;
       if (item.k) a.setAttribute("data-k", item.k);
       if (item.sc >= 35) a.className = "hot";
       var src = document.createElement("span");
@@ -399,7 +436,7 @@ ${spark_html}  </div>
       la.href = lead.u;
       la.target = "_blank";
       la.rel = "noopener";
-      la.textContent = lead.t.toUpperCase();
+      la.textContent = lead.t;
       if (lead.k) la.setAttribute("data-k", lead.k);
       box.appendChild(la);
       var ls = document.createElement("div");
@@ -485,6 +522,20 @@ ${spark_html}  </div>
     dose.addEventListener("input", function () {
       var c = current();
       apply(c[0], c[1], true);
+    });
+
+    // Edition switch — mirrors the pre-paint boot script in <head>.
+    function setEdition(ed, ev) {
+      if (ev && ev.preventDefault) ev.preventDefault();
+      var root = document.documentElement;
+      if (root) root.className = ed === "sunday" ? "sunday" : "";
+      try { localStorage.setItem("malaiseEdition", ed); } catch (e) {}
+    }
+    document.getElementById("ed-t").addEventListener("click", function (ev) {
+      setEdition("tabloid", ev);
+    });
+    document.getElementById("ed-s").addEventListener("click", function (ev) {
+      setEdition("sunday", ev);
     });
 ${gc_js}
     var savedMix = null, savedDose = null;
