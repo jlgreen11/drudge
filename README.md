@@ -113,8 +113,16 @@ open index.html
 ```
 
 Fork it, then: **Settings → Pages → Deploy from a branch → `main` / root.**
-The cron does the rest, forever. Recommended: require the PR test check under
-Settings → Branches, so nothing untested ever reaches your presses.
+The cron does the rest, forever.
+
+One sharp edge to respect: **don't add classic branch protection with required
+status checks to `main`** — the night editor pushes its own commits straight
+to main every half hour, and required checks would bounce them (breaking the
+presses in the name of protecting them). The test suite already gates every
+pull request via the workflow's `pull_request` trigger. If you want a harder
+gate, use a repo *ruleset* that requires the check on PRs with a bypass for
+GitHub Actions — or wait for the roadmap's `deploy-pages` migration, after
+which the bot stops committing entirely.
 
 ## Tune the outrage
 
