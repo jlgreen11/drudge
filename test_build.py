@@ -622,6 +622,14 @@ GOLDEN_TONE = [
     ("Hundreds died in ferry disaster, officials say", "GRIM"),
     ("Hostage crisis ends peacefully after negotiations", "ROSY"),
     ("Recession fears deepen as layoffs spread", "GRIM"),
+    # From the blind 120-headline eval (2026-07-09) — regression pins:
+    ("Photos: Iran to bury slain supreme leader in culmination of mass funeral", "GRIM"),
+    ("A country that made huge progress on measles now reports 120,000 cases", "GRIM"),
+    ("Oregon Records 5 Years of Zero Pesticide-Related Deaths in Bees", "ROSY"),
+    ("Million-euro portrait recovered from thieves after museum heist", "ROSY"),
+    ("Grocery stores lower prices as consumers pare spending", "ROSY"),
+    ("Why are big AI labs hiring so many philosophers?", "GRIM"),
+    ("France's far right set to improve ties with Germany", "GRIM"),
     # Zero-signal headlines stay GRIM by editorial rule:
     ("Emmy nominations announced: see the full list", "GRIM"),
     ("Committee schedules procedural vote for Thursday", "GRIM"),

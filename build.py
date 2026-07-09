@@ -196,6 +196,7 @@ GRIM_WORDS = {
     "evicted": 1, "evictions": 1, "foreclosure": 1, "overdoses": 1,
     "fentanyl": 1, "contaminated": 1, "contamination": 1, "radioactive": 1,
     "hospitalization": 1, "tumor": 1,
+    "funeral": 2, "funerals": 2, "measles": 2, "cholera": 2,
     "strike": 2, "strikes": 2, "murdering": 3, "murdered": 3, "murders": 3,
     "killing": 3, "killings": 3, "shootings": 2, "dying": 2, "died": 3,
     "deaths": 3, "kidnapping": 2, "stabbings": 2,
@@ -206,7 +207,8 @@ ROSY_WORDS = {
     "triumph": 3, "miracle": 3,
     "wins": 2, "win": 2, "won": 2, "victory": 2, "celebrates": 2,
     "celebration": 2, "joy": 2, "hope": 2, "hopeful": 2, "recovery": 2,
-    "recovers": 2, "survives": 2, "survivor": 2, "survivors": 2,
+    "recovers": 2, "recovered": 2, "survives": 2, "survivor": 2, "survivors": 2,
+    "alive": 2, "lower prices": 2,
     "success": 2,
     "successful": 2, "award": 2, "awarded": 2, "prize": 2, "honored": 2,
     "milestone": 2, "discovery": 2, "donates": 2, "donation": 2,
@@ -218,7 +220,7 @@ ROSY_WORDS = {
     "volunteers": 1, "charity": 1, "festival": 1, "wedding": 1,
     "birth": 1, "born": 1, "baby": 1, "graduates": 1, "scholarship": 1,
     "boost": 1, "boosts": 1, "gains": 1, "rally": 1, "soars": 1,
-    "deal": 1, "agreement": 1, "growth": 1, "expands": 1, "hiring": 1,
+    "deal": 1, "agreement": 1, "growth": 1, "expands": 1,
     "anniversary": 1, "celebrate": 1, "welcomes": 1, "blooming": 1,
     "renewable": 1, "protects": 1, "protected": 1, "cleaner": 1,
     "rescues": 3, "lifesaving": 3, "breakthroughs": 3, "cures": 3,
@@ -480,12 +482,15 @@ ROSY_TOKENS, ROSY_PHRASES = _split_lexicon(ROSY_WORDS)
 # "ENDS WAR" is rosy) and one step backward ("WAR ENDS" is rosy too).
 # Deliberately NOT negators: denies/denied — in headlines a denial does not
 # negate the event ("MAN DENIES MURDER" is still a murder story).
-NEGATORS = {"no", "not", "never", "without",
+NEGATORS = {"no", "not", "never", "without", "zero",
             "end", "ends", "ended", "averts", "averted", "avoids", "avoided",
             "cancels", "cancelled", "canceled", "won't", "can't", "isn't",
             "aren't", "wasn't", "didn't", "doesn't", "halts", "halted"}
 
-VADER_WEIGHT = 0.6  # general-English sentiment defers to the news lexicon
+VADER_WEIGHT = 0.6   # general-English sentiment defers to the news lexicon
+VADER_ROSY_MIN = 1.8  # a rosy verdict built ONLY from general-English words
+                      # needs real evidence — blind eval showed weak VADER
+                      # positives produce "MASS FUNERAL - ROSY" class errors
 
 TOKEN_RE = re.compile(r"[a-z0-9']+")
 
@@ -499,31 +504,47 @@ def judge(title):
     is GRIM — no neutral; a story is grim until it proves otherwise (the
     README methodology declares this as editorial policy)."""
     def _raw(w):
+        """(value, is_domain_word) — pure, safe for lookahead peeking."""
         if w in ROSY_TOKENS:
-            return float(ROSY_TOKENS[w])
+            return float(ROSY_TOKENS[w]), True
         if w in GRIM_TOKENS:
-            return -float(GRIM_TOKENS[w])
-        return VADER.get(w, 0.0) * VADER_WEIGHT
+            return -float(GRIM_TOKENS[w]), True
+        return VADER.get(w, 0.0) * VADER_WEIGHT, False
 
     lowered = title.lower()
     toks = TOKEN_RE.findall(lowered)
     score = 0.0
     negate = 0
+    domain_hits = 0
     prev_val = 0.0  # last scored word's contribution, for backward flips
     for i, w in enumerate(toks):
         if w in NEGATORS:
-            # A negator binds ONCE. Forward when the very next word is a
-            # scorable non-adverb ("NO SURVIVORS", "ENDS CEASEFIRE");
-            # otherwise backward ("WAR ENDS", "CRISIS ENDS PEACEFULLY" —
-            # the -ly adverb says how it ended and keeps its own sign).
+            # A negator binds ONCE, precedence by proximity:
+            # 1) immediate next scored non-adverb -> forward ("NO
+            #    SURVIVORS", "STRIKES END CEASEFIRE");
+            # 2) scored predecessor -> backward ("WAR ENDS AS CEASEFIRE
+            #    SIGNED", "CRISIS ENDS PEACEFULLY" — the -ly adverb says
+            #    how it ended and keeps its own sign);
+            # 3) first scored non-adverb within 3 -> forward ("ZERO
+            #    PESTICIDE-RELATED DEATHS").
+            negate = 0
             nxt = toks[i + 1] if i + 1 < len(toks) else ""
-            if _raw(nxt) and not nxt.endswith("ly"):
+            nval, _d = _raw(nxt)
+            if nval and not nxt.endswith("ly"):
                 negate = 2
             elif prev_val:
                 score += -1.75 * prev_val
                 prev_val = 0.0
+            else:
+                for d, far in enumerate(toks[i + 2:i + 4], start=2):
+                    fval, _fd = _raw(far)
+                    if fval and not far.endswith("ly"):
+                        negate = d
+                        break
             continue
-        val = _raw(w)
+        val, dom = _raw(w)
+        if dom:
+            domain_hits += 1
         if val and negate:
             val = -0.75 * val
         if negate:
@@ -536,9 +557,16 @@ def judge(title):
     for phrase, v in ROSY_PHRASES.items():
         if f" {phrase} " in padded:
             score += v
+            domain_hits += 1
     for phrase, v in GRIM_PHRASES.items():
         if f" {phrase} " in padded:
             score -= v
+            domain_hits += 1
+    # Weak-evidence gate: a positive verdict resting purely on general-
+    # English sentiment (no news-lexicon word anywhere) must clear a bar,
+    # or it falls back to the grim default.
+    if score > 0 and domain_hits == 0 and score < VADER_ROSY_MIN:
+        score = 0.0
     return round(score, 2)
 
 
