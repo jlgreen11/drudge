@@ -4,13 +4,19 @@
     <title>THE DAILY MALAISE</title>
     <link>https://jlgreen11.github.io/daily-malaise/</link>
     <description>The only front page you can tune. A crisis of confidence, every thirty minutes.</description>
-    <lastBuildDate>Wed, 15 Jul 2026 12:54:02 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2026 14:58:34 +0000</lastBuildDate>
     <atom:link href="https://jlgreen11.github.io/daily-malaise/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>TODAY'S WIRE: 95% GRIM / 5% ROSY — 11% TRUMP ON THE FRONT PAGE, 11% ON THE FULL WIRE</title>
+      <title>TODAY'S WIRE: 95% GRIM / 5% ROSY — 10% TRUMP ON THE FRONT PAGE, 11% ON THE FULL WIRE</title>
       <link>https://jlgreen11.github.io/daily-malaise/</link>
       <guid isPermaLink="false">stat-2026-07-15</guid>
       <pubDate>Wed, 15 Jul 2026 00:00:00 -0500</pubDate>
+    </item>
+    <item>
+      <title>LIVE: Senators question acting Attorney General Todd Blanche at confirmation hearing (ABC)</title>
+      <link>https://abcnews.com/video/41463246/</link>
+      <guid isPermaLink="false">https://abcnews.com/video/41463246/</guid>
+      <pubDate>Wed, 15 Jul 2026 14:28:33 +0000</pubDate>
     </item>
     <item>
       <title>Seven Britons among those killed in Spain wildfires (BBC)</title>
@@ -19,16 +25,16 @@
       <pubDate>Wed, 15 Jul 2026 12:21:32 +0000</pubDate>
     </item>
     <item>
-      <title>DRC Ebola cases surpass 2,000 as more health workers begin strike (AL JAZEERA)</title>
-      <link>https://www.aljazeera.com/news/2026/7/15/drc-ebola-cases-surpass-2000-as-more-health-workers-begin-strike?traffic_source=rss</link>
-      <guid isPermaLink="false">https://www.aljazeera.com/news/2026/7/15/drc-ebola-cases-surpass-2000-as-more-health-workers-begin-strike?traffic_source=rss</guid>
-      <pubDate>Wed, 15 Jul 2026 12:07:43 +0000</pubDate>
+      <title>Mystery solved as John Doe in 1978 crash that killed four teens is finally identified 50 years later (INDEPENDENT)</title>
+      <link>https://www.independent.co.uk/news/world/americas/riverside-crash-victim-identified-mark-alan-smith-b3015432.html</link>
+      <guid isPermaLink="false">https://www.independent.co.uk/news/world/americas/riverside-crash-victim-identified-mark-alan-smith-b3015432.html</guid>
+      <pubDate>Wed, 15 Jul 2026 14:00:16 +0000</pubDate>
     </item>
     <item>
-      <title>1 person dead, 3 missing after boat sinks near Alcatraz Island in San Francisco Bay (CBS)</title>
-      <link>https://www.cbsnews.com/video/1-person-dead-3-missing-after-boat-sinks-near-alcatraz-island-in-san-francisco-bay/</link>
-      <guid isPermaLink="false">https://www.cbsnews.com/video/1-person-dead-3-missing-after-boat-sinks-near-alcatraz-island-in-san-francisco-bay/</guid>
-      <pubDate>Wed, 15 Jul 2026 12:15:22 +0000</pubDate>
+      <title>U.S. launches fresh wave of strikes on Iran, as analysts warn conflict risks becoming 'forever war' (CNBC)</title>
+      <link>https://www.cnbc.com/2026/07/15/trump-iran-hormuz-strikes-power-plants-targeted.html</link>
+      <guid isPermaLink="false">https://www.cnbc.com/2026/07/15/trump-iran-hormuz-strikes-power-plants-targeted.html</guid>
+      <pubDate>Wed, 15 Jul 2026 14:28:24 +0000</pubDate>
     </item>
     <item>
       <title>Gibraltar’s new era as border fence with Spain is finally removed (INDEPENDENT)</title>
@@ -49,22 +55,46 @@
       <pubDate>Wed, 15 Jul 2026 11:23:58 +0000</pubDate>
     </item>
     <item>
-      <title>U.S. launches fresh wave of strikes on Iran, as analysts warn conflict risks becoming 'forever war' (CNBC)</title>
-      <link>https://www.cnbc.com/2026/07/15/trump-iran-hormuz-strikes-power-plants-targeted.html</link>
-      <guid isPermaLink="false">https://www.cnbc.com/2026/07/15/trump-iran-hormuz-strikes-power-plants-targeted.html</guid>
-      <pubDate>Wed, 15 Jul 2026 12:07:12 +0000</pubDate>
+      <title>Venezuela government to launch formal talks with opposition members (BBC)</title>
+      <link>https://www.bbc.co.uk/news/articles/c1eye5320g5o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/c1eye5320g5o?at_medium=RSS&amp;at_campaign=rss</guid>
+      <pubDate>Wed, 15 Jul 2026 12:21:21 +0000</pubDate>
     </item>
     <item>
-      <title>Dr. Erica Schwartz to appear before Senate for CDC director confirmation hearing (ABC)</title>
+      <title>DRC Ebola cases surpass 2,000 as more health workers begin strike (AL JAZEERA)</title>
+      <link>https://www.aljazeera.com/news/2026/7/15/drc-ebola-cases-surpass-2000-as-more-health-workers-begin-strike?traffic_source=rss</link>
+      <guid isPermaLink="false">https://www.aljazeera.com/news/2026/7/15/drc-ebola-cases-surpass-2000-as-more-health-workers-begin-strike?traffic_source=rss</guid>
+      <pubDate>Wed, 15 Jul 2026 12:07:43 +0000</pubDate>
+    </item>
+    <item>
+      <title>Protest in Pakistan’s Kashmir stalls after nine killed in clashes (AL JAZEERA)</title>
+      <link>https://www.aljazeera.com/news/2026/7/15/protest-in-pakistans-kashmir-stalls-after-nine-killed-in-clashes?traffic_source=rss</link>
+      <guid isPermaLink="false">https://www.aljazeera.com/news/2026/7/15/protest-in-pakistans-kashmir-stalls-after-nine-killed-in-clashes?traffic_source=rss</guid>
+      <pubDate>Wed, 15 Jul 2026 13:06:15 +0000</pubDate>
+    </item>
+    <item>
+      <title>US military attacks Iran after Trump's threat of wider strikes (THE HILL)</title>
+      <link>https://thehill.com/policy/defense/5969274-us-military-strikes-iran-island/</link>
+      <guid isPermaLink="false">https://thehill.com/policy/defense/5969274-us-military-strikes-iran-island/</guid>
+      <pubDate>Wed, 15 Jul 2026 14:00:46 +0000</pubDate>
+    </item>
+    <item>
+      <title>Moscow warns that foreign troops in Ukraine would be seen as legitimate targets – Europe live (GUARDIAN)</title>
+      <link>https://www.theguardian.com/world/live/2026/jul/15/ursula-von-der-leyen-ukraine-russia-volodymyr-zelenskyy-vladimir-putin-europe-live-news</link>
+      <guid isPermaLink="false">https://www.theguardian.com/world/live/2026/jul/15/ursula-von-der-leyen-ukraine-russia-volodymyr-zelenskyy-vladimir-putin-europe-live-news</guid>
+      <pubDate>Wed, 15 Jul 2026 14:25:25 +0000</pubDate>
+    </item>
+    <item>
+      <title>Dr. Erica Schwartz appears before Senate for CDC director confirmation hearing (ABC)</title>
       <link>https://abcnews.com/Health/dr-erica-schwartz-senate-committee-confirmation-hearing-cdc/story?id=134740574</link>
       <guid isPermaLink="false">https://abcnews.com/Health/dr-erica-schwartz-senate-committee-confirmation-hearing-cdc/story?id=134740574</guid>
-      <pubDate>Wed, 15 Jul 2026 09:45:55 +0000</pubDate>
+      <pubDate>Wed, 15 Jul 2026 14:51:38 +0000</pubDate>
     </item>
     <item>
-      <title>🔴 Middle East live: More than 30 killed in recent US strikes on Iran, Tehran says (FRANCE 24)</title>
-      <link>https://www.france24.com/en/middle-east/20260715-middle-east-live-tehran-and-us-exchange-strikes-as-blockade-of-iranian-ports-resumes</link>
-      <guid isPermaLink="false">https://www.france24.com/en/middle-east/20260715-middle-east-live-tehran-and-us-exchange-strikes-as-blockade-of-iranian-ports-resumes</guid>
-      <pubDate>Wed, 15 Jul 2026 08:39:04 +0000</pubDate>
+      <title>U.S. announces new strikes on Iran as war intensifies (CBS)</title>
+      <link>https://www.cbsnews.com/live-updates/iran-us-war-trump-strait-of-hormuz-persian-gulf-strikes/</link>
+      <guid isPermaLink="false">https://www.cbsnews.com/live-updates/iran-us-war-trump-strait-of-hormuz-persian-gulf-strikes/</guid>
+      <pubDate>Wed, 15 Jul 2026 14:36:22 +0000</pubDate>
     </item>
     <item>
       <title>Iran-US war latest: Trump launches new wave of attacks after discussing ‘massive offensive’ to open Hormuz (INDEPENDENT)</title>
@@ -73,28 +103,82 @@
       <pubDate>Wed, 15 Jul 2026 11:23:15 +0000</pubDate>
     </item>
     <item>
-      <title>U.S. announces new strikes on Iran as war intensifies (CBS)</title>
-      <link>https://www.cbsnews.com/live-updates/iran-us-war-trump-strait-of-hormuz-persian-gulf-strikes/</link>
-      <guid isPermaLink="false">https://www.cbsnews.com/live-updates/iran-us-war-trump-strait-of-hormuz-persian-gulf-strikes/</guid>
-      <pubDate>Wed, 15 Jul 2026 12:28:45 +0000</pubDate>
+      <title>Trump endorses ‘MyPillow Guy’ Mike Lindell for Minnesota governor (INDEPENDENT)</title>
+      <link>https://www.independent.co.uk/news/world/americas/us-politics/trump-endorses-mike-lindell-minnesota-governor-mypillow-guy-b3015453.html</link>
+      <guid isPermaLink="false">https://www.independent.co.uk/news/world/americas/us-politics/trump-endorses-mike-lindell-minnesota-governor-mypillow-guy-b3015453.html</guid>
+      <pubDate>Wed, 15 Jul 2026 14:12:00 +0000</pubDate>
     </item>
     <item>
-      <title>ICE halts most vehicle stops following deadly shootings, sources say (CBS)</title>
-      <link>https://www.cbsnews.com/news/ice-agents-halt-vehicle-stops-after-shootings-maine-texas/</link>
-      <guid isPermaLink="false">https://www.cbsnews.com/news/ice-agents-halt-vehicle-stops-after-shootings-maine-texas/</guid>
-      <pubDate>Wed, 15 Jul 2026 12:34:53 +0000</pubDate>
-    </item>
-    <item>
-      <title>Russian attacks kill six as Ukraine targets Black Sea oil tankers (BBC)</title>
+      <title>Russian attacks kill eight as Ukraine hits Black Sea oil tankers (BBC)</title>
       <link>https://www.bbc.co.uk/news/articles/c8929jv8kdzo?at_medium=RSS&amp;at_campaign=rss</link>
       <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/c8929jv8kdzo?at_medium=RSS&amp;at_campaign=rss</guid>
-      <pubDate>Wed, 15 Jul 2026 12:19:30 +0000</pubDate>
+      <pubDate>Wed, 15 Jul 2026 13:32:05 +0000</pubDate>
     </item>
     <item>
-      <title>BlackRock profits jump as assets under management hit a record $15 trillion (MARKETWATCH)</title>
-      <link>https://www.marketwatch.com/story/blackrock-profits-jump-as-assets-under-management-hit-a-record-15-trillion-8e6fd54b?mod=mw_rss_topstories</link>
-      <guid isPermaLink="false">https://www.marketwatch.com/story/blackrock-profits-jump-as-assets-under-management-hit-a-record-15-trillion-8e6fd54b?mod=mw_rss_topstories</guid>
-      <pubDate>Wed, 15 Jul 2026 12:19:00 +0000</pubDate>
+      <title>Video shows aftermath of fatal ICE shooting in Maine (CBS)</title>
+      <link>https://www.cbsnews.com/video/video-shows-aftermath-of-fatal-ice-shooting-in-maine/</link>
+      <guid isPermaLink="false">https://www.cbsnews.com/video/video-shows-aftermath-of-fatal-ice-shooting-in-maine/</guid>
+      <pubDate>Wed, 15 Jul 2026 14:25:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Left-wing interviewer presses Ro Khanna on whether Hamas was justified to attack Israel on October 7 (FOX)</title>
+      <link>https://www.foxnews.com/media/left-wing-interviewer-presses-ro-khanna-whether-hamas-justified-attack-israel-october-7</link>
+      <guid isPermaLink="false">https://www.foxnews.com/media/left-wing-interviewer-presses-ro-khanna-whether-hamas-justified-attack-israel-october-7</guid>
+      <pubDate>Wed, 15 Jul 2026 14:16:30 +0000</pubDate>
+    </item>
+    <item>
+      <title>‘They cut off online access’: My mother’s bank balance plummeted after her death. What’s going on? (MARKETWATCH)</title>
+      <link>https://www.marketwatch.com/story/they-cut-off-online-access-my-mothers-bank-balance-plummeted-after-her-death-whats-going-on-8e8f3aa2?mod=mw_rss_topstories</link>
+      <guid isPermaLink="false">https://www.marketwatch.com/story/they-cut-off-online-access-my-mothers-bank-balance-plummeted-after-her-death-whats-going-on-8e8f3aa2?mod=mw_rss_topstories</guid>
+      <pubDate>Wed, 15 Jul 2026 14:15:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Tim Walz becomes GOP punchline in sweeping new war on welfare fraud (FOX)</title>
+      <link>https://www.foxnews.com/politics/tim-walz-becomes-gop-punchline-sweeping-new-war-welfare-fraud</link>
+      <guid isPermaLink="false">https://www.foxnews.com/politics/tim-walz-becomes-gop-punchline-sweeping-new-war-welfare-fraud</guid>
+      <pubDate>Wed, 15 Jul 2026 14:01:22 +0000</pubDate>
+    </item>
+    <item>
+      <title>Former Hungarian foreign minister resigns from parliament for job with Chinese automaker (INDEPENDENT)</title>
+      <link>https://www.independent.co.uk/news/world/europe/peter-szijjarto-viktor-orban-chinese-european-union-peter-magyar-b3015443.html</link>
+      <guid isPermaLink="false">https://www.independent.co.uk/news/world/europe/peter-szijjarto-viktor-orban-chinese-european-union-peter-magyar-b3015443.html</guid>
+      <pubDate>Wed, 15 Jul 2026 13:59:01 +0000</pubDate>
+    </item>
+    <item>
+      <title>Stephen Miller says Iranian officials are 'desperate' to strike a deal with Trump after escalation (FOX)</title>
+      <link>https://www.foxnews.com/media/stephen-miller-says-iranian-officials-desperate-strike-deal-trump-after-escalation</link>
+      <guid isPermaLink="false">https://www.foxnews.com/media/stephen-miller-says-iranian-officials-desperate-strike-deal-trump-after-escalation</guid>
+      <pubDate>Wed, 15 Jul 2026 14:49:28 +0000</pubDate>
+    </item>
+    <item>
+      <title>Man arrested over threatening to shoot Farage in social media post (BBC US)</title>
+      <link>https://www.bbc.co.uk/news/articles/c8r2r76vnd1o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/c8r2r76vnd1o?at_medium=RSS&amp;at_campaign=rss</guid>
+      <pubDate>Wed, 15 Jul 2026 14:43:54 +0000</pubDate>
+    </item>
+    <item>
+      <title>"Miracle on the Hudson" pilot, Capt. "Sully," shares Alzheimer's diagnosis (CBS)</title>
+      <link>https://www.cbsnews.com/news/sully-sullenberger-pilot-alzheimers-miracle-hudson/</link>
+      <guid isPermaLink="false">https://www.cbsnews.com/news/sully-sullenberger-pilot-alzheimers-miracle-hudson/</guid>
+      <pubDate>Wed, 15 Jul 2026 14:35:07 +0000</pubDate>
+    </item>
+    <item>
+      <title>Iran live updates: US launches daytime strikes, IRGC claims targeting of US bases (ABC)</title>
+      <link>https://abcnews.com/International/live-updates/iran-live-updates-kuwait-reports-attacks-after-latest/?id=134704698</link>
+      <guid isPermaLink="false">https://abcnews.com/International/live-updates/iran-live-updates-kuwait-reports-attacks-after-latest/?id=134704698</guid>
+      <pubDate>Wed, 15 Jul 2026 14:23:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Should you really ditch produce during cyclosporiasis outbreak? As cases spread, expert advice varies (INDEPENDENT)</title>
+      <link>https://www.independent.co.uk/news/world/americas/parasite-diarrhea-outbreak-produce-wash-b3015336.html</link>
+      <guid isPermaLink="false">https://www.independent.co.uk/news/world/americas/parasite-diarrhea-outbreak-produce-wash-b3015336.html</guid>
+      <pubDate>Wed, 15 Jul 2026 14:19:58 +0000</pubDate>
+    </item>
+    <item>
+      <title>Imam who prayed before Congress faces formal rebuke after celebrating Graham's death (FOX)</title>
+      <link>https://www.foxnews.com/politics/imam-who-prayed-before-congress-faces-censure-after-celebrating-grahams-death</link>
+      <guid isPermaLink="false">https://www.foxnews.com/politics/imam-who-prayed-before-congress-faces-censure-after-celebrating-grahams-death</guid>
+      <pubDate>Wed, 15 Jul 2026 13:08:47 +0000</pubDate>
     </item>
     <item>
       <title>Seven British nationals confirmed dead in devastating Spanish wildfires (INDEPENDENT)</title>
@@ -103,94 +187,10 @@
       <pubDate>Wed, 15 Jul 2026 12:04:34 +0000</pubDate>
     </item>
     <item>
-      <title>Vigil to be held after family found dead in house in Ballymena (BBC US)</title>
-      <link>https://www.bbc.co.uk/news/articles/ce8k8rj7j1jo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/ce8k8rj7j1jo?at_medium=RSS&amp;at_campaign=rss</guid>
-      <pubDate>Wed, 15 Jul 2026 11:54:37 +0000</pubDate>
-    </item>
-    <item>
-      <title>U.S. War Against Iran Enters a New Phase (NYT)</title>
-      <link>https://www.nytimes.com/2026/07/14/us/politics/us-war-iran-next-phase.html</link>
-      <guid isPermaLink="false">https://www.nytimes.com/2026/07/14/us/politics/us-war-iran-next-phase.html</guid>
-      <pubDate>Wed, 15 Jul 2026 12:44:10 +0000</pubDate>
-    </item>
-    <item>
-      <title>Iran: Alleged Ahmadinejad plot highlights info war (DW)</title>
-      <link>https://www.dw.com/en/iran-alleged-ahmadinejad-plot-highlights-info-war/a-77967268?maca=en-rss-en-all-1573-rdf</link>
-      <guid isPermaLink="false">https://www.dw.com/en/iran-alleged-ahmadinejad-plot-highlights-info-war/a-77967268?maca=en-rss-en-all-1573-rdf</guid>
-      <pubDate>Wed, 15 Jul 2026 12:20:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Wildfires expose millions in Midwest, Northeast to dangerous smoke (CBS)</title>
-      <link>https://www.cbsnews.com/news/wildfires-smoke-millions-exposed-midwest-northeast-us/</link>
-      <guid isPermaLink="false">https://www.cbsnews.com/news/wildfires-smoke-millions-exposed-midwest-northeast-us/</guid>
-      <pubDate>Wed, 15 Jul 2026 11:15:20 +0000</pubDate>
-    </item>
-    <item>
-      <title>Israeli air attack on Gaza apartment kills family of three (AL JAZEERA)</title>
-      <link>https://www.aljazeera.com/news/2026/7/15/israeli-air-attack-on-gaza-apartment-kills-family-of-3?traffic_source=rss</link>
-      <guid isPermaLink="false">https://www.aljazeera.com/news/2026/7/15/israeli-air-attack-on-gaza-apartment-kills-family-of-3?traffic_source=rss</guid>
-      <pubDate>Wed, 15 Jul 2026 12:11:11 +0000</pubDate>
-    </item>
-    <item>
-      <title>Louisiana man charged with murder in shooting of U.S. marshal (CBS)</title>
-      <link>https://www.cbsnews.com/news/louisiana-man-charged-murder-shooting-us-marshal-could-face-death-penalty/</link>
-      <guid isPermaLink="false">https://www.cbsnews.com/news/louisiana-man-charged-murder-shooting-us-marshal-could-face-death-penalty/</guid>
-      <pubDate>Wed, 15 Jul 2026 12:07:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>"Miracle on the Hudson" pilot, Capt. "Sully," shares Alzheimer's diagnosis (CBS)</title>
-      <link>https://www.cbsnews.com/news/sully-sullenberger-pilot-alzheimers-miracle-hudson/</link>
-      <guid isPermaLink="false">https://www.cbsnews.com/news/sully-sullenberger-pilot-alzheimers-miracle-hudson/</guid>
-      <pubDate>Wed, 15 Jul 2026 12:44:11 +0000</pubDate>
-    </item>
-    <item>
-      <title>Crash footage of ESPN analyst who had arm amputated raises uncomfortable questions about GoFundMe (FOX)</title>
-      <link>https://www.foxnews.com/outkick-sports/crash-footage-espn-analyst-arm-amputated-raises-uncomfortable-questions-gofundme</link>
-      <guid isPermaLink="false">https://www.foxnews.com/outkick-sports/crash-footage-espn-analyst-arm-amputated-raises-uncomfortable-questions-gofundme</guid>
-      <pubDate>Wed, 15 Jul 2026 12:35:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>Iran live updates: US launches daytime strikes, IRGC claims targeting of US bases (ABC)</title>
-      <link>https://abcnews.com/International/live-updates/iran-live-updates-kuwait-reports-attacks-after-latest/?id=134704698</link>
-      <guid isPermaLink="false">https://abcnews.com/International/live-updates/iran-live-updates-kuwait-reports-attacks-after-latest/?id=134704698</guid>
-      <pubDate>Wed, 15 Jul 2026 12:19:43 +0000</pubDate>
-    </item>
-    <item>
-      <title>Trump pleads for faster weapon production as war with Iran exposes Pentagon shortfalls (INDEPENDENT)</title>
-      <link>https://www.independent.co.uk/news/world/americas/us-politics/donald-trump-defense-weapons-production-pennsylvania-b3015302.html</link>
-      <guid isPermaLink="false">https://www.independent.co.uk/news/world/americas/us-politics/donald-trump-defense-weapons-production-pennsylvania-b3015302.html</guid>
-      <pubDate>Wed, 15 Jul 2026 11:14:09 +0000</pubDate>
-    </item>
-    <item>
-      <title>#ICE suspends traffic stop operations after second fatal #shooting (FRANCE 24)</title>
-      <link>https://www.france24.com/en/video/20260715-ice-suspends-traffic-stop-operations-after-second-fatal-shooting</link>
-      <guid isPermaLink="false">https://www.france24.com/en/video/20260715-ice-suspends-traffic-stop-operations-after-second-fatal-shooting</guid>
-      <pubDate>Wed, 15 Jul 2026 11:12:29 +0000</pubDate>
-    </item>
-    <item>
-      <title>Pennsylvania woman arrested as girl, 8, found in car suffering seizure after ‘drinking bleach’ (INDEPENDENT)</title>
-      <link>https://www.independent.co.uk/news/world/americas/crime/pennsylvania-fayette-bleach-girl-big-bear-lake-b3015254.html</link>
-      <guid isPermaLink="false">https://www.independent.co.uk/news/world/americas/crime/pennsylvania-fayette-bleach-girl-big-bear-lake-b3015254.html</guid>
-      <pubDate>Wed, 15 Jul 2026 12:06:42 +0000</pubDate>
-    </item>
-    <item>
-      <title>'The wind and drift patterns tell a story,' Cajun Navy official says of missing Mississippi teen found dead (FOX)</title>
-      <link>https://www.foxnews.com/us/wind-drift-patterns-tell-story-cajun-navy-official-missing-mississippi-teen-found-dead</link>
-      <guid isPermaLink="false">https://www.foxnews.com/us/wind-drift-patterns-tell-story-cajun-navy-official-missing-mississippi-teen-found-dead</guid>
-      <pubDate>Wed, 15 Jul 2026 10:00:38 +0000</pubDate>
-    </item>
-    <item>
-      <title>The Gavel: Justices make their case for Supreme Court funding (THE HILL)</title>
-      <link>https://thehill.com/newsletters/the-gavel/5968759-supreme-court-testify-congress-budget/</link>
-      <guid isPermaLink="false">https://thehill.com/newsletters/the-gavel/5968759-supreme-court-testify-congress-budget/</guid>
-      <pubDate>Wed, 15 Jul 2026 12:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>‘It’s Chaos’: What New York’s Suburbs Can Tell Us About the Mood of the Country (NYT)</title>
-      <link>https://www.nytimes.com/2026/07/15/opinion/midterm-elections-politicians-trump-new-york.html</link>
-      <guid isPermaLink="false">https://www.nytimes.com/2026/07/15/opinion/midterm-elections-politicians-trump-new-york.html</guid>
-      <pubDate>Wed, 15 Jul 2026 11:54:23 +0000</pubDate>
+      <title>As the US restarts war on Iran, is its weapons stockpile running low? (AL JAZEERA)</title>
+      <link>https://www.aljazeera.com/news/2026/7/15/as-the-us-restarts-war-on-iran-is-its-weapons-stockpile-running-low?traffic_source=rss</link>
+      <guid isPermaLink="false">https://www.aljazeera.com/news/2026/7/15/as-the-us-restarts-war-on-iran-is-its-weapons-stockpile-running-low?traffic_source=rss</guid>
+      <pubDate>Wed, 15 Jul 2026 12:55:33 +0000</pubDate>
     </item>
   </channel>
 </rss>
