@@ -4,61 +4,79 @@
     <title>THE DAILY MALAISE</title>
     <link>https://jlgreen11.github.io/daily-malaise/</link>
     <description>The only front page you can tune. A crisis of confidence, every thirty minutes.</description>
-    <lastBuildDate>Wed, 15 Jul 2026 04:11:04 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2026 06:37:40 +0000</lastBuildDate>
     <atom:link href="https://jlgreen11.github.io/daily-malaise/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>TODAY'S WIRE: 95% GRIM / 5% ROSY — 18% TRUMP ON THE FRONT PAGE, 11% ON THE FULL WIRE</title>
+      <title>TODAY'S WIRE: 97% GRIM / 3% ROSY — 16% TRUMP ON THE FRONT PAGE, 11% ON THE FULL WIRE</title>
       <link>https://jlgreen11.github.io/daily-malaise/</link>
-      <guid isPermaLink="false">stat-2026-07-14</guid>
-      <pubDate>Tue, 14 Jul 2026 00:00:00 -0500</pubDate>
+      <guid isPermaLink="false">stat-2026-07-15</guid>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 -0500</pubDate>
+    </item>
+    <item>
+      <title>Spain knock out France, prepare for World Cup final (AL JAZEERA)</title>
+      <link>https://www.aljazeera.com/video/newsfeed/2026/7/15/spain-knock-out-france-prepare-for-world-cup-final?traffic_source=rss</link>
+      <guid isPermaLink="false">https://www.aljazeera.com/video/newsfeed/2026/7/15/spain-knock-out-france-prepare-for-world-cup-final?traffic_source=rss</guid>
+      <pubDate>Wed, 15 Jul 2026 05:25:47 +0000</pubDate>
     </item>
     <item>
       <title>Seven Britons among those killed in Spain wildfires (BBC)</title>
       <link>https://www.bbc.co.uk/news/articles/cp8l87784ngo?at_medium=RSS&amp;at_campaign=rss</link>
       <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/cp8l87784ngo?at_medium=RSS&amp;at_campaign=rss</guid>
-      <pubDate>Wed, 15 Jul 2026 01:03:08 +0000</pubDate>
+      <pubDate>Wed, 15 Jul 2026 01:03:07 +0000</pubDate>
     </item>
     <item>
-      <title>Spain defeats France 2-0 to reach FIFA World Cup final (CBS)</title>
-      <link>https://www.cbsnews.com/video/spain-defeats-france-2-0-to-reach-world-cup-final/</link>
-      <guid isPermaLink="false">https://www.cbsnews.com/video/spain-defeats-france-2-0-to-reach-world-cup-final/</guid>
-      <pubDate>Wed, 15 Jul 2026 00:16:28 +0000</pubDate>
+      <title>Australia news live: Aria chief calls for AI content licensing; five-year-old dead after crash in Perth (GUARDIAN)</title>
+      <link>https://www.theguardian.com/australia-news/live/2026/jul/15/australia-news-live-ceo-pay-anthony-albanese-palestine-gaza-ai-artificial-intelligence-datacentres-copyright-royal-commission-antisemitism-labor-ntwnfb</link>
+      <guid isPermaLink="false">https://www.theguardian.com/australia-news/live/2026/jul/15/australia-news-live-ceo-pay-anthony-albanese-palestine-gaza-ai-artificial-intelligence-datacentres-copyright-royal-commission-antisemitism-labor-ntwnfb</guid>
+      <pubDate>Wed, 15 Jul 2026 06:34:33 +0000</pubDate>
     </item>
     <item>
-      <title>Trump retreat over Hormuz tolls suggests he is struggling to end Iran war (BBC)</title>
-      <link>https://www.bbc.co.uk/news/articles/crele3r8j19o?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/crele3r8j19o?at_medium=RSS&amp;at_campaign=rss</guid>
-      <pubDate>Tue, 14 Jul 2026 23:17:28 +0000</pubDate>
+      <title>China economic growth falls sharply, missing target (BBC)</title>
+      <link>https://www.bbc.co.uk/news/articles/cd959x4edy8o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/cd959x4edy8o?at_medium=RSS&amp;at_campaign=rss</guid>
+      <pubDate>Wed, 15 Jul 2026 05:12:55 +0000</pubDate>
     </item>
     <item>
-      <title>Anthropic launches "Claude for Teachers," giving educators a year of free access to AI tools (CBS)</title>
-      <link>https://www.cbsnews.com/video/anthropic-launches-claude-for-teachers/</link>
-      <guid isPermaLink="false">https://www.cbsnews.com/video/anthropic-launches-claude-for-teachers/</guid>
-      <pubDate>Wed, 15 Jul 2026 02:17:49 +0000</pubDate>
+      <title>England risks building new ‘death traps’ as experts warn of overheating crisis (GUARDIAN)</title>
+      <link>https://www.theguardian.com/politics/2026/jul/15/england-risks-building-death-traps-overheating-crisis-plans</link>
+      <guid isPermaLink="false">https://www.theguardian.com/politics/2026/jul/15/england-risks-building-death-traps-overheating-crisis-plans</guid>
+      <pubDate>Wed, 15 Jul 2026 06:00:48 +0000</pubDate>
+    </item>
+    <item>
+      <title>Heating oil customers to get up to £350 compensation for cancelled orders (GUARDIAN)</title>
+      <link>https://www.theguardian.com/money/2026/jul/15/heating-oil-customers-compensation-cancelled-orders-cma</link>
+      <guid isPermaLink="false">https://www.theguardian.com/money/2026/jul/15/heating-oil-customers-compensation-cancelled-orders-cma</guid>
+      <pubDate>Wed, 15 Jul 2026 05:00:45 +0000</pubDate>
+    </item>
+    <item>
+      <title>U.S. strikes Iranian missile sites, defense systems and reinstates port blockade (CNBC)</title>
+      <link>https://www.cnbc.com/2026/07/14/iran-strikes-hormuz-strait-blockade-trump-tolls.html</link>
+      <guid isPermaLink="false">https://www.cnbc.com/2026/07/14/iran-strikes-hormuz-strait-blockade-trump-tolls.html</guid>
+      <pubDate>Wed, 15 Jul 2026 05:54:52 +0000</pubDate>
     </item>
     <item>
       <title>House Votes for Permanent Daylight Saving Time (NYT)</title>
       <link>https://www.nytimes.com/2026/07/14/us/politics/house-daylight-savings-time-sunshine-protection-act.html</link>
       <guid isPermaLink="false">https://www.nytimes.com/2026/07/14/us/politics/house-daylight-savings-time-sunshine-protection-act.html</guid>
-      <pubDate>Wed, 15 Jul 2026 01:33:08 +0000</pubDate>
+      <pubDate>Wed, 15 Jul 2026 01:33:07 +0000</pubDate>
     </item>
     <item>
-      <title>Singapore court orders Bloomberg to pay ministers $356,000 in defamation case (GUARDIAN)</title>
-      <link>https://www.theguardian.com/world/2026/jul/15/bloomberg-singapore-defamation-case</link>
-      <guid isPermaLink="false">https://www.theguardian.com/world/2026/jul/15/bloomberg-singapore-defamation-case</guid>
-      <pubDate>Wed, 15 Jul 2026 02:03:58 +0000</pubDate>
+      <title>China detains US scientist who studied North Korea nuclear tests (BBC)</title>
+      <link>https://www.bbc.co.uk/news/articles/cqx1xdn3g4eo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/cqx1xdn3g4eo?at_medium=RSS&amp;at_campaign=rss</guid>
+      <pubDate>Wed, 15 Jul 2026 02:14:37 +0000</pubDate>
     </item>
     <item>
       <title>Man fleeing ICE officers in Florida is struck and killed by tractor-trailer, police say (FOX)</title>
       <link>https://www.foxnews.com/us/man-fleeing-ice-officers-florida-struck-killed-tractor-trailer-police-say</link>
       <guid isPermaLink="false">https://www.foxnews.com/us/man-fleeing-ice-officers-florida-struck-killed-tractor-trailer-police-say</guid>
-      <pubDate>Tue, 14 Jul 2026 23:58:17 +0000</pubDate>
+      <pubDate>Tue, 14 Jul 2026 23:58:16 +0000</pubDate>
     </item>
     <item>
-      <title>Ukraine-Russia war latest: Putin strikes civilian ship near Black Sea port after threatening ‘powerful’ attacks (INDEPENDENT)</title>
-      <link>https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-putin-zelensky-front-line-updates-b3014287.html</link>
-      <guid isPermaLink="false">https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-putin-zelensky-front-line-updates-b3014287.html</guid>
-      <pubDate>Wed, 15 Jul 2026 02:52:34 +0000</pubDate>
+      <title>Trump retreat over Hormuz tolls suggests he is struggling to end Iran war (BBC)</title>
+      <link>https://www.bbc.co.uk/news/articles/crele3r8j19o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/crele3r8j19o?at_medium=RSS&amp;at_campaign=rss</guid>
+      <pubDate>Tue, 14 Jul 2026 23:17:27 +0000</pubDate>
     </item>
     <item>
       <title>Texas declares emergency amid high risk of flash flooding a year after state was hit by Camp Mystic disaster that killed 28 (INDEPENDENT)</title>
@@ -70,13 +88,31 @@
       <title>A Record-Breaking Heat Wave Is Sweeping Across the U.S. This Week. Here Are Some of the Cities It Will Hit Hardest (TIME)</title>
       <link>https://time.com/article/2026/07/14/us-heat-wave-forecast-where-record-breaking-temperatures/</link>
       <guid isPermaLink="false">https://time.com/article/2026/07/14/us-heat-wave-forecast-where-record-breaking-temperatures/</guid>
-      <pubDate>Tue, 14 Jul 2026 23:27:34 +0000</pubDate>
+      <pubDate>Tue, 14 Jul 2026 23:27:33 +0000</pubDate>
+    </item>
+    <item>
+      <title>Anthropic launches "Claude for Teachers," giving educators a year of free access to AI tools (CBS)</title>
+      <link>https://www.cbsnews.com/video/anthropic-launches-claude-for-teachers/</link>
+      <guid isPermaLink="false">https://www.cbsnews.com/video/anthropic-launches-claude-for-teachers/</guid>
+      <pubDate>Wed, 15 Jul 2026 02:17:48 +0000</pubDate>
+    </item>
+    <item>
+      <title>Houston prosecutor could bring charges against ICE agents in fatal shooting (CBS)</title>
+      <link>https://www.cbsnews.com/news/houston-prosecutor-ice-shooting-lorenzo-salgado-araujo-prepared-to-bring-charges/</link>
+      <guid isPermaLink="false">https://www.cbsnews.com/news/houston-prosecutor-ice-shooting-lorenzo-salgado-araujo-prepared-to-bring-charges/</guid>
+      <pubDate>Wed, 15 Jul 2026 06:01:22 +0000</pubDate>
     </item>
     <item>
       <title>Iran war live: US carries out strikes, IRGC claims damage on US Gulf bases (AL JAZEERA)</title>
       <link>https://www.aljazeera.com/news/liveblog/2026/7/15/live-trump-says-strikes-on-iran-will-continue-until-i-say?traffic_source=rss</link>
       <guid isPermaLink="false">https://www.aljazeera.com/news/liveblog/2026/7/15/live-trump-says-strikes-on-iran-will-continue-until-i-say?traffic_source=rss</guid>
-      <pubDate>Wed, 15 Jul 2026 00:00:16 +0000</pubDate>
+      <pubDate>Wed, 15 Jul 2026 00:00:15 +0000</pubDate>
+    </item>
+    <item>
+      <title>Iran-US war latest: Trump threatens to hit civilian targets in Iran as US resumes Strait of Hormuz blockade (INDEPENDENT)</title>
+      <link>https://www.independent.co.uk/news/world/middle-east/iran-us-war-live-trump-strikes-strait-hormuz-blockade-b3015048.html</link>
+      <guid isPermaLink="false">https://www.independent.co.uk/news/world/middle-east/iran-us-war-live-trump-strikes-strait-hormuz-blockade-b3015048.html</guid>
+      <pubDate>Wed, 15 Jul 2026 05:59:50 +0000</pubDate>
     </item>
     <item>
       <title>Trump held Situation Room meeting on massive new Iran strikes (AXIOS)</title>
@@ -85,112 +121,76 @@
       <pubDate>Wed, 15 Jul 2026 02:46:23 +0000</pubDate>
     </item>
     <item>
+      <title>Ukraine-Russia war latest: Kyiv says more than 100 Russian ships in Azov hit in nine days (INDEPENDENT)</title>
+      <link>https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-putin-zelensky-sea-of-azov-strikes-b3015070.html</link>
+      <guid isPermaLink="false">https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-putin-zelensky-sea-of-azov-strikes-b3015070.html</guid>
+      <pubDate>Wed, 15 Jul 2026 05:43:40 +0000</pubDate>
+    </item>
+    <item>
+      <title>1 dead, 3 missing after boat sinks near Alcatraz Island in San Francisco Bay (ABC)</title>
+      <link>https://abcnews.com/US/1-missing-17-rescued-after-boat-sinks-alcatraz/story?id=134768432</link>
+      <guid isPermaLink="false">https://abcnews.com/US/1-missing-17-rescued-after-boat-sinks-alcatraz/story?id=134768432</guid>
+      <pubDate>Wed, 15 Jul 2026 04:35:32 +0000</pubDate>
+    </item>
+    <item>
+      <title>U.S. restarts blockade and strikes Iran as Trump seeks control of Strait of Hormuz (CBS)</title>
+      <link>https://www.cbsnews.com/live-updates/us-iran-war-trump-ceasefire-attacks-strait-of-hormuz/</link>
+      <guid isPermaLink="false">https://www.cbsnews.com/live-updates/us-iran-war-trump-ceasefire-attacks-strait-of-hormuz/</guid>
+      <pubDate>Wed, 15 Jul 2026 06:20:38 +0000</pubDate>
+    </item>
+    <item>
       <title>5 takeaways as Supreme Court Justices Barrett and Kagan testify on Capitol Hill (THE HILL)</title>
       <link>https://thehill.com/homenews/house/5968507-supreme-court-justices-security-budget-takeaways/</link>
       <guid isPermaLink="false">https://thehill.com/homenews/house/5968507-supreme-court-justices-security-budget-takeaways/</guid>
-      <pubDate>Tue, 14 Jul 2026 22:18:39 +0000</pubDate>
+      <pubDate>Tue, 14 Jul 2026 22:18:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Deadly Russian strike hits Odesa as von der Leyen arrives in Ukraine for defence talks (FRANCE 24)</title>
+      <link>https://www.france24.com/en/europe/20260715-deadly-russian-strike-hits-odesa-as-von-der-leyen-arrives-in-ukraine-with-defence-plans</link>
+      <guid isPermaLink="false">https://www.france24.com/en/europe/20260715-deadly-russian-strike-hits-odesa-as-von-der-leyen-arrives-in-ukraine-with-defence-plans</guid>
+      <pubDate>Wed, 15 Jul 2026 06:01:15 +0000</pubDate>
+    </item>
+    <item>
+      <title>This Is a Forever War in the Making (NYT)</title>
+      <link>https://www.nytimes.com/2026/07/15/opinion/us-iran-forever-war-strait-of-hormuz.html</link>
+      <guid isPermaLink="false">https://www.nytimes.com/2026/07/15/opinion/us-iran-forever-war-strait-of-hormuz.html</guid>
+      <pubDate>Wed, 15 Jul 2026 05:00:13 +0000</pubDate>
     </item>
     <item>
       <title>Trump threatens to bomb bridges and power plants unless Iran resumes talks (BBC)</title>
       <link>https://www.bbc.co.uk/news/articles/cy0608wy8pro?at_medium=RSS&amp;at_campaign=rss</link>
       <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/cy0608wy8pro?at_medium=RSS&amp;at_campaign=rss</guid>
-      <pubDate>Wed, 15 Jul 2026 03:57:18 +0000</pubDate>
+      <pubDate>Wed, 15 Jul 2026 03:57:17 +0000</pubDate>
+    </item>
+    <item>
+      <title>Oil prices rise above $85 as US strikes Iran for second night (INDEPENDENT)</title>
+      <link>https://www.independent.co.uk/news/business/oil-prices-today-brent-wti-iran-war-b3015046.html</link>
+      <guid isPermaLink="false">https://www.independent.co.uk/news/business/oil-prices-today-brent-wti-iran-war-b3015046.html</guid>
+      <pubDate>Wed, 15 Jul 2026 05:50:42 +0000</pubDate>
+    </item>
+    <item>
+      <title>Worker killed in furnace explosion fire at Indian recycling plant (AL JAZEERA)</title>
+      <link>https://www.aljazeera.com/video/newsfeed/2026/7/14/worker-killed-in-furnace-explosion-fire-at-indian-recycling-plant?traffic_source=rss</link>
+      <guid isPermaLink="false">https://www.aljazeera.com/video/newsfeed/2026/7/14/worker-killed-in-furnace-explosion-fire-at-indian-recycling-plant?traffic_source=rss</guid>
+      <pubDate>Tue, 14 Jul 2026 20:18:36 +0000</pubDate>
+    </item>
+    <item>
+      <title>Oil rises after another round of U.S. strikes against Iran, naval blockade of the country's ports (CNBC)</title>
+      <link>https://www.cnbc.com/2026/07/15/oil-prices-today-brent-wti-hormuz-blockade.html</link>
+      <guid isPermaLink="false">https://www.cnbc.com/2026/07/15/oil-prices-today-brent-wti-hormuz-blockade.html</guid>
+      <pubDate>Wed, 15 Jul 2026 05:11:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>Trump to address defense technology gathering as the Iran war has reduced US weapon stocks (INDEPENDENT)</title>
+      <link>https://www.independent.co.uk/news/world/americas/trump-pete-hegseth-congress-pennsylvania-tomahawk-b3015051.html</link>
+      <guid isPermaLink="false">https://www.independent.co.uk/news/world/americas/trump-pete-hegseth-congress-pennsylvania-tomahawk-b3015051.html</guid>
+      <pubDate>Wed, 15 Jul 2026 04:01:48 +0000</pubDate>
     </item>
     <item>
       <title>‘Gus’ the T. rex becomes most expensive dinosaur fossil ever sold for $50M (INDEPENDENT)</title>
       <link>https://www.independent.co.uk/news/world/americas/trex-gus-auction-fossil-sothebys-b3014893.html</link>
       <guid isPermaLink="false">https://www.independent.co.uk/news/world/americas/trex-gus-auction-fossil-sothebys-b3014893.html</guid>
       <pubDate>Tue, 14 Jul 2026 19:37:04 +0000</pubDate>
-    </item>
-    <item>
-      <title>Worker killed in furnace explosion fire at Indian recycling plant (AL JAZEERA)</title>
-      <link>https://www.aljazeera.com/video/newsfeed/2026/7/14/worker-killed-in-furnace-explosion-fire-at-indian-recycling-plant?traffic_source=rss</link>
-      <guid isPermaLink="false">https://www.aljazeera.com/video/newsfeed/2026/7/14/worker-killed-in-furnace-explosion-fire-at-indian-recycling-plant?traffic_source=rss</guid>
-      <pubDate>Tue, 14 Jul 2026 20:18:37 +0000</pubDate>
-    </item>
-    <item>
-      <title>US Senate Democrats block defence bill over Iran war, Israel integration (AL JAZEERA)</title>
-      <link>https://www.aljazeera.com/news/2026/7/14/senate-democrats-block-defence-bill-over-iran-war-israel-provisions?traffic_source=rss</link>
-      <guid isPermaLink="false">https://www.aljazeera.com/news/2026/7/14/senate-democrats-block-defence-bill-over-iran-war-israel-provisions?traffic_source=rss</guid>
-      <pubDate>Tue, 14 Jul 2026 20:12:07 +0000</pubDate>
-    </item>
-    <item>
-      <title>Iran-US war latest: Trump threatens to hit civilian targets in Iran as US resumes Strait of Hormuz blockade (INDEPENDENT)</title>
-      <link>https://www.independent.co.uk/news/world/middle-east/iran-us-war-live-trump-strikes-strait-hormuz-blockade-b3015048.html</link>
-      <guid isPermaLink="false">https://www.independent.co.uk/news/world/middle-east/iran-us-war-live-trump-strikes-strait-hormuz-blockade-b3015048.html</guid>
-      <pubDate>Wed, 15 Jul 2026 03:56:33 +0000</pubDate>
-    </item>
-    <item>
-      <title>US military reimposes naval blockade on Iranian ports, launches new strikes (FRANCE 24)</title>
-      <link>https://www.france24.com/en/middle-east/20260714-us-military-reimposes-naval-blockade-on-iranian-ports-launches-new-strikes</link>
-      <guid isPermaLink="false">https://www.france24.com/en/middle-east/20260714-us-military-reimposes-naval-blockade-on-iranian-ports-launches-new-strikes</guid>
-      <pubDate>Tue, 14 Jul 2026 20:45:40 +0000</pubDate>
-    </item>
-    <item>
-      <title>An ICE Shooting in Maine Puts Pressure on Senator Susan Collins (NYT)</title>
-      <link>https://www.nytimes.com/2026/07/14/us/politics/ice-shooting-maine-susan-collins.html</link>
-      <guid isPermaLink="false">https://www.nytimes.com/2026/07/14/us/politics/ice-shooting-maine-susan-collins.html</guid>
-      <pubDate>Wed, 15 Jul 2026 03:12:36 +0000</pubDate>
-    </item>
-    <item>
-      <title>Trump again threatens to strike Iran’s power plants amid impasse over strait of Hormuz (GUARDIAN)</title>
-      <link>https://www.theguardian.com/world/2026/jul/15/trump-iran-power-plants-strike-threat-strait-of-hormuz</link>
-      <guid isPermaLink="false">https://www.theguardian.com/world/2026/jul/15/trump-iran-power-plants-strike-threat-strait-of-hormuz</guid>
-      <pubDate>Wed, 15 Jul 2026 04:04:48 +0000</pubDate>
-    </item>
-    <item>
-      <title>One person dead and 16 rescued after boat sinks off Alcatraz Island (INDEPENDENT)</title>
-      <link>https://www.independent.co.uk/news/world/americas/san-francisco-fire-boat-alcatraz-rescue-b3015020.html</link>
-      <guid isPermaLink="false">https://www.independent.co.uk/news/world/americas/san-francisco-fire-boat-alcatraz-rescue-b3015020.html</guid>
-      <pubDate>Wed, 15 Jul 2026 02:02:26 +0000</pubDate>
-    </item>
-    <item>
-      <title>ICE officer hailed as hero after saving driver injured in Missouri crash (FOX)</title>
-      <link>https://www.foxnews.com/us/ice-officer-hailed-hero-saving-driver-injured-missouri-crash</link>
-      <guid isPermaLink="false">https://www.foxnews.com/us/ice-officer-hailed-hero-saving-driver-injured-missouri-crash</guid>
-      <pubDate>Wed, 15 Jul 2026 03:53:37 +0000</pubDate>
-    </item>
-    <item>
-      <title>Oil rises as U.S. continues to strike Iran, reinstates naval blockade of the country's ports (CNBC)</title>
-      <link>https://www.cnbc.com/2026/07/15/oil-prices-today-brent-wti-hormuz-blockade.html</link>
-      <guid isPermaLink="false">https://www.cnbc.com/2026/07/15/oil-prices-today-brent-wti-hormuz-blockade.html</guid>
-      <pubDate>Wed, 15 Jul 2026 03:42:03 +0000</pubDate>
-    </item>
-    <item>
-      <title>Houston prosecutor could bring charges against ICE agents in fatal shooting (CBS)</title>
-      <link>https://www.cbsnews.com/news/houston-prosecutor-ice-shooting-lorenzo-salgado-araujo-prepared-to-bring-charges/</link>
-      <guid isPermaLink="false">https://www.cbsnews.com/news/houston-prosecutor-ice-shooting-lorenzo-salgado-araujo-prepared-to-bring-charges/</guid>
-      <pubDate>Wed, 15 Jul 2026 02:21:39 +0000</pubDate>
-    </item>
-    <item>
-      <title>1 dead, 2 missing after boat sinks near Alcatraz Island in San Francisco Bay (ABC)</title>
-      <link>https://abcnews.com/US/1-missing-17-rescued-after-boat-catches-fire/story?id=134768432</link>
-      <guid isPermaLink="false">https://abcnews.com/US/1-missing-17-rescued-after-boat-catches-fire/story?id=134768432</guid>
-      <pubDate>Wed, 15 Jul 2026 01:21:05 +0000</pubDate>
-    </item>
-    <item>
-      <title>Supreme Court Justices give chilling accounts of threats to their safety (NPR)</title>
-      <link>https://www.npr.org/2026/07/14/nx-s1-5893664/supreme-court-justices-kagan-barrett-give-chilling-accounts-of-threats-to-their-safety</link>
-      <guid isPermaLink="false">https://www.npr.org/2026/07/14/nx-s1-5893664/supreme-court-justices-kagan-barrett-give-chilling-accounts-of-threats-to-their-safety</guid>
-      <pubDate>Wed, 15 Jul 2026 03:19:26 +0000</pubDate>
-    </item>
-    <item>
-      <title>Police say Ann Widdecombe killed in 'targeted attack' as motive investigated (BBC US)</title>
-      <link>https://www.bbc.co.uk/news/articles/c0ryr74zjzvo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/c0ryr74zjzvo?at_medium=RSS&amp;at_campaign=rss</guid>
-      <pubDate>Tue, 14 Jul 2026 18:07:09 +0000</pubDate>
-    </item>
-    <item>
-      <title>US hits 'dozens' of military targets in additional round of strikes (THE HILL)</title>
-      <link>https://thehill.com/policy/defense/5968856-us-centcom-strikes-iranian-targets/</link>
-      <guid isPermaLink="false">https://thehill.com/policy/defense/5968856-us-centcom-strikes-iranian-targets/</guid>
-      <pubDate>Wed, 15 Jul 2026 03:06:54 +0000</pubDate>
-    </item>
-    <item>
-      <title>Houston prosecutor says he's trying to get visas for witnesses of fatal ICE shooting (CBS)</title>
-      <link>https://www.cbsnews.com/video/houston-prosecutor-says-hes-trying-to-get-visas-for-witnesses-of-fatal-ice-shooting/</link>
-      <guid isPermaLink="false">https://www.cbsnews.com/video/houston-prosecutor-says-hes-trying-to-get-visas-for-witnesses-of-fatal-ice-shooting/</guid>
-      <pubDate>Wed, 15 Jul 2026 01:52:31 +0000</pubDate>
     </item>
   </channel>
 </rss>
