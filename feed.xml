@@ -4,25 +4,31 @@
     <title>THE DAILY MALAISE</title>
     <link>https://jlgreen11.github.io/daily-malaise/</link>
     <description>The only front page you can tune. A crisis of confidence, every thirty minutes.</description>
-    <lastBuildDate>Sun, 19 Jul 2026 01:03:39 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2026 04:28:14 +0000</lastBuildDate>
     <atom:link href="https://jlgreen11.github.io/daily-malaise/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>TODAY'S WIRE: 98% GRIM / 2% ROSY — 17% TRUMP ON THE FRONT PAGE, 12% ON THE FULL WIRE</title>
+      <title>TODAY'S WIRE: 93% GRIM / 7% ROSY — 7% TRUMP ON THE FRONT PAGE, 10% ON THE FULL WIRE</title>
       <link>https://jlgreen11.github.io/daily-malaise/</link>
       <guid isPermaLink="false">stat-2026-07-18</guid>
       <pubDate>Sat, 18 Jul 2026 00:00:00 -0500</pubDate>
     </item>
     <item>
-      <title>2 U.S. service members killed, 1 missing following Iranian strike on Jordan (CBS)</title>
-      <link>https://www.cbsnews.com/news/iran-strike-jordan-us-troops-killed/</link>
-      <guid isPermaLink="false">https://www.cbsnews.com/news/iran-strike-jordan-us-troops-killed/</guid>
-      <pubDate>Sun, 19 Jul 2026 00:40:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>Two US troops killed and one missing after Iranian attack in Jordan (BBC US)</title>
+      <title>Two US troops killed and one missing after Iranian attack in Jordan (BBC)</title>
       <link>https://www.bbc.co.uk/news/articles/cn8nynv8ze8o?at_medium=RSS&amp;at_campaign=rss</link>
       <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/cn8nynv8ze8o?at_medium=RSS&amp;at_campaign=rss</guid>
       <pubDate>Sun, 19 Jul 2026 00:18:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>Andrew and Tristan Tate arrested by US Marshals in Miami for UK rape charges (INDEPENDENT)</title>
+      <link>https://www.independent.co.uk/news/world/americas/crime/andrew-tristan-tate-arrested-rape-trafficking-charges-b3017553.html</link>
+      <guid isPermaLink="false">https://www.independent.co.uk/news/world/americas/crime/andrew-tristan-tate-arrested-rape-trafficking-charges-b3017553.html</guid>
+      <pubDate>Sun, 19 Jul 2026 01:17:11 +0000</pubDate>
+    </item>
+    <item>
+      <title>Andrew Tate and brother arrested in US after more charges laid against them in UK (BBC)</title>
+      <link>https://www.bbc.co.uk/news/articles/cwymly9yd33o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/cwymly9yd33o?at_medium=RSS&amp;at_campaign=rss</guid>
+      <pubDate>Sun, 19 Jul 2026 02:17:07 +0000</pubDate>
     </item>
     <item>
       <title>Iran war live: US launches new strikes; Trump mourns killed soldiers (AL JAZEERA)</title>
@@ -31,10 +37,34 @@
       <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Ukraine-Russia war latest: Nine killed in drone strike on warehouse of Russia’s largest online retailer (INDEPENDENT)</title>
-      <link>https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-putin-zelensky-wildberries-b3017336.html</link>
-      <guid isPermaLink="false">https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-putin-zelensky-wildberries-b3017336.html</guid>
-      <pubDate>Sat, 18 Jul 2026 23:08:47 +0000</pubDate>
+      <title>Tate Brothers Arrested in Miami As U.K. Authorities File Sex Crime Charges (NYT)</title>
+      <link>https://www.nytimes.com/2026/07/18/us/tate-brothers-arrest-miami.html</link>
+      <guid isPermaLink="false">https://www.nytimes.com/2026/07/18/us/tate-brothers-arrest-miami.html</guid>
+      <pubDate>Sun, 19 Jul 2026 04:10:31 +0000</pubDate>
+    </item>
+    <item>
+      <title>Palestinian teenage footballer dies after Israeli settler attack (AL JAZEERA)</title>
+      <link>https://www.aljazeera.com/video/newsfeed/2026/7/19/palestinian-teenage-footballer-dies-after-israeli-settler-attack?traffic_source=rss</link>
+      <guid isPermaLink="false">https://www.aljazeera.com/video/newsfeed/2026/7/19/palestinian-teenage-footballer-dies-after-israeli-settler-attack?traffic_source=rss</guid>
+      <pubDate>Sun, 19 Jul 2026 02:57:31 +0000</pubDate>
+    </item>
+    <item>
+      <title>U.S. concludes 8th night of strikes on Iran after Iranian attack kills 2 U.S. soldiers (CBS)</title>
+      <link>https://www.cbsnews.com/live-updates/iran-war-trump-strait-of-hormuz-attacks-persian-gulf/</link>
+      <guid isPermaLink="false">https://www.cbsnews.com/live-updates/iran-war-trump-strait-of-hormuz-attacks-persian-gulf/</guid>
+      <pubDate>Sun, 19 Jul 2026 04:01:18 +0000</pubDate>
+    </item>
+    <item>
+      <title>Iran war latest: US launches retaliatory strikes as Trump calls deaths of two service members ‘very sad’ (INDEPENDENT)</title>
+      <link>https://www.independent.co.uk/news/world/middle-east/iran-us-war-live-updates-trump-strikes-airport-water-b3017324.html</link>
+      <guid isPermaLink="false">https://www.independent.co.uk/news/world/middle-east/iran-us-war-live-updates-trump-strikes-airport-water-b3017324.html</guid>
+      <pubDate>Sun, 19 Jul 2026 03:48:18 +0000</pubDate>
+    </item>
+    <item>
+      <title>2 U.S. service members killed, 1 missing following Iranian strike on Jordan (CBS)</title>
+      <link>https://www.cbsnews.com/news/iran-strike-jordan-us-troops-killed/</link>
+      <guid isPermaLink="false">https://www.cbsnews.com/news/iran-strike-jordan-us-troops-killed/</guid>
+      <pubDate>Sun, 19 Jul 2026 02:26:33 +0000</pubDate>
     </item>
     <item>
       <title>Khamenei threatens ‘unforgettable lessons’, two US troops killed in Iranian attack (FRANCE 24)</title>
@@ -43,16 +73,10 @@
       <pubDate>Sat, 18 Jul 2026 20:10:02 +0000</pubDate>
     </item>
     <item>
-      <title>Josh Kerr of Britain breaks 27-year-old world record in the mile (NPR)</title>
-      <link>https://www.npr.org/2026/07/18/nx-s1-5899057/josh-kerr-mile-world-record-time</link>
-      <guid isPermaLink="false">https://www.npr.org/2026/07/18/nx-s1-5899057/josh-kerr-mile-world-record-time</guid>
-      <pubDate>Sat, 18 Jul 2026 20:06:35 +0000</pubDate>
-    </item>
-    <item>
-      <title>Andrew and Tristan Tate arrested by US Marshals in Miami for UK rape charges (INDEPENDENT)</title>
-      <link>https://www.independent.co.uk/news/world/americas/crime/andrew-tristan-tate-arrested-rape-trafficking-charges-b3017553.html</link>
-      <guid isPermaLink="false">https://www.independent.co.uk/news/world/americas/crime/andrew-tristan-tate-arrested-rape-trafficking-charges-b3017553.html</guid>
-      <pubDate>Sun, 19 Jul 2026 00:58:23 +0000</pubDate>
+      <title>Iran live updates: US launches airstrikes after deadly attack on troops in Jordan (ABC)</title>
+      <link>https://abcnews.com/International/live-updates/iran-live-updates-kuwait-reports-attacks-after-latest/?id=134704698</link>
+      <guid isPermaLink="false">https://abcnews.com/International/live-updates/iran-live-updates-kuwait-reports-attacks-after-latest/?id=134704698</guid>
+      <pubDate>Sun, 19 Jul 2026 04:07:42 +0000</pubDate>
     </item>
     <item>
       <title>2 U.S. soldiers killed in Iranian attack on Jordan military base (CBS)</title>
@@ -67,22 +91,16 @@
       <pubDate>Sun, 19 Jul 2026 00:21:37 +0000</pubDate>
     </item>
     <item>
-      <title>Iran-US war latest: Two US service members killed as supreme leader issues warning to Trump (INDEPENDENT)</title>
-      <link>https://www.independent.co.uk/news/world/middle-east/iran-us-war-live-updates-trump-strikes-airport-water-b3017324.html</link>
-      <guid isPermaLink="false">https://www.independent.co.uk/news/world/middle-east/iran-us-war-live-updates-trump-strikes-airport-water-b3017324.html</guid>
-      <pubDate>Sat, 18 Jul 2026 23:12:10 +0000</pubDate>
+      <title>Ukraine-Russia war latest: Nine killed in drone strike on warehouse of Russia’s largest online retailer (INDEPENDENT)</title>
+      <link>https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-putin-zelensky-wildberries-b3017336.html</link>
+      <guid isPermaLink="false">https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-putin-zelensky-wildberries-b3017336.html</guid>
+      <pubDate>Sat, 18 Jul 2026 23:08:47 +0000</pubDate>
     </item>
     <item>
-      <title>Russian online retail warehouses hit by Ukraine drones in deadly attack (INDEPENDENT)</title>
-      <link>https://www.independent.co.uk/news/world/europe/russian-wildberries-warehouses-elektrostal-ukraine-drones-b3017446.html</link>
-      <guid isPermaLink="false">https://www.independent.co.uk/news/world/europe/russian-wildberries-warehouses-elektrostal-ukraine-drones-b3017446.html</guid>
-      <pubDate>Sat, 18 Jul 2026 16:17:46 +0000</pubDate>
-    </item>
-    <item>
-      <title>U.S. launches 8th night of strikes on Iran after Iranian attack kills 2 U.S. soldiers (CBS)</title>
-      <link>https://www.cbsnews.com/live-updates/iran-war-trump-strait-of-hormuz-attacks-persian-gulf/</link>
-      <guid isPermaLink="false">https://www.cbsnews.com/live-updates/iran-war-trump-strait-of-hormuz-attacks-persian-gulf/</guid>
-      <pubDate>Sun, 19 Jul 2026 00:41:10 +0000</pubDate>
+      <title>Private jets flock to Montana - but locals can't afford the trailer park (BBC)</title>
+      <link>https://www.bbc.co.uk/news/articles/ckg92d8d40yo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/ckg92d8d40yo?at_medium=RSS&amp;at_campaign=rss</guid>
+      <pubDate>Sat, 18 Jul 2026 23:44:04 +0000</pubDate>
     </item>
     <item>
       <title>Mexican president to attend World Cup final at Trump's invitation amid trade tensions (CBS)</title>
@@ -91,16 +109,16 @@
       <pubDate>Sun, 19 Jul 2026 00:42:04 +0000</pubDate>
     </item>
     <item>
-      <title>Palestinian teenage footballer dies a week after Israeli settler attack (AL JAZEERA)</title>
-      <link>https://www.aljazeera.com/news/2026/7/18/palestinian-teenage-footballer-dies-a-week-after-israeli-settler-attack?traffic_source=rss</link>
-      <guid isPermaLink="false">https://www.aljazeera.com/news/2026/7/18/palestinian-teenage-footballer-dies-a-week-after-israeli-settler-attack?traffic_source=rss</guid>
-      <pubDate>Sat, 18 Jul 2026 20:24:51 +0000</pubDate>
+      <title>Russian online retail warehouses hit by Ukraine drones in deadly attack (INDEPENDENT)</title>
+      <link>https://www.independent.co.uk/news/world/europe/russian-wildberries-warehouses-elektrostal-ukraine-drones-b3017446.html</link>
+      <guid isPermaLink="false">https://www.independent.co.uk/news/world/europe/russian-wildberries-warehouses-elektrostal-ukraine-drones-b3017446.html</guid>
+      <pubDate>Sat, 18 Jul 2026 16:17:46 +0000</pubDate>
     </item>
     <item>
-      <title>Iran live updates: US launches airstrikes after deadly attack on troops in Jordan (ABC)</title>
-      <link>https://abcnews.com/International/live-updates/iran-live-updates-kuwait-reports-attacks-after-latest/?id=134704698</link>
-      <guid isPermaLink="false">https://abcnews.com/International/live-updates/iran-live-updates-kuwait-reports-attacks-after-latest/?id=134704698</guid>
-      <pubDate>Sat, 18 Jul 2026 22:38:03 +0000</pubDate>
+      <title>Man dies after cross-border police pursuit ends in NSW northern rivers (GUARDIAN)</title>
+      <link>https://www.theguardian.com/australia-news/2026/jul/19/man-dies-after-queensland-nsw-police-car-chase-ntwnfb</link>
+      <guid isPermaLink="false">https://www.theguardian.com/australia-news/2026/jul/19/man-dies-after-queensland-nsw-police-car-chase-ntwnfb</guid>
+      <pubDate>Sun, 19 Jul 2026 02:46:04 +0000</pubDate>
     </item>
     <item>
       <title>Rory McIlroy blasts Bryson DeChambeau for holding The Open ‘hostage’ over penalty chaos: 'It is performative' (FOX)</title>
@@ -115,13 +133,55 @@
       <pubDate>Sat, 18 Jul 2026 21:58:20 +0000</pubDate>
     </item>
     <item>
+      <title>New EU border system tripling time at passport control, airport boss says (BBC)</title>
+      <link>https://www.bbc.co.uk/news/articles/ckg5gg6n9x3o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/ckg5gg6n9x3o?at_medium=RSS&amp;at_campaign=rss</guid>
+      <pubDate>Sun, 19 Jul 2026 01:47:59 +0000</pubDate>
+    </item>
+    <item>
+      <title>Why the World Cup half-time show may be a taste of things to come (BBC)</title>
+      <link>https://www.bbc.co.uk/news/articles/cwyr498vqqpo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/cwyr498vqqpo?at_medium=RSS&amp;at_campaign=rss</guid>
+      <pubDate>Sun, 19 Jul 2026 01:11:23 +0000</pubDate>
+    </item>
+    <item>
+      <title>São Tomé and Príncipe heads to polls in tense presidential election (GUARDIAN)</title>
+      <link>https://www.theguardian.com/world/2026/jul/19/sao-tome-and-principe-presidential-election</link>
+      <guid isPermaLink="false">https://www.theguardian.com/world/2026/jul/19/sao-tome-and-principe-presidential-election</guid>
+      <pubDate>Sun, 19 Jul 2026 04:00:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>Social media influencers Andrew and Tristan Tate arrested in Miami (CBS)</title>
+      <link>https://www.cbsnews.com/news/social-media-influencers-andrew-and-tristan-tate-arrested-in-miami-uk-charges/</link>
+      <guid isPermaLink="false">https://www.cbsnews.com/news/social-media-influencers-andrew-and-tristan-tate-arrested-in-miami-uk-charges/</guid>
+      <pubDate>Sun, 19 Jul 2026 02:58:18 +0000</pubDate>
+    </item>
+    <item>
+      <title>Andrew, Tristan Tate arrested in US after British prosecutors bring new charges (ABC)</title>
+      <link>https://abcnews.com/US/andrew-tristan-tate-arrested-miami-after-british-prosecutors/story?id=134883878</link>
+      <guid isPermaLink="false">https://abcnews.com/US/andrew-tristan-tate-arrested-miami-after-british-prosecutors/story?id=134883878</guid>
+      <pubDate>Sun, 19 Jul 2026 02:58:12 +0000</pubDate>
+    </item>
+    <item>
       <title>Live updates: 2 US soldiers killed by Iran strikes in Jordan; Norman launches bid for Graham seat (THE HILL)</title>
       <link>https://thehill.com/homenews/administration/5975853-live-updates-us-iran-war-trump-election-claims-midterms/</link>
       <guid isPermaLink="false">https://thehill.com/homenews/administration/5975853-live-updates-us-iran-war-trump-election-claims-midterms/</guid>
       <pubDate>Sat, 18 Jul 2026 18:23:18 +0000</pubDate>
     </item>
     <item>
-      <title>Russians turn to cash, putting more strain on slowing wartime economy (BBC US)</title>
+      <title>The Papers: 'Messiah without a mandate' and 'attack of the Argie ants' (BBC US)</title>
+      <link>https://www.bbc.co.uk/news/articles/c5y4wn7y757o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/c5y4wn7y757o?at_medium=RSS&amp;at_campaign=rss</guid>
+      <pubDate>Sun, 19 Jul 2026 01:21:14 +0000</pubDate>
+    </item>
+    <item>
+      <title>Tate brothers arrested in Miami as UK adds rape, trafficking charges (AL JAZEERA)</title>
+      <link>https://www.aljazeera.com/news/2026/7/19/tate-brothers-arrested-in-miami-as-uk-adds-rape-trafficking-charges?traffic_source=rss</link>
+      <guid isPermaLink="false">https://www.aljazeera.com/news/2026/7/19/tate-brothers-arrested-in-miami-as-uk-adds-rape-trafficking-charges?traffic_source=rss</guid>
+      <pubDate>Sun, 19 Jul 2026 02:05:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>Russians turn to cash, putting more strain on slowing wartime economy (BBC)</title>
       <link>https://www.bbc.co.uk/news/articles/cglj255jk8ko?at_medium=RSS&amp;at_campaign=rss</link>
       <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/cglj255jk8ko?at_medium=RSS&amp;at_campaign=rss</guid>
       <pubDate>Sat, 18 Jul 2026 23:59:26 +0000</pubDate>
@@ -131,66 +191,6 @@
       <link>https://www.aljazeera.com/video/newsfeed/2026/7/19/a-giant-cake-for-venezuelan-quake-child-survivors-as-death-toll-passes-5000?traffic_source=rss</link>
       <guid isPermaLink="false">https://www.aljazeera.com/video/newsfeed/2026/7/19/a-giant-cake-for-venezuelan-quake-child-survivors-as-death-toll-passes-5000?traffic_source=rss</guid>
       <pubDate>Sun, 19 Jul 2026 00:39:42 +0000</pubDate>
-    </item>
-    <item>
-      <title>Boston police investigate death at home owned by Rep. Ayanna Pressley's husband (FOX)</title>
-      <link>https://www.foxnews.com/us/boston-police-investigate-death-home-owned-rep-ayanna-pressley-husband</link>
-      <guid isPermaLink="false">https://www.foxnews.com/us/boston-police-investigate-death-home-owned-rep-ayanna-pressley-husband</guid>
-      <pubDate>Sun, 19 Jul 2026 00:10:02 +0000</pubDate>
-    </item>
-    <item>
-      <title>Two U.S. service members killed in Jordan, one missing; Iran threatens 'unforgettable lessons' after calling off interim peace agreement (CNBC)</title>
-      <link>https://www.cnbc.com/2026/07/18/us-military-says-it-completed-latest-round-of-strikes-against-iran.html</link>
-      <guid isPermaLink="false">https://www.cnbc.com/2026/07/18/us-military-says-it-completed-latest-round-of-strikes-against-iran.html</guid>
-      <pubDate>Sat, 18 Jul 2026 23:04:22 +0000</pubDate>
-    </item>
-    <item>
-      <title>Tate brothers arrested in US after more charges laid against them in UK (BBC US)</title>
-      <link>https://www.bbc.co.uk/news/articles/cwymly9yd33o?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/cwymly9yd33o?at_medium=RSS&amp;at_campaign=rss</guid>
-      <pubDate>Sun, 19 Jul 2026 00:57:18 +0000</pubDate>
-    </item>
-    <item>
-      <title>The Tate brothers are arrested in Miami, U.S. Marshals Service tells AP (NPR)</title>
-      <link>https://www.npr.org/2026/07/18/g-s1-134475/tate-brothers-arrested-miami</link>
-      <guid isPermaLink="false">https://www.npr.org/2026/07/18/g-s1-134475/tate-brothers-arrested-miami</guid>
-      <pubDate>Sun, 19 Jul 2026 00:57:08 +0000</pubDate>
-    </item>
-    <item>
-      <title>Andrew, Tristan Tate arrested in US after British prosecutors bring new charges (ABC)</title>
-      <link>https://abcnews.com/US/andrew-tristan-tate-arrested-miami-after-british-prosecutors/story?id=134883878</link>
-      <guid isPermaLink="false">https://abcnews.com/US/andrew-tristan-tate-arrested-miami-after-british-prosecutors/story?id=134883878</guid>
-      <pubDate>Sun, 19 Jul 2026 00:39:37 +0000</pubDate>
-    </item>
-    <item>
-      <title>Conservatives around world at war against ‘leftwing globalists’, Bridget McKenzie tells CPAC London event (GUARDIAN)</title>
-      <link>https://www.theguardian.com/australia-news/2026/jul/19/bridget-mckenzie-cpac-london-national-party-pauline-hanson-one-nation-ntwnfb</link>
-      <guid isPermaLink="false">https://www.theguardian.com/australia-news/2026/jul/19/bridget-mckenzie-cpac-london-national-party-pauline-hanson-one-nation-ntwnfb</guid>
-      <pubDate>Sat, 18 Jul 2026 23:37:48 +0000</pubDate>
-    </item>
-    <item>
-      <title>Social media influencers Andrew and Tristian Tate arrested in Miami (CBS)</title>
-      <link>https://www.cbsnews.com/news/social-media-influencers-andrew-and-tristian-tate-arrested-in-miami-uk-charges/</link>
-      <guid isPermaLink="false">https://www.cbsnews.com/news/social-media-influencers-andrew-and-tristian-tate-arrested-in-miami-uk-charges/</guid>
-      <pubDate>Sun, 19 Jul 2026 00:34:23 +0000</pubDate>
-    </item>
-    <item>
-      <title>German politician resigns over surrogacy child controversy (BBC US)</title>
-      <link>https://www.bbc.co.uk/news/articles/cq56e9n1ddzo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/cq56e9n1ddzo?at_medium=RSS&amp;at_campaign=rss</guid>
-      <pubDate>Sat, 18 Jul 2026 15:23:31 +0000</pubDate>
-    </item>
-    <item>
-      <title>Taylor Farms Expands Iceberg Lettuce Recall to 27 States Amid Cyclospora Outbreak (NYT)</title>
-      <link>https://www.nytimes.com/2026/07/18/health/taylor-farms-iceberg-lettuce-recall.html</link>
-      <guid isPermaLink="false">https://www.nytimes.com/2026/07/18/health/taylor-farms-iceberg-lettuce-recall.html</guid>
-      <pubDate>Sun, 19 Jul 2026 00:14:38 +0000</pubDate>
-    </item>
-    <item>
-      <title>Flash flood warnings strike north-east US amid wildfire smoke from Canada (GUARDIAN)</title>
-      <link>https://www.theguardian.com/us-news/2026/jul/18/flash-flood-weather-north-east-us</link>
-      <guid isPermaLink="false">https://www.theguardian.com/us-news/2026/jul/18/flash-flood-weather-north-east-us</guid>
-      <pubDate>Sat, 18 Jul 2026 19:11:13 +0000</pubDate>
     </item>
   </channel>
 </rss>
