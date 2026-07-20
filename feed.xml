@@ -4,13 +4,37 @@
     <title>THE DAILY MALAISE</title>
     <link>https://jlgreen11.github.io/daily-malaise/</link>
     <description>The only front page you can tune. A crisis of confidence, every thirty minutes.</description>
-    <lastBuildDate>Mon, 20 Jul 2026 16:39:23 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2026 18:59:32 +0000</lastBuildDate>
     <atom:link href="https://jlgreen11.github.io/daily-malaise/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>TODAY'S WIRE: 93% GRIM / 7% ROSY — 13% TRUMP ON THE FRONT PAGE, 8% ON THE FULL WIRE</title>
+      <title>TODAY'S WIRE: 95% GRIM / 5% ROSY — 22% TRUMP ON THE FRONT PAGE, 10% ON THE FULL WIRE</title>
       <link>https://jlgreen11.github.io/daily-malaise/</link>
       <guid isPermaLink="false">stat-2026-07-20</guid>
       <pubDate>Mon, 20 Jul 2026 00:00:00 -0500</pubDate>
+    </item>
+    <item>
+      <title>Pentagon Identifies 2 U.S. Soldiers Killed in Jordan During Iran Strike (NYT)</title>
+      <link>https://www.nytimes.com/2026/07/20/us/iran-war-us-soldiers-killed-jordan-identified.html</link>
+      <guid isPermaLink="false">https://www.nytimes.com/2026/07/20/us/iran-war-us-soldiers-killed-jordan-identified.html</guid>
+      <pubDate>Mon, 20 Jul 2026 18:51:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Notorious drug cartel leader Ismael Zambada sentenced to life in US prison (BBC)</title>
+      <link>https://www.bbc.co.uk/news/articles/ce3q1d1ed5do?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/ce3q1d1ed5do?at_medium=RSS&amp;at_campaign=rss</guid>
+      <pubDate>Mon, 20 Jul 2026 17:21:27 +0000</pubDate>
+    </item>
+    <item>
+      <title>Trump says US strikes hit Iran in 'honour' of American soldiers killed (BBC)</title>
+      <link>https://www.bbc.co.uk/news/articles/cly52xzjd3qo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/cly52xzjd3qo?at_medium=RSS&amp;at_campaign=rss</guid>
+      <pubDate>Mon, 20 Jul 2026 17:20:37 +0000</pubDate>
+    </item>
+    <item>
+      <title>Andy Burnham becomes the U.K.'s seventh new prime minister in a decade (CBS)</title>
+      <link>https://www.cbsnews.com/video/andy-burnham-becomes-the-u-k-s-seventh-new-prime-minister-in-a-decade/</link>
+      <guid isPermaLink="false">https://www.cbsnews.com/video/andy-burnham-becomes-the-u-k-s-seventh-new-prime-minister-in-a-decade/</guid>
+      <pubDate>Mon, 20 Jul 2026 15:56:04 +0000</pubDate>
     </item>
     <item>
       <title>England and Liverpool foortball legend Kevin Keegan dies aged 75 (DW)</title>
@@ -19,22 +43,40 @@
       <pubDate>Mon, 20 Jul 2026 16:19:00 +0000</pubDate>
     </item>
     <item>
-      <title>Pentagon ID's 2 soldiers killed in Iran strike in Jordan; 1 still missing (CBS)</title>
-      <link>https://www.cbsnews.com/news/iran-strike-jordan-us-troops-killed/</link>
-      <guid isPermaLink="false">https://www.cbsnews.com/news/iran-strike-jordan-us-troops-killed/</guid>
-      <pubDate>Mon, 20 Jul 2026 15:47:01 +0000</pubDate>
-    </item>
-    <item>
-      <title>Trump says US strikes hit Iran in 'honour' of American soldiers killed (BBC)</title>
-      <link>https://www.bbc.co.uk/news/articles/cly52xzjd3qo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/cly52xzjd3qo?at_medium=RSS&amp;at_campaign=rss</guid>
-      <pubDate>Mon, 20 Jul 2026 11:18:41 +0000</pubDate>
-    </item>
-    <item>
       <title>Ten killed as Russian attacks on merchant ships in Black Sea intensify (BBC)</title>
       <link>https://www.bbc.co.uk/news/articles/c4gvpv3ewv2o?at_medium=RSS&amp;at_campaign=rss</link>
       <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/c4gvpv3ewv2o?at_medium=RSS&amp;at_campaign=rss</guid>
-      <pubDate>Mon, 20 Jul 2026 16:10:39 +0000</pubDate>
+      <pubDate>Mon, 20 Jul 2026 16:10:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Trump to attend dignified transfer of US soldiers killed in Iran strikes (THE HILL)</title>
+      <link>https://thehill.com/homenews/administration/5978822-trump-dignified-transfer-iran-deaths/</link>
+      <guid isPermaLink="false">https://thehill.com/homenews/administration/5978822-trump-dignified-transfer-iran-deaths/</guid>
+      <pubDate>Mon, 20 Jul 2026 17:50:11 +0000</pubDate>
+    </item>
+    <item>
+      <title>U.S. vows to "swiftly punish" Iran as at least 3 troops killed (CBS)</title>
+      <link>https://www.cbsnews.com/live-updates/iran-war-trump-us-troops-killed-wounded-jordan-base/</link>
+      <guid isPermaLink="false">https://www.cbsnews.com/live-updates/iran-war-trump-us-troops-killed-wounded-jordan-base/</guid>
+      <pubDate>Mon, 20 Jul 2026 18:46:54 +0000</pubDate>
+    </item>
+    <item>
+      <title>Trump says Iran ‘will pay’ for killing soldiers ‘many times over’ after Pezeshkian says country fighting ‘full-scale war’ – Middle East crisis live (GUARDIAN)</title>
+      <link>https://www.theguardian.com/world/live/2026/jul/20/us-iran-war-live-updates-strikes-strait-of-hormuz-middle-east-crisis-latest-news</link>
+      <guid isPermaLink="false">https://www.theguardian.com/world/live/2026/jul/20/us-iran-war-live-updates-strikes-strait-of-hormuz-middle-east-crisis-latest-news</guid>
+      <pubDate>Mon, 20 Jul 2026 18:39:43 +0000</pubDate>
+    </item>
+    <item>
+      <title>Army IDs 2 victims killed in Jordan air base attack; Trump: Iran will pay 'many times over' (FOX)</title>
+      <link>https://www.foxnews.com/politics/army-ids-2-victims-killed-enemy-attack-jordan-air-base</link>
+      <guid isPermaLink="false">https://www.foxnews.com/politics/army-ids-2-victims-killed-enemy-attack-jordan-air-base</guid>
+      <pubDate>Mon, 20 Jul 2026 16:39:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>Trump says 'Netanyahu will not be arrested' after Mamdani calls him 'a war criminal' (THE HILL)</title>
+      <link>https://thehill.com/homenews/administration/5978771-trump-netanyahu-arrest-mamdani-new-york/</link>
+      <guid isPermaLink="false">https://thehill.com/homenews/administration/5978771-trump-netanyahu-arrest-mamdani-new-york/</guid>
+      <pubDate>Mon, 20 Jul 2026 18:03:35 +0000</pubDate>
     </item>
     <item>
       <title>'This Must End': Lawmakers Demand Termination of Iran War After Three U.S. Service Members Killed (TIME)</title>
@@ -55,46 +97,16 @@
       <pubDate>Mon, 20 Jul 2026 16:10:44 +0000</pubDate>
     </item>
     <item>
-      <title>Hamas names Khalil al-Hayya as new overall leader (BBC)</title>
-      <link>https://www.bbc.co.uk/news/articles/cx25nzkyj50o?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/cx25nzkyj50o?at_medium=RSS&amp;at_campaign=rss</guid>
-      <pubDate>Mon, 20 Jul 2026 14:02:32 +0000</pubDate>
-    </item>
-    <item>
-      <title>Yemen’s Houthis declare naval blockade against Saudi Arabia amid Strait of Hormuz fighting (INDEPENDENT)</title>
-      <link>https://www.independent.co.uk/news/world/middle-east/yemen-houthi-blockade-saudi-arabia-b3018262.html</link>
-      <guid isPermaLink="false">https://www.independent.co.uk/news/world/middle-east/yemen-houthi-blockade-saudi-arabia-b3018262.html</guid>
-      <pubDate>Mon, 20 Jul 2026 15:48:24 +0000</pubDate>
-    </item>
-    <item>
       <title>What we know about US soldiers killed in Iran war, and Iranian casualties (AL JAZEERA)</title>
       <link>https://www.aljazeera.com/news/2026/7/20/what-we-know-about-us-soldiers-killed-in-iran-war-and-iranian-casualties?traffic_source=rss</link>
       <guid isPermaLink="false">https://www.aljazeera.com/news/2026/7/20/what-we-know-about-us-soldiers-killed-in-iran-war-and-iranian-casualties?traffic_source=rss</guid>
       <pubDate>Mon, 20 Jul 2026 14:34:43 +0000</pubDate>
     </item>
     <item>
-      <title>Suspect arrested in explosion outside NYC federal building was anti-ICE, sources say (CBS)</title>
-      <link>https://www.cbsnews.com/video/suspect-arrested-explosion-outside-nyc-federal-building-anti-ice-sources/</link>
-      <guid isPermaLink="false">https://www.cbsnews.com/video/suspect-arrested-explosion-outside-nyc-federal-building-anti-ice-sources/</guid>
-      <pubDate>Mon, 20 Jul 2026 16:23:24 +0000</pubDate>
-    </item>
-    <item>
-      <title>U.S. vows to "swiftly punish" Iran as at least 3 troops killed (CBS)</title>
-      <link>https://www.cbsnews.com/live-updates/iran-war-trump-us-troops-killed-wounded-jordan-base/</link>
-      <guid isPermaLink="false">https://www.cbsnews.com/live-updates/iran-war-trump-us-troops-killed-wounded-jordan-base/</guid>
-      <pubDate>Mon, 20 Jul 2026 16:22:39 +0000</pubDate>
-    </item>
-    <item>
-      <title>Trump says new Air Force One will be "maxed out" with security capabilities (CBS)</title>
-      <link>https://www.cbsnews.com/news/trump-air-force-one-maxed-out-security-capabilities-qatar/</link>
-      <guid isPermaLink="false">https://www.cbsnews.com/news/trump-air-force-one-maxed-out-security-capabilities-qatar/</guid>
-      <pubDate>Mon, 20 Jul 2026 15:52:13 +0000</pubDate>
-    </item>
-    <item>
-      <title>Live updates: US pounds Iran as war's death toll hits 17; gas prices surpass $4 again (THE HILL)</title>
-      <link>https://thehill.com/homenews/administration/5977234-live-updates-trump-iran/</link>
-      <guid isPermaLink="false">https://thehill.com/homenews/administration/5977234-live-updates-trump-iran/</guid>
-      <pubDate>Mon, 20 Jul 2026 14:58:56 +0000</pubDate>
+      <title>Head of Commerce Department's AI safety arm resigns (THE HILL)</title>
+      <link>https://thehill.com/policy/technology/5978770-chris-fall-caisi-resigns/</link>
+      <guid isPermaLink="false">https://thehill.com/policy/technology/5978770-chris-fall-caisi-resigns/</guid>
+      <pubDate>Mon, 20 Jul 2026 18:27:01 +0000</pubDate>
     </item>
     <item>
       <title>Ebola death toll in DRC surges to at least 930 as outbreak continues spread (AL JAZEERA)</title>
@@ -106,91 +118,79 @@
       <title>Iran’s president says country is in ‘full-scale war’ after expansion of US attacks (GUARDIAN)</title>
       <link>https://www.theguardian.com/world/2026/jul/20/us-strikes-iran-strait-of-hormuz-oil-prices</link>
       <guid isPermaLink="false">https://www.theguardian.com/world/2026/jul/20/us-strikes-iran-strait-of-hormuz-oil-prices</guid>
-      <pubDate>Mon, 20 Jul 2026 16:17:21 +0000</pubDate>
+      <pubDate>Mon, 20 Jul 2026 16:17:20 +0000</pubDate>
     </item>
     <item>
-      <title>Scores feared dead after passenger ferry capsizes off Guyana (BBC)</title>
-      <link>https://www.bbc.co.uk/news/articles/cm2gm99nrm7o?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/cm2gm99nrm7o?at_medium=RSS&amp;at_campaign=rss</guid>
-      <pubDate>Mon, 20 Jul 2026 11:37:33 +0000</pubDate>
+      <title>Paramount and Warner Bros. merger hit with temporary restraining order (CNBC)</title>
+      <link>https://www.cnbc.com/2026/07/20/paramount-wbd-merger-delay.html</link>
+      <guid isPermaLink="false">https://www.cnbc.com/2026/07/20/paramount-wbd-merger-delay.html</guid>
+      <pubDate>Mon, 20 Jul 2026 18:49:34 +0000</pubDate>
+    </item>
+    <item>
+      <title>Judge temporarily halts Paramount-Warner Bros. Discovery merger (CBS)</title>
+      <link>https://www.cbsnews.com/news/paramount-warner-bros-merger-judge-halts/</link>
+      <guid isPermaLink="false">https://www.cbsnews.com/news/paramount-warner-bros-merger-judge-halts/</guid>
+      <pubDate>Mon, 20 Jul 2026 18:29:29 +0000</pubDate>
+    </item>
+    <item>
+      <title>Andy Burnham’s first Labour cabinet: who’s in and who’s out? (GUARDIAN)</title>
+      <link>https://www.theguardian.com/politics/2026/jul/20/andy-burnham-labour-cabinet-profiles</link>
+      <guid isPermaLink="false">https://www.theguardian.com/politics/2026/jul/20/andy-burnham-labour-cabinet-profiles</guid>
+      <pubDate>Mon, 20 Jul 2026 18:27:18 +0000</pubDate>
+    </item>
+    <item>
+      <title>Man, 28, charged with murder of Ann Widdecombe (BBC US)</title>
+      <link>https://www.bbc.co.uk/news/articles/cn4n2erympvo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/cn4n2erympvo?at_medium=RSS&amp;at_campaign=rss</guid>
+      <pubDate>Mon, 20 Jul 2026 18:26:46 +0000</pubDate>
     </item>
     <item>
       <title>Iran-US war latest: Tehran tells Trump ‘our missiles will rain down on you for years’ in new threat (INDEPENDENT)</title>
       <link>https://www.independent.co.uk/news/world/middle-east/iran-us-war-live-trump-strikes-strait-hormuz-oil-crisis-b3017902.html</link>
       <guid isPermaLink="false">https://www.independent.co.uk/news/world/middle-east/iran-us-war-live-trump-strikes-strait-hormuz-oil-crisis-b3017902.html</guid>
-      <pubDate>Mon, 20 Jul 2026 14:17:12 +0000</pubDate>
+      <pubDate>Mon, 20 Jul 2026 14:17:13 +0000</pubDate>
     </item>
     <item>
       <title>Ukraine-Russia war latest: Moscow under attack as 400 Ukrainian drones hit Russian capital (INDEPENDENT)</title>
       <link>https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-putin-ballistic-missile-attack-b3017892.html</link>
       <guid isPermaLink="false">https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-putin-ballistic-missile-attack-b3017892.html</guid>
-      <pubDate>Mon, 20 Jul 2026 12:11:57 +0000</pubDate>
+      <pubDate>Mon, 20 Jul 2026 12:11:58 +0000</pubDate>
+    </item>
+    <item>
+      <title>‘Israeli settlers are in partnership with the army,’ say Palestinians after two shot dead in West Bank (GUARDIAN)</title>
+      <link>https://www.theguardian.com/world/2026/jul/20/israeli-settlers-partnership-army-palestinians-bury-dead-west-bank</link>
+      <guid isPermaLink="false">https://www.theguardian.com/world/2026/jul/20/israeli-settlers-partnership-army-palestinians-bury-dead-west-bank</guid>
+      <pubDate>Mon, 20 Jul 2026 17:53:28 +0000</pubDate>
     </item>
     <item>
       <title>Canada issues air quality warnings over US wildfire smoke after Trump tariff threat (GUARDIAN)</title>
       <link>https://www.theguardian.com/world/2026/jul/20/canada-air-quality-warnings-us-wildfire-smoke-trump-tariffs</link>
       <guid isPermaLink="false">https://www.theguardian.com/world/2026/jul/20/canada-air-quality-warnings-us-wildfire-smoke-trump-tariffs</guid>
-      <pubDate>Mon, 20 Jul 2026 15:52:59 +0000</pubDate>
+      <pubDate>Mon, 20 Jul 2026 15:52:58 +0000</pubDate>
     </item>
     <item>
-      <title>'We Would Never Rig An Election,' Announces President Xi After Again Winning 100% Of Vote (BABYLON BEE)</title>
-      <link>https://babylonbee.com/news/we-would-never-rig-an-election-announces-president-xi-after-again-winning-100-of-vote/</link>
-      <guid isPermaLink="false">https://babylonbee.com/news/we-would-never-rig-an-election-announces-president-xi-after-again-winning-100-of-vote/</guid>
-      <pubDate>Mon, 20 Jul 2026 15:59:56 +0000</pubDate>
+      <title>Former FBI agent on explosion outside New York City federal building (CBS)</title>
+      <link>https://www.cbsnews.com/video/former-fbi-special-agent-explosion-new-york-city/</link>
+      <guid isPermaLink="false">https://www.cbsnews.com/video/former-fbi-special-agent-explosion-new-york-city/</guid>
+      <pubDate>Mon, 20 Jul 2026 18:48:51 +0000</pubDate>
     </item>
     <item>
-      <title>Police block thousands of 'cockroach' protesters marching on India's parliament (BBC)</title>
-      <link>https://www.bbc.co.uk/news/articles/cvg9w9dxd7lo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/cvg9w9dxd7lo?at_medium=RSS&amp;at_campaign=rss</guid>
-      <pubDate>Mon, 20 Jul 2026 16:26:41 +0000</pubDate>
-    </item>
-    <item>
-      <title>Suspect in custody after explosion in trash can outside NYC federal building (CBS)</title>
+      <title>Watch Live: FBI gives update on explosion outside NYC federal building (CBS)</title>
       <link>https://www.cbsnews.com/news/incendiary-device-federal-building-nyc-manhattan/</link>
       <guid isPermaLink="false">https://www.cbsnews.com/news/incendiary-device-federal-building-nyc-manhattan/</guid>
-      <pubDate>Mon, 20 Jul 2026 16:36:45 +0000</pubDate>
+      <pubDate>Mon, 20 Jul 2026 18:48:31 +0000</pubDate>
     </item>
     <item>
-      <title>Man with airsoft rifles caused fireworks explosion outside NYC immigration court: MS NOW (CNBC)</title>
-      <link>https://www.cnbc.com/2026/07/20/new-york-nyc-fbi-incendiary-device.html</link>
-      <guid isPermaLink="false">https://www.cnbc.com/2026/07/20/new-york-nyc-fbi-incendiary-device.html</guid>
-      <pubDate>Mon, 20 Jul 2026 16:21:58 +0000</pubDate>
+      <title>Early details on suspect in explosion outside NYC federal building (CBS)</title>
+      <link>https://www.cbsnews.com/video/man-in-custody-after-attack-on-nyc-federal-building/</link>
+      <guid isPermaLink="false">https://www.cbsnews.com/video/man-in-custody-after-attack-on-nyc-federal-building/</guid>
+      <pubDate>Mon, 20 Jul 2026 18:46:01 +0000</pubDate>
     </item>
     <item>
-      <title>Iran live updates: Pentagon releases names of 2 service members killed in Jordan (ABC)</title>
-      <link>https://abcnews.com/International/live-updates/iran-live-updates-kuwait-attacked-bahrain-sounds-sirens/?id=134907987</link>
-      <guid isPermaLink="false">https://abcnews.com/International/live-updates/iran-live-updates-kuwait-attacked-bahrain-sounds-sirens/?id=134907987</guid>
-      <pubDate>Mon, 20 Jul 2026 15:21:13 +0000</pubDate>
-    </item>
-    <item>
-      <title>Ukraine unleashes more than 400 drones near Moscow in one of war's biggest attacks (FOX)</title>
-      <link>https://www.foxnews.com/world/ukraine-unleashes-more-than-400-drones-near-moscow-one-wars-biggest-attacks</link>
-      <guid isPermaLink="false">https://www.foxnews.com/world/ukraine-unleashes-more-than-400-drones-near-moscow-one-wars-biggest-attacks</guid>
-      <pubDate>Mon, 20 Jul 2026 16:15:04 +0000</pubDate>
-    </item>
-    <item>
-      <title>Trump curse strikes again after president’s World Cup final favorite Argentina loses to Spain (INDEPENDENT)</title>
-      <link>https://www.independent.co.uk/news/world/americas/us-politics/trump-curse-argentina-world-cup-b3018171.html</link>
-      <guid isPermaLink="false">https://www.independent.co.uk/news/world/americas/us-politics/trump-curse-argentina-world-cup-b3018171.html</guid>
-      <pubDate>Mon, 20 Jul 2026 13:14:58 +0000</pubDate>
-    </item>
-    <item>
-      <title>Tucson mass shooting has residents concerned over ongoing rampant violence, pols debating gun rights (FOX)</title>
-      <link>https://www.foxnews.com/us/tucson-mass-shooting-residents-concerned-ongoing-rampant-violence-pols-debating-gun-rights</link>
-      <guid isPermaLink="false">https://www.foxnews.com/us/tucson-mass-shooting-residents-concerned-ongoing-rampant-violence-pols-debating-gun-rights</guid>
-      <pubDate>Mon, 20 Jul 2026 16:13:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>Mystery after dead body found at home owned by husband of congresswoman Ayanna Pressley (INDEPENDENT)</title>
-      <link>https://www.independent.co.uk/news/world/americas/crime/ayanna-pressley-husband-body-found-b3018156.html</link>
-      <guid isPermaLink="false">https://www.independent.co.uk/news/world/americas/crime/ayanna-pressley-husband-body-found-b3018156.html</guid>
-      <pubDate>Mon, 20 Jul 2026 15:08:07 +0000</pubDate>
-    </item>
-    <item>
-      <title>War erupts on far left as DSA endorses challenger against sitting House progressive (FOX)</title>
-      <link>https://www.foxnews.com/politics/war-erupts-far-left-dsa-endorses-challenger-against-sitting-house-progressive</link>
-      <guid isPermaLink="false">https://www.foxnews.com/politics/war-erupts-far-left-dsa-endorses-challenger-against-sitting-house-progressive</guid>
-      <pubDate>Mon, 20 Jul 2026 16:00:54 +0000</pubDate>
+      <title>Yemen's Houthis announce 'maritime embargo' on Saudi Arabia (BBC)</title>
+      <link>https://www.bbc.co.uk/news/articles/cm2gmddx1ldo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">https://www.bbc.co.uk/news/articles/cm2gmddx1ldo?at_medium=RSS&amp;at_campaign=rss</guid>
+      <pubDate>Mon, 20 Jul 2026 17:33:02 +0000</pubDate>
     </item>
   </channel>
 </rss>
